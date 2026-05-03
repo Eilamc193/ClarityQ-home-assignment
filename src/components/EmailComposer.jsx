@@ -97,7 +97,7 @@ export default function EmailComposer({ persona, company, onBack }) {
             <div className="flex items-center gap-3">
               {persona.photo ? (
                 <img
-                  src={persona.photo}
+                  src={`${import.meta.env.BASE_URL}${persona.photo.slice(1)}`}
                   alt={persona.name}
                   onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex' }}
                   className="w-10 h-10 rounded-full object-cover shrink-0"

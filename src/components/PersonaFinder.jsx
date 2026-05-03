@@ -25,7 +25,7 @@ function PersonaCard({ persona, company, onDraftEmail }) {
       <div className="flex items-start gap-4">
         {persona.photo ? (
           <img
-            src={persona.photo}
+            src={`${import.meta.env.BASE_URL}${persona.photo.slice(1)}`}
             alt={persona.name}
             onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex' }}
             className="w-12 h-12 rounded-full object-cover shrink-0"
@@ -96,20 +96,10 @@ function PersonaCard({ persona, company, onDraftEmail }) {
         )}
 
         {emailState.status === 'notfound' && (
-          persona.estimatedEmail ? (
-            <div className="flex flex-col gap-1.5">
-              <div className="flex items-center gap-2 bg-amber-50 border border-amber-200 px-3 py-2 rounded-lg">
-                <AlertCircle size={14} className="text-amber-500 shrink-0" />
-                <span className="text-xs text-amber-700 font-medium">Estimated: {persona.estimatedEmail}</span>
-              </div>
-              <span className="text-xs text-gray-400 pl-1">Pattern-based — verify before sending</span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-2 rounded-lg">
-              <AlertCircle size={14} className="text-gray-400 shrink-0" />
-              <span className="text-sm text-gray-500">Email not found — try LinkedIn DM</span>
-            </div>
-          )
+          <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-2 rounded-lg">
+            <AlertCircle size={14} className="text-gray-400 shrink-0" />
+            <span className="text-sm text-gray-500">Email not found — try LinkedIn DM</span>
+          </div>
         )}
 
         {emailState.status === 'error' && (
@@ -154,16 +144,19 @@ export default function PersonaFinder({ company, onBack, onDraftEmail }) {
       </button>
 
       <div className="flex items-center gap-3 mb-1.5">
-        <span className="text-2xl">{company.emoji}</span>
+        {company.logo ? (
+          <img
+            src={`${import.meta.env.BASE_URL}${company.logo.slice(1)}`}
+            alt={company.name}
+            onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'inline' }}
+            className="w-9 h-9 rounded object-contain shrink-0"
+          />
+        ) : null}
+        <span className="text-2xl" style={company.logo ? { display: 'none' } : {}}>{company.emoji}</span>
         <div>
           <h1 className="text-2xl font-bold text-slate-900">{company.name} — Decision Makers</h1>
           <p className="text-sm text-slate-500 mt-0.5">{company.industry} · {company.headcount} employees · {company.stage}</p>
         </div>
-        <span className={`ml-auto text-sm font-semibold px-3 py-1 rounded-full ${
-          company.icpScore >= 85 ? 'bg-emerald-100 text-emerald-700' : 'bg-indigo-100 text-indigo-700'
-        }`}>
-          ICP {company.icpScore}/100
-        </span>
       </div>
 
       <p className="text-sm text-slate-500 mb-7 mt-2">{company.description}</p>
@@ -180,24 +173,6 @@ export default function PersonaFinder({ company, onBack, onDraftEmail }) {
         ))}
       </div>
 
-      {/* ICP breakdown */}
-      <div className="mt-6 bg-white rounded-xl border border-gray-200 shadow-sm p-5">
-        <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">ICP Score Breakdown</p>
-        <div className="space-y-2.5">
-          {company.icpBreakdown.map((item) => (
-            <div key={item.label} className="flex items-center gap-3">
-              <span className={`text-base ${item.met ? 'text-emerald-500' : 'text-gray-300'}`}>
-                {item.met ? '✓' : '○'}
-              </span>
-              <span className="text-sm text-slate-700 flex-1">{item.label}</span>
-              {item.note && <span className="text-xs text-slate-400 italic">{item.note}</span>}
-              <span className="text-sm font-semibold text-slate-900 tabular-nums">
-                {item.score}/{item.max}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   )
 }
