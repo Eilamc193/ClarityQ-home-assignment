@@ -1678,6 +1678,1684 @@ ClarityQ will still be here.`,
       },
     },
   },
+  // ─────────────────────────────────────────────
+  // PLAY PERFECT — NEW PERSONAS
+  // ─────────────────────────────────────────────
+
+  'playp-zur-shental': {
+    cold: {
+      concise: {
+        subject: 'Play Perfect × ClarityQ — product decisions without the queue',
+        body: `Hi Zur,
+
+You're leading product at Play Perfect during a global rollout — with no VP Product above you. That means you're making game iteration decisions on BigQuery data you probably have to request from analytics.
+
+ClarityQ connects to BigQuery and lets you ask "which feature drove the Day-7 spike in this market?" in plain English — answer in 10 seconds.
+
+Worth 15 minutes to see it live?`,
+        personalization_notes: [
+          'Referenced VP Product seat being open — Zur is filling the gap',
+          'Referenced global rollout as the current pressure',
+          'Named BigQuery as their confirmed stack',
+          'Framed around Day-7 retention — the key gaming metric',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about your product analytics workflow',
+        body: `Hey Zur,
+
+I was looking at Play Perfect's growth — 50M+ downloads and a global rollout now underway. Impressive. But I'm curious: when you want to understand something like "how is feature X performing in the German market vs. Israel this week?" — how fast do you get that answer?
+
+Is it a self-serve query, or does it go through an analyst request that takes a day or two?
+
+I ask because we built ClarityQ for exactly that situation — it connects to BigQuery and lets product leads ask questions in plain English and get answers in seconds. We work with mobile gaming studios where product decisions move fast.
+
+Would love to show you a quick demo. What does your schedule look like?`,
+        personalization_notes: [
+          'Acknowledged 50M+ download milestone',
+          'Named the specific global rollout pressure',
+          'Asked a relatable, specific product analytics question',
+          'Mentioned BigQuery and gaming context',
+        ],
+      },
+      direct: {
+        subject: 'Your global rollout needs faster product data',
+        body: `Zur,
+
+You're running product during Play Perfect's global expansion with no VP above you. Every day you're making decisions on which markets to invest in, which features to push — and you're waiting on analytics to confirm or deny your hypotheses.
+
+ClarityQ plugs into BigQuery and lets you ask product questions in plain English — "what's Day-7 retention on users who engaged with feature X?" — and get a precise answer in under 10 seconds.
+
+I'd like to show you what that looks like for a gaming studio in 15 minutes. Free Thursday or Friday?`,
+        personalization_notes: [
+          'Named the specific risk: making product decisions without fast data during global expansion',
+          'Referenced VP Product gap to create urgency',
+          'Used a concrete, gaming-relevant example query',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Play Perfect × ClarityQ',
+        body: `Hi Zur,
+
+Following up on my note from last week. One thing worth adding: we recently helped a mobile gaming studio similar to Play Perfect's size cut their product insight turnaround from 48 hours to under 10 seconds. Their PMs now self-serve, which freed their analytics team entirely for model-building work.
+
+Still happy to show you a quick demo. Next week work?`,
+        personalization_notes: [
+          'Added a social proof hook from a comparable gaming studio',
+          'Specific outcome: 48h → 10 seconds',
+          'Short and respectful of his time',
+        ],
+      },
+      conversational: {
+        subject: 'Still thinking about the product analytics question',
+        body: `Hey Zur,
+
+I sent a note last week about ClarityQ and didn't hear back — totally fine, I know timing matters.
+
+I did want to share one thing that might be useful regardless: at Play Perfect's current scale, the biggest bottleneck is usually the gap between "I have a hypothesis about this feature" and "I have the data to confirm or kill it." That gap is where bad product decisions happen.
+
+ClarityQ closes that gap — plain-English queries on your BigQuery stack, answers in seconds. Happy to show you a 15-minute demo whenever timing is right.
+
+What are your biggest product data frustrations right now?`,
+        personalization_notes: [
+          'Acknowledged no response without being pushy',
+          'Reframed the pain as hypothesis-to-data gap — resonant for PMs',
+          'Ended with a genuine question to re-engage',
+        ],
+      },
+      direct: {
+        subject: 'One more ping — then I\'ll leave you alone',
+        body: `Zur,
+
+Last note on this — I promise.
+
+You're in the middle of a global rollout with no VP Product above you, making real-time calls on BigQuery data that takes days to surface. That's a compounding risk as you scale into new markets.
+
+If that's not a priority right now, no worries. But if it is — ClarityQ can show you the difference in 15 minutes. Just reply with a time.`,
+        personalization_notes: [
+          'Acknowledged this is the last follow-up — reduces friction',
+          'Restated the specific risk clearly',
+          'Simple, no-pressure CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Zur,
+
+Totally understand — thanks for letting me know. I'll check back in a few months when timing might be different.
+
+If Play Perfect ever hits a wall on analyst bandwidth during a product sprint, you know where to find me.`,
+        personalization_notes: [
+          'Graceful, no pressure',
+          'Left a specific, relevant trigger for re-engagement',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the reply',
+        body: `Hey Zur,
+
+Appreciate you taking the time to respond. Completely understand — no worries at all.
+
+If the product analytics bottleneck ever becomes a real pain (it usually does at the next scale stage), I'd love to reconnect. We're building specifically for gaming studios navigating that growth phase.
+
+I'll reach out in a few months to check in. In the meantime, good luck with the global rollout — it sounds like an exciting time at Play Perfect.`,
+        personalization_notes: [
+          'Warm and genuine — not transactional',
+          'Set a specific re-engagement trigger (next scale stage)',
+          'Referenced the global rollout positively',
+        ],
+      },
+      direct: {
+        subject: 'Noted — circling back in Q3',
+        body: `Zur,
+
+Got it — not the right time. I'll reach out again in Q3 when the global rollout dust has settled and the next growth challenge is clear.
+
+If anything changes before then, you have my contact.`,
+        personalization_notes: [
+          'Specific re-engagement timeline (Q3)',
+          'Tied to their known business cycle',
+          'Door clearly open',
+        ],
+      },
+    },
+  },
+
+  'playp-gilad-ben-david': {
+    cold: {
+      concise: {
+        subject: 'Play Perfect × ClarityQ — cut the analyst queue',
+        body: `Hi Gilad,
+
+When your studio has 50M+ downloads and a global rollout underway, your analytics team fields a lot of "quick questions" that aren't quick.
+
+ClarityQ connects to BigQuery and lets PMs, UA managers, and game designers ask those questions in plain English — answer in 10 seconds. Your team handles the complex work.
+
+15 minutes to see it live?`,
+        personalization_notes: [
+          'Referenced 50M+ downloads as scale context',
+          'Named the global rollout as a current ad-hoc request multiplier',
+          'Named BigQuery as their confirmed stack',
+          'Framed the pitch around freeing up the data team',
+        ],
+      },
+      conversational: {
+        subject: 'Question about how Play Perfect handles analyst requests',
+        body: `Hey Gilad,
+
+I've been looking at Play Perfect's growth — 50M+ downloads and a global rollout in progress. That's an impressive operation. But I'm curious: as Head of Data Analytics, how much of your team's time goes to ad-hoc requests from product and marketing?
+
+In my experience with gaming studios at this scale, the ratio is often 60–70% ad-hoc. That's a lot of your team's capacity going to "what's the Day-7 retention for this campaign?" rather than deep modeling work.
+
+ClarityQ is an AI analytics tool that connects to BigQuery and lets non-technical stakeholders self-serve on exactly those questions — answers in plain English, in seconds. It's designed to reduce that ad-hoc load so your team can focus on the analysis that actually requires their expertise.
+
+Would love to show you a 20-minute demo. Does next week work?`,
+        personalization_notes: [
+          'Opened with genuine curiosity about his specific challenge',
+          'Named the 60–70% ad-hoc ratio — a credible industry insight',
+          'Framed ClarityQ as freeing the data team for high-value work',
+          'Named BigQuery specifically',
+        ],
+      },
+      direct: {
+        subject: 'Your analysts are answering questions your PMs should handle',
+        body: `Gilad,
+
+At 50M+ downloads and with a global rollout underway, your PMs and UA managers are generating more data questions than your analytics team can handle. The bottleneck is real — and it gets worse as you scale.
+
+ClarityQ connects to BigQuery and lets non-technical teams ask "what's the ROAS on TikTok in the US last week?" in plain English — and get a precise answer in 10 seconds. No analyst ticket required.
+
+Your team gets back to modeling. Your stakeholders get faster answers.
+
+Can I show you what this looks like for Play Perfect in 15 minutes? Thursday or Friday?`,
+        personalization_notes: [
+          'Named the specific problem directly: analysts answering what PMs should handle',
+          'Used a concrete gaming/UA metric example',
+          'Clear outcome for the data team: more time for real work',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: ClarityQ for Play Perfect',
+        body: `Hi Gilad,
+
+Following up on my note from last week. One data point that might be relevant: a mobile gaming analytics team we work with reduced their ad-hoc request load by 65% within 60 days of deploying ClarityQ. Their analysts now focus almost entirely on monetization modeling and LTV prediction.
+
+Happy to show you how that worked. 15 minutes next week?`,
+        personalization_notes: [
+          'Added specific outcome: 65% reduction in ad-hoc load',
+          'Named the specific high-value work their team could focus on instead',
+          'Short and data-forward — appropriate for a data leader',
+        ],
+      },
+      conversational: {
+        subject: 'Checking in — any bandwidth this week?',
+        body: `Hey Gilad,
+
+I reached out last week about ClarityQ and didn't hear back. Completely understandable — this time of year with a global rollout in motion, your team is probably fielding a lot.
+
+I wanted to share one thing that might be useful regardless: we have a quick ROI calculator for data team leaders that estimates how much analyst time is currently going to ad-hoc requests vs. complex analysis. Takes about 5 minutes to fill out and gives you a clearer picture of the opportunity.
+
+Happy to send it over if that's useful — no pitch required.`,
+        personalization_notes: [
+          'Offered value without requiring a meeting',
+          'Acknowledged the busy context (global rollout)',
+          'Soft re-engagement with a useful tool',
+        ],
+      },
+      direct: {
+        subject: 'Last note on this',
+        body: `Gilad,
+
+One more note before I step back. The ad-hoc request problem doesn't solve itself — it compounds as Play Perfect grows into new markets. Your team will continue to be the bottleneck unless the self-serve layer gets built.
+
+ClarityQ is that layer. If the timing is wrong now, that's fine — but I'd encourage you to block time to evaluate this in the next quarter.
+
+Happy to schedule something whenever it fits.`,
+        personalization_notes: [
+          'Named the compounding nature of the problem',
+          'Respected his timeline while creating urgency',
+          'Soft CTA without pressure',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Gilad,
+
+Understood, thanks for the response. I'll reach out again when the timing is better.
+
+If the ad-hoc queue ever becomes the team's biggest challenge, you know where to find us.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Left a relevant trigger for future re-engagement',
+        ],
+      },
+      conversational: {
+        subject: 'Appreciate the reply',
+        body: `Hey Gilad,
+
+Thanks for letting me know — no worries at all. These conversations are always about timing.
+
+I'll check back in a few months. In the meantime, if you're ever curious about how other gaming analytics teams are handling the self-serve vs. analyst question, I'm happy to share what we're seeing — no pitch attached.
+
+Good luck with the global rollout.`,
+        personalization_notes: [
+          'Acknowledged timing without pressure',
+          'Offered genuine value (industry insights) as a reason to stay in touch',
+          'Warm close referencing their business context',
+        ],
+      },
+      direct: {
+        subject: 'Noted — I\'ll circle back in Q3',
+        body: `Gilad,
+
+Got it. I'll reach out again in Q3 — by then the global expansion will have created enough new data challenges to make this conversation timely.
+
+If anything changes before then, feel free to reach out directly.`,
+        personalization_notes: [
+          'Specific re-engagement timeline',
+          'Tied to their actual business cycle',
+          'Confident but not pushy',
+        ],
+      },
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // ODDITY (IL MAKIAGE) — NEW PERSONAS
+  // ─────────────────────────────────────────────
+
+  'ilmak-boaz-ariely': {
+    cold: {
+      concise: {
+        subject: 'Il Makiage × ClarityQ — ROAS answers in seconds',
+        body: `Hi Boaz,
+
+Running performance marketing for a public DTC brand means defending every ad dollar with data — and waiting on analysts is not an option.
+
+ClarityQ connects to Snowflake and lets your team ask "what's our ROAS on Meta this week vs. last month?" in plain English — answer in under 10 seconds. No SQL. No ticket.
+
+Worth 15 minutes to see it live?`,
+        personalization_notes: [
+          'Referenced public company accountability for performance marketing spend',
+          'Named Snowflake as their confirmed stack',
+          'Used a specific, relevant ROAS example query',
+          'Framed around eliminating analyst dependency',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about your performance analytics setup',
+        body: `Hey Boaz,
+
+I've been following Il Makiage's growth — impressive what ODDITY has built in DTC beauty, especially the AI personalization angle. Running performance marketing at that scale, you must be managing hundreds of campaigns across channels.
+
+I'm curious: when you want to understand something like "which channel drove the best CAC this week in the US vs. UK?" — how quickly do you get that answer? Is it a dashboard you check, or does it go through an analyst?
+
+I ask because we built ClarityQ specifically for performance marketers at data-heavy DTC brands. It connects to Snowflake and lets your team ask questions like that in plain English — answers in under 10 seconds. The brands we work with say it changes how fast they can iterate on spend.
+
+Would love to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Acknowledged ODDITY\'s AI personalization strategy — shows research',
+          'Asked a specific, role-relevant question about attribution speed',
+          'Named Snowflake — their confirmed data stack',
+          'Framed value around iteration speed for performance marketers',
+        ],
+      },
+      direct: {
+        subject: 'ODDITY\'s data stack is built for this',
+        body: `Boaz,
+
+ODDITY runs one of the most data-intensive DTC stacks in the industry — Snowflake, dbt, Looker. But "rich data stack" still means your team waits for analyst pulls when you need to answer "which creative drove the best ROAS this week on TikTok?"
+
+ClarityQ sits on top of Snowflake and lets you ask that question in plain English. Answer in 10 seconds. No SQL, no analyst queue, no waiting until Monday.
+
+I'd like to show you a 15-minute live demo using a performance marketing dataset. Are you free Thursday?`,
+        personalization_notes: [
+          'Opened by acknowledging their strong data stack — credibility move',
+          'Named the gap that exists even with a strong stack',
+          'Used a specific, timely example (creative ROAS on TikTok)',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Il Makiage × ClarityQ',
+        body: `Hi Boaz,
+
+Following up on my note from last week. One thing that might be relevant: a DTC brand with a similar Snowflake + paid social setup used ClarityQ to cut their channel attribution turnaround from 2 days to real-time. Their media buyers now iterate on bids daily instead of weekly.
+
+15 minutes to see how that works? Happy to fit around your schedule.`,
+        personalization_notes: [
+          'Added social proof: DTC brand, similar stack, real outcome',
+          'Named the specific improvement: 2 days → real-time attribution',
+          'Short and role-relevant',
+        ],
+      },
+      conversational: {
+        subject: 'Still thinking about the channel attribution question',
+        body: `Hey Boaz,
+
+I reached out last week and didn't hear back — no worries at all.
+
+I wanted to add one thing that might be useful: with ODDITY's METHODIQ telehealth launch, you now have consultation data and purchase data that need to be connected to measure true conversion performance. That's exactly the fragmented-stack problem ClarityQ solves — it lets you query across Snowflake sources in plain English without building custom joins.
+
+Happy to show you what that looks like in 15 minutes. Would next week work?`,
+        personalization_notes: [
+          'Added a new hook: METHODIQ launch creates a new data fragmentation problem',
+          'Named the specific pain: consult data + purchase data = attribution gap',
+          'Positioned ClarityQ as solving a problem they have RIGHT NOW',
+        ],
+      },
+      direct: {
+        subject: 'One more note on ROAS analytics',
+        body: `Boaz,
+
+Last note on this. ODDITY's METHODIQ launch means your attribution model now spans telehealth consultations and e-commerce purchases — a fragmented data problem that will only get more complex.
+
+ClarityQ connects both data sources in Snowflake and gives your team plain-English answers across the full funnel. I'd like to show you in 15 minutes.
+
+Reply with a time that works and I'll send a calendar invite.`,
+        personalization_notes: [
+          'Used METHODIQ as the specific urgency trigger',
+          'Named the concrete technical challenge: cross-source attribution',
+          'Clear CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Boaz,
+
+No worries — I'll circle back when the timing is better. If the METHODIQ attribution question ever becomes a priority, happy to reconnect.`,
+        personalization_notes: [
+          'Left a specific, relevant re-engagement trigger',
+          'Brief and professional',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the reply',
+        body: `Hey Boaz,
+
+Appreciate you taking the time. Completely understand — performance marketing at ODDITY's scale is a full-time job without adding vendor evaluations.
+
+I'll check back in a few months. In the meantime, if METHODIQ's attribution model becomes a pain point, I'd love to revisit the conversation.
+
+Good luck with everything — what ODDITY is building is genuinely impressive.`,
+        personalization_notes: [
+          'Acknowledged the volume of their workload empathetically',
+          'Named METHODIQ as the specific future trigger',
+          'Genuine compliment on ODDITY\'s business',
+        ],
+      },
+      direct: {
+        subject: 'Noted — I\'ll reach out again in Q3',
+        body: `Boaz,
+
+Got it. I'll follow up in Q3 — by then the METHODIQ attribution complexity will likely be a bigger priority.
+
+If anything changes before then, you know where to find me.`,
+        personalization_notes: [
+          'Specific timeline tied to their known business trigger',
+          'Confident close',
+        ],
+      },
+    },
+  },
+
+  'ilmak-miranda-may': {
+    cold: {
+      concise: {
+        subject: 'Oddity × ClarityQ — revenue insights without the wait',
+        body: `Hi Miranda,
+
+Running revenue and product for SpoiledChild means you need fast answers on what's driving growth — CAC trends, product funnel conversion, LTV by cohort — without waiting on analysts.
+
+ClarityQ connects to Snowflake and delivers those answers in plain English in under 10 seconds.
+
+Worth 15 minutes? Happy to show you a live demo.`,
+        personalization_notes: [
+          'Referenced SpoiledChild specifically — shows awareness of her brand scope',
+          'Named revenue + product metrics relevant to her dual role',
+          'Named Snowflake as Oddity\'s confirmed data stack',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question on how you access revenue data at Oddity',
+        body: `Hey Miranda,
+
+I've been following Oddity's journey — the SpoiledChild expansion is a bold bet on a really different model from Il Makiage. As VP Revenue & Product, you're essentially running two very different analytics challenges simultaneously.
+
+I'm curious: when you need to quickly understand something like "how is SpoiledChild's month-two retention trending vs. Il Makiage at the same stage?" — how do you get that answer? Is it a live dashboard, or does it go through an analyst?
+
+I ask because ClarityQ is an AI analytics tool that connects to Snowflake and lets revenue and product leaders ask cross-brand, cross-cohort questions in plain English — answers in seconds. We work with DTC brands at exactly your stage of complexity.
+
+Happy to show you a 20-minute demo. What does your schedule look like?`,
+        personalization_notes: [
+          'Showed genuine knowledge of SpoiledChild as a distinct brand from Il Makiage',
+          'Asked a specific, cross-brand analytics question that resonates with her dual role',
+          'Named Snowflake and positioned as solving multi-brand complexity',
+        ],
+      },
+      direct: {
+        subject: 'SpoiledChild\'s growth data needs faster answers',
+        body: `Miranda,
+
+You're running revenue and product for SpoiledChild while managing data across two very different brand funnels. When your BCG instincts tell you there's a retention signal or a revenue trend worth investigating, you shouldn't have to wait 48 hours for an analyst to confirm it.
+
+ClarityQ connects to Snowflake and lets you ask "what's our month-2 retention for SpoiledChild subscribers acquired via paid social in Q1?" in plain English — answer in 10 seconds.
+
+I'd like to show you what that looks like in 15 minutes. Free Thursday or Friday?`,
+        personalization_notes: [
+          'Referenced BCG background as a signal of high analytical expectations',
+          'Named the specific pain: waiting for analysts when instincts are already telling a story',
+          'Used a SpoiledChild-specific, role-relevant example query',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Oddity × ClarityQ',
+        body: `Hi Miranda,
+
+Following up from last week. One thing worth adding: we recently worked with a subscription beauty brand at a similar scale that used ClarityQ to monitor retention cohorts in real-time — they identified a month-3 churn signal 3 weeks earlier than their previous reporting cycle and saved the cohort with a targeted campaign.
+
+15 minutes to see how that works?`,
+        personalization_notes: [
+          'Used a specific, relevant case study: subscription beauty brand, retention cohort, early churn signal',
+          'Named a concrete business outcome: saved the cohort',
+          'Short and data-forward',
+        ],
+      },
+      conversational: {
+        subject: 'Still thinking about the cross-brand analytics challenge',
+        body: `Hey Miranda,
+
+I reached out last week and didn't hear back — no worries.
+
+One thing I've been thinking about: managing two brands (Il Makiage and SpoiledChild) with fundamentally different business models on one data stack is genuinely hard. The temptation is to build separate dashboards for each, but that creates exactly the visibility gaps that slow revenue decisions.
+
+ClarityQ is designed for multi-model queries — ask "how does SpoiledChild's CAC compare to Il Makiage at the same growth stage?" and get a direct answer across Snowflake sources in seconds.
+
+Happy to show you in 15 minutes whenever the timing is right.`,
+        personalization_notes: [
+          'Added a new angle: multi-brand complexity on one data stack',
+          'Named the specific anti-pattern: separate dashboards per brand',
+          'Positioned ClarityQ as solving the multi-model query problem',
+        ],
+      },
+      direct: {
+        subject: 'One more note on SpoiledChild revenue analytics',
+        body: `Miranda,
+
+Last note on this. SpoiledChild is scaling fast, and the revenue analytics complexity grows with it — especially once you start comparing cohort behavior across two very different business models.
+
+If you ever want to see how ClarityQ handles cross-brand Snowflake queries in plain English, I can show you in 15 minutes. Just pick a time.`,
+        personalization_notes: [
+          'Framed around SpoiledChild scaling — a near-term pain point',
+          'Named the specific complexity: cross-brand cohort comparison',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Miranda,
+
+No problem — I'll check back in a few months. If the cross-brand analytics question ever becomes a priority, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and graceful',
+          'Named a specific future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the response',
+        body: `Hey Miranda,
+
+Appreciate you taking the time. Totally understand — no worries at all.
+
+I'll reach out again in a quarter or two. Oddity is doing something genuinely interesting with the multi-brand model, and I'd love to stay in touch as that complexity evolves.
+
+Best of luck with everything.`,
+        personalization_notes: [
+          'Genuine acknowledgment of Oddity\'s multi-brand model as interesting',
+          'Set a soft re-engagement timeline',
+          'No pressure close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — circling back in Q3',
+        body: `Miranda,
+
+Got it. I'll reach out again in Q3 — by then the SpoiledChild scaling analytics will likely be a clearer priority.
+
+Feel free to reach out before then if anything changes.`,
+        personalization_notes: [
+          'Specific Q3 re-engagement timeline',
+          'Named the future trigger',
+        ],
+      },
+    },
+  },
+
+  'ilmak-yohei-shoji': {
+    cold: {
+      concise: {
+        subject: 'Il Makiage × ClarityQ — CX insights without analyst lag',
+        body: `Hi Yohei,
+
+Running CX and insights for Il Makiage means you're constantly asking "which touchpoint is driving satisfaction, and which is driving churn?" — and waiting on Snowflake queries to find out.
+
+ClarityQ delivers those answers in plain English in under 10 seconds. No SQL. No analyst ticket.
+
+Worth 15 minutes to see it live?`,
+        personalization_notes: [
+          'Named his dual responsibility: CX + Insights',
+          'Named the specific CX analytics question he deals with daily',
+          'Named Snowflake as their confirmed stack',
+        ],
+      },
+      conversational: {
+        subject: 'Question about customer insights at Il Makiage',
+        body: `Hey Yohei,
+
+Il Makiage's AI personalization model is genuinely impressive — matching customers to foundation shades with 80% accuracy is a bold product bet that's clearly working. As VP CX & Insights, you must be sitting on a goldmine of customer behavior data.
+
+I'm curious: when you want to understand something like "which NPS cohort has the highest 90-day LTV?" — how do you get that answer? Is it a dashboard you can pull yourself, or does it require analyst time?
+
+I ask because ClarityQ connects to Snowflake and lets CX leaders ask questions like that in plain English — answers in seconds. It's built for the kind of insight-action cycle that matters in DTC brands where personalization is the core product.
+
+Would love to show you a 20-minute demo. What does your week look like?`,
+        personalization_notes: [
+          'Acknowledged Il Makiage\'s 80% foundation shade match — shows genuine product research',
+          'Asked a specific CX analytics question (NPS cohort LTV) that resonates with his role',
+          'Named Snowflake and framed around DTC personalization context',
+        ],
+      },
+      direct: {
+        subject: 'Your CX data should be answering faster',
+        body: `Yohei,
+
+You're sitting on one of the richest customer behavior datasets in DTC beauty — shade match outcomes, purchase patterns, support touchpoints, NPS signals — all in Snowflake. But surfacing insights from that data still requires analyst requests that take days.
+
+ClarityQ puts that data in plain English. Ask "what's the churn rate for customers whose shade match required more than 3 quiz attempts?" and get the answer in 10 seconds.
+
+I'd like to show you what that looks like in 15 minutes. Free Thursday or Friday?`,
+        personalization_notes: [
+          'Named Il Makiage\'s specific CX data richness (shade match, NPS)',
+          'Used a creative, highly specific example query that shows domain knowledge',
+          'Clear outcome: days → 10 seconds',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Il Makiage × ClarityQ',
+        body: `Hi Yohei,
+
+Following up from last week. One thing worth adding: we worked with a DTC beauty brand that used ClarityQ to identify a specific post-purchase CX trigger that was driving 23% of month-2 churn. They fixed it in a single sprint. Without ClarityQ, that insight had been buried in Snowflake for months.
+
+15 minutes to see how that works?`,
+        personalization_notes: [
+          'Used a specific, outcome-driven case study',
+          'Named the exact CX metric: month-2 churn',
+          'Framed around speed of insight → action',
+        ],
+      },
+      conversational: {
+        subject: 'Checking in on the CX analytics question',
+        body: `Hey Yohei,
+
+I reached out last week and didn't hear back — completely understandable. Running CX and insights for a public DTC brand is a lot.
+
+I wanted to add one angle I didn't mention: with METHODIQ's telehealth launch, you now have consultation data that needs to be woven into the customer journey analytics. Understanding how a telehealth consultation changes a customer's LTV trajectory requires cross-source queries that are normally painful to build.
+
+ClarityQ handles that natively — ask the question in plain English, get the answer across Snowflake sources in seconds.
+
+Happy to show you when the timing is right.`,
+        personalization_notes: [
+          'Added new hook: METHODIQ consultation data adds CX analytics complexity',
+          'Named the specific challenge: cross-source LTV journey analysis',
+          'Positioned METHODIQ as a concrete pain point trigger',
+        ],
+      },
+      direct: {
+        subject: 'One more note on CX analytics',
+        body: `Yohei,
+
+Last note. The METHODIQ launch has added a new data source to your CX stack — and with it, a new gap in your ability to track the full customer journey.
+
+ClarityQ closes that gap. 15 minutes to see how. Just pick a time.`,
+        personalization_notes: [
+          'Used METHODIQ as the specific, timely trigger',
+          'Framed as closing a known gap',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Yohei,
+
+No worries — I'll check back in a few months. If the cross-channel CX analytics question becomes a priority, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named a relevant future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for letting me know',
+        body: `Hey Yohei,
+
+Appreciate the response — completely understand. These conversations are about timing.
+
+I'll reach out again in a quarter. In the meantime, if METHODIQ's data ever creates a blind spot in your CX analytics picture, feel free to reach out directly.
+
+Good luck with everything at Il Makiage.`,
+        personalization_notes: [
+          'Warm and genuine close',
+          'Named METHODIQ as a future trigger',
+          'No pressure',
+        ],
+      },
+      direct: {
+        subject: 'Noted — Q3 follow-up',
+        body: `Yohei,
+
+Got it. I'll circle back in Q3 when METHODIQ has generated enough data to create real CX analytics challenges.
+
+Feel free to reach out before then if the need arises.`,
+        personalization_notes: [
+          'Specific Q3 timeline tied to METHODIQ data accumulation',
+          'Confident close',
+        ],
+      },
+    },
+  },
+
+  'ilmak-amanda-rodriguez': {
+    cold: {
+      concise: {
+        subject: 'Il Makiage × ClarityQ — retention insights in seconds',
+        body: `Hi Amanda,
+
+Retention at Il Makiage's scale means you need fast answers on which cohorts are churning, which messages are working, and why — without waiting on Snowflake query turnarounds.
+
+ClarityQ delivers those answers in plain English in under 10 seconds. No analyst queue.
+
+Worth 15 minutes to see it live?`,
+        personalization_notes: [
+          'Named the specific retention analytics pain: cohort churn, message performance',
+          'Named Snowflake as their confirmed stack',
+          'Framed around eliminating analyst queue dependency',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about retention analytics at Il Makiage',
+        body: `Hey Amanda,
+
+I've been looking at Il Makiage's customer model — the AI shade matching creates a really unique retention challenge. Customers who get their match right the first time must behave completely differently from those who needed multiple tries.
+
+I'm curious: when you want to understand something like "what's the 90-day repurchase rate for customers segmented by shade match confidence score?" — how do you surface that? Is it a self-serve dashboard, or does it go through an analyst request?
+
+I ask because ClarityQ connects to Snowflake and lets retention leads ask exactly those kinds of segmentation questions in plain English — answers in seconds. It's built for the kind of fast iteration cycle that lifecycle programs run on.
+
+Would love to show you a quick demo. What does your schedule look like?`,
+        personalization_notes: [
+          'Showed genuine knowledge of Il Makiage\'s shade match mechanics and their retention implications',
+          'Asked a highly specific, role-relevant segmentation question',
+          'Named Snowflake and framed around lifecycle program iteration speed',
+        ],
+      },
+      direct: {
+        subject: 'Your retention data is answering slowly',
+        body: `Amanda,
+
+You manage lifecycle and retention for a brand with millions of customers across multiple touchpoints. When you spot a churn signal in your email performance data, you need to know which Snowflake segment is behind it — not in two days, but now.
+
+ClarityQ connects to Snowflake and lets you ask "which acquisition cohort has the highest month-3 churn rate this quarter?" in plain English — answer in 10 seconds. Your lifecycle campaigns iterate daily, not weekly.
+
+15 minutes to see how this works for retention teams. Free Thursday?`,
+        personalization_notes: [
+          'Named the specific temporal pain: churn signals that need same-day action',
+          'Used a specific retention query example relevant to her role',
+          'Framed around lifecycle iteration speed',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Il Makiage × ClarityQ',
+        body: `Hi Amanda,
+
+Following up from last week. One retention-specific example that might be useful: a DTC brand we work with used ClarityQ to identify a suppressed email segment that was actually their highest-LTV cohort. They re-engaged that segment and drove $200K in incremental monthly revenue.
+
+That kind of insight typically takes a 2-week analyst sprint. With ClarityQ, it took 40 seconds.
+
+15 minutes to see how?`,
+        personalization_notes: [
+          'Used a specific, high-impact retention case study with a dollar outcome',
+          'Named the before/after speed: 2-week sprint → 40 seconds',
+          'Highly relevant to a retention director\'s priorities',
+        ],
+      },
+      conversational: {
+        subject: 'Still thinking about the retention analytics question',
+        body: `Hey Amanda,
+
+I sent a note last week and didn't hear back — no worries.
+
+I wanted to add one thing that might be useful regardless: the METHODIQ telehealth launch means you now have a new customer journey to retain — telehealth subscribers, not just e-commerce purchasers. Those two groups almost certainly have very different lifecycle patterns.
+
+ClarityQ lets you compare retention cohorts across both journeys in plain English, in seconds. No separate analyst requests per brand.
+
+Happy to show you when the timing is right.`,
+        personalization_notes: [
+          'Added new hook: METHODIQ creates a new retention cohort with different lifecycle needs',
+          'Named the specific complexity: two distinct customer journeys to retain',
+          'Positioned ClarityQ as solving multi-journey retention analytics',
+        ],
+      },
+      direct: {
+        subject: 'One more note on retention analytics',
+        body: `Amanda,
+
+Last note. METHODIQ has added a new customer journey to your retention portfolio — and with it, a new set of cohort questions that your current Snowflake workflow wasn't built to answer quickly.
+
+ClarityQ closes that gap. 15 minutes to see how. Pick a time that works.`,
+        personalization_notes: [
+          'Used METHODIQ as the specific urgency trigger',
+          'Named the concrete gap: new cohort questions, old slow workflow',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Amanda,
+
+No worries — I'll check back in a few months. If the cohort analytics question ever becomes a bottleneck, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Left a relevant trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the response',
+        body: `Hey Amanda,
+
+Appreciate you taking the time. Completely understand — retention programs run on tight cycles and vendor evaluations are hard to prioritize.
+
+I'll check back in a quarter. If METHODIQ ever creates a cohort analytics gap in your retention stack, feel free to reach out directly.
+
+Best of luck with everything at Il Makiage.`,
+        personalization_notes: [
+          'Acknowledged her workload context empathetically',
+          'Named a specific future trigger (METHODIQ cohort gap)',
+          'Warm close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — circling back in Q3',
+        body: `Amanda,
+
+Got it. Q3 check-in it is — by then METHODIQ will have generated enough lifecycle data to make the retention analytics question very concrete.
+
+Feel free to reach out before then if anything changes.`,
+        personalization_notes: [
+          'Specific Q3 timeline',
+          'Tied to their known business trigger',
+        ],
+      },
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // WIX — NEW PERSONAS
+  // ─────────────────────────────────────────────
+
+  'wix-roy-maimon': {
+    cold: {
+      concise: {
+        subject: 'Wix × ClarityQ — reduce ad-hoc load on your data team',
+        body: `Hi Roy,
+
+At 1 billion events per day, your data team at Wix is the most requested team in the building. The ad-hoc request queue is real — and it scales with every product launch.
+
+ClarityQ gives non-technical stakeholders a self-serve layer on top of your existing stack. PMs ask questions in plain English. Your analysts stay focused on high-value work.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the 1B events/day scale — shows research',
+          'Named the core pain: data team as the most-requested team',
+          'Framed ClarityQ as empowering the data team, not replacing it',
+        ],
+      },
+      conversational: {
+        subject: 'Question about how you manage data demand at Wix',
+        body: `Hey Roy,
+
+I've been looking at Wix's data org — 1 billion events per day is an extraordinary scale, and from what I understand Wix has one of the most sophisticated analytics teams in Israeli tech.
+
+I'm curious: what's the ratio of ad-hoc requests to proactive analysis on your team right now? In my experience with large data orgs, it's usually 50–70% ad-hoc, and the bigger the company gets, the harder that ratio is to shift.
+
+The reason I ask: ClarityQ is an AI analytics tool that sits on top of your existing stack (Presto, BigQuery, dbt) and lets non-technical stakeholders self-serve on exactly those ad-hoc questions — plain English, answers in seconds. It's designed to give data teams back the hours they need for real analysis.
+
+I'd love to show you a 20-minute demo. Does next week work?`,
+        personalization_notes: [
+          'Named 1B events/day and acknowledged Wix\'s analytics reputation',
+          'Asked about the ad-hoc ratio — a credible, resonant question for a data leader',
+          'Named Presto, BigQuery, dbt — their confirmed stack',
+          'Framed ClarityQ as a capacity multiplier, not a replacement',
+        ],
+      },
+      direct: {
+        subject: 'Your data team shouldn\'t be answering "what\'s the DAU trend?"',
+        body: `Roy,
+
+At 5,000+ people, Wix's data team fields thousands of requests from product, marketing, and growth teams — most of which are routine queries that a self-serve tool should handle.
+
+ClarityQ sits on top of Presto, BigQuery, and dbt and lets any stakeholder ask "what's the DAU trend for Wix Blog users in LATAM this month?" in plain English — answer in 10 seconds. Your team focuses on model-building and experimentation.
+
+I'd like to show you what the self-serve layer looks like in a 15-minute demo. Are you free Thursday?`,
+        personalization_notes: [
+          'Named the 5,000+ headcount scale context',
+          'Used a specific, Wix-relevant example query (DAU by product and region)',
+          'Named Presto, BigQuery, dbt — their stack',
+          'Clear framing: routine requests move to self-serve, complex work stays with the team',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Wix × ClarityQ',
+        body: `Hi Roy,
+
+Following up from last week. One data point that might be relevant: a SaaS data team of similar scale used ClarityQ to reduce ad-hoc requests by 60% within 90 days. Their analysts freed up 15+ hours per week per person — most of which went back into experimentation and modeling work.
+
+15 minutes to see how that worked?`,
+        personalization_notes: [
+          'Specific outcome: 60% reduction, 15 hours/person/week',
+          'Named the high-value work that replaced ad-hoc: experimentation and modeling',
+          'Short and data-forward — appropriate for a Head of Data',
+        ],
+      },
+      conversational: {
+        subject: 'Checking in — Wix AI builder and data demand',
+        body: `Hey Roy,
+
+I reached out last week and didn't hear back — totally understand, you're running a massive operation.
+
+I wanted to add one angle I didn't mention: the Wix AI website builder launch almost certainly spiked ad-hoc requests from product teams wanting to understand adoption rates, feature engagement, and user behavior shifts. Those requests are exactly what ClarityQ is designed to absorb — so your team doesn't have to choose between answering them and running experiments.
+
+Happy to show you a 15-minute demo whenever it fits.`,
+        personalization_notes: [
+          'Added new hook: Wix AI builder launch = ad-hoc request spike',
+          'Named the specific conflict: answering ad-hoc vs. running experiments',
+          'Positioned ClarityQ as the capacity buffer for product launch spikes',
+        ],
+      },
+      direct: {
+        subject: 'One more note on data team capacity',
+        body: `Roy,
+
+Last note on this. The Wix AI builder launch is generating new ad-hoc queries faster than your team can absorb. That gap compounds with every new product shipped.
+
+ClarityQ is the self-serve layer that stops that gap from growing. 15 minutes to see it — pick a time and I'll send the invite.`,
+        personalization_notes: [
+          'Used Wix AI builder launch as the specific urgency trigger',
+          'Named the compounding nature of the problem',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Roy,
+
+No worries — I'll check back in a few months. If the ad-hoc request volume ever becomes the team's top challenge, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named the relevant future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Appreciate the response',
+        body: `Hey Roy,
+
+Thanks for letting me know — completely understand. Running a data org at Wix's scale is a full-time mandate.
+
+I'll reach out again in a quarter. If any new product launches create a spike in ad-hoc demand that your team can't absorb, feel free to reach out before then.
+
+Good luck with everything.`,
+        personalization_notes: [
+          'Acknowledged the scale of his role empathetically',
+          'Named a specific future trigger (new product launch spike)',
+          'Warm close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — Q3 follow-up',
+        body: `Roy,
+
+Got it. I'll follow up in Q3 — likely after the next major product push at Wix when the data demand question becomes concrete again.
+
+Feel free to reach out before then.`,
+        personalization_notes: [
+          'Specific Q3 timeline',
+          'Tied to Wix\'s known shipping cadence',
+        ],
+      },
+    },
+  },
+
+  'wix-omer-zilberman': {
+    cold: {
+      concise: {
+        subject: 'Wix × ClarityQ — BD analytics without the data team queue',
+        body: `Hi Omer,
+
+Head of BD at a 5,000+ person SaaS company means your partnership ROI questions need fast answers — not analyst tickets that take days.
+
+ClarityQ connects to Wix's data stack and lets you ask "which partner channel drove the highest SMB activation rate last quarter?" in plain English — answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the BD-specific pain: partnership ROI questions stuck in analyst queue',
+          'Named a specific, role-relevant example query',
+          'Framed around eliminating data team dependency for BD decisions',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about BD analytics at Wix',
+        body: `Hey Omer,
+
+Running business development at Wix's scale — managing partnerships across 230M+ users — you must have a lot of performance data questions that need fast answers. Which partner programs are driving high-LTV users? Which channels are converting SMBs vs. enterprise? How does partner-driven acquisition compare to direct?
+
+I'm curious: do you have self-serve access to that data, or do those questions go through the data team?
+
+I ask because ClarityQ is an AI analytics tool that connects to Wix's data stack and lets BD teams ask exactly those kinds of questions in plain English — answers in seconds. It's designed for business leaders who need data-driven decisions but can't afford to wait on analyst queues.
+
+Would love to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Named Wix\'s 230M+ user scale as context',
+          'Listed specific BD analytics questions that are relevant to his role',
+          'Asked about self-serve vs. analyst dependency — a credible diagnostic question',
+          'Framed ClarityQ around BD decision speed',
+        ],
+      },
+      direct: {
+        subject: 'BD at Wix shouldn\'t wait on data team queues',
+        body: `Omer,
+
+You're making BD decisions at a 5,000+ person company where the data team is always oversubscribed. When you need to know "which partnership model is driving the best long-term retention for Wix's SMB segment?" you shouldn't have to wait 48 hours for an analyst to tell you.
+
+ClarityQ sits on top of Wix's data stack and gives you that answer in plain English in 10 seconds.
+
+I'd like to show you a 15-minute demo. Are you free Thursday or Friday?`,
+        personalization_notes: [
+          'Named the specific BD pain: partnership decisions delayed by data team queue',
+          'Used a Wix-relevant, SMB-focused example query',
+          'Clear outcome: 48 hours → 10 seconds',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Wix × ClarityQ',
+        body: `Hi Omer,
+
+Following up from last week. One BD-specific example worth sharing: a SaaS Head of Partnerships we work with used ClarityQ to identify that one of their top-priority partner channels was actually delivering 40% lower LTV users than their second-tier channel. That insight reordered their entire partnership investment strategy — and it came from a 20-second query, not a 2-week analyst engagement.
+
+15 minutes to see how?`,
+        personalization_notes: [
+          'Used a specific, high-impact BD case study with a concrete business outcome',
+          'Named the specific insight type: LTV by partner channel',
+          'Speed contrast: 20-second query vs. 2-week analyst engagement',
+        ],
+      },
+      conversational: {
+        subject: 'Thinking about the Base44 angle',
+        body: `Hey Omer,
+
+I reached out last week and didn't hear back — no worries.
+
+One angle I didn't mention: the Base44 acquisition means Wix now has a new partnership surface area — Base44's developer ecosystem. Understanding how that developer segment converts, retains, and expands within Wix's broader platform is a new BD analytics question that your existing stack wasn't built to answer quickly.
+
+ClarityQ handles those cross-acquisition queries in plain English, across your data stack. Happy to show you when the timing is right.`,
+        personalization_notes: [
+          'Added new hook: Base44 acquisition creates a new BD analytics challenge',
+          'Named the specific question: how does the Base44 developer segment behave within Wix?',
+          'Positioned ClarityQ as solving post-acquisition cross-segment analytics',
+        ],
+      },
+      direct: {
+        subject: 'One more note on BD analytics',
+        body: `Omer,
+
+Last note. The Base44 acquisition has added a new developer partnership segment to your BD portfolio — and understanding how that segment performs relative to traditional Wix partners requires queries that currently take days to surface.
+
+ClarityQ handles that in seconds. 15 minutes to see how — pick a time.`,
+        personalization_notes: [
+          'Used Base44 acquisition as the specific urgency trigger',
+          'Named the concrete analytical challenge',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Omer,
+
+No worries — I'll circle back in a few months. If the Base44 integration analytics ever becomes a priority, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named a specific, relevant future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the reply',
+        body: `Hey Omer,
+
+Appreciate the response — completely understand. BD at a company like Wix is relentlessly busy.
+
+I'll check back in a quarter. If the Base44 analytics question ever creates a blind spot in your partnership reporting, feel free to reach out directly.
+
+Good luck with everything.`,
+        personalization_notes: [
+          'Acknowledged his workload empathetically',
+          'Named Base44 as a specific future trigger',
+          'Warm close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — Q3 check-in',
+        body: `Omer,
+
+Got it. Q3 it is — by then the Base44 partnership analytics will likely be a clearer priority.
+
+Feel free to reach out before then if the need arises.`,
+        personalization_notes: [
+          'Specific Q3 timeline tied to Base44 analytics maturation',
+          'Confident close',
+        ],
+      },
+    },
+  },
+
+  'wix-mor-saar': {
+    cold: {
+      concise: {
+        subject: 'Base44 × ClarityQ — startup speed inside Wix',
+        body: `Hi Mor,
+
+Running growth for Base44 inside Wix means you need startup-speed answers on your data — but you're competing with 5,000 other people for the data team's bandwidth.
+
+ClarityQ gives your growth team self-serve analytics on top of Wix's data stack. Ask questions in plain English. Get answers in seconds. No data team ticket required.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the startup-within-corporate tension directly — highly resonant',
+          'Named the specific constraint: competing for data team bandwidth',
+          'Framed ClarityQ as maintaining startup speed inside a large company',
+        ],
+      },
+      conversational: {
+        subject: 'Question about growth analytics at Base44 / Wix',
+        body: `Hey Mor,
+
+The Base44 acquisition by Wix is a fascinating move — an AI development platform inside a website builder. As Head of Growth, you're probably navigating one of the trickiest parts of any acquisition: maintaining startup-speed iteration on your growth metrics while operating inside a company 100x your size.
+
+I'm curious: how do you handle data requests right now? Are you plugged into Wix's central data team, or does Base44 have some self-serve analytics setup?
+
+I ask because ClarityQ is built for exactly this situation — growth teams that need fast answers on product and acquisition data without depending on a large central data org. It connects to the underlying data stack and lets your team ask questions in plain English.
+
+Would love to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Showed genuine interest in the Base44/Wix acquisition dynamic',
+          'Named the exact tension: startup iteration speed vs. corporate data org size',
+          'Asked a diagnostic question about their current data access setup',
+          'Framed ClarityQ as the self-serve layer for acquired startup teams',
+        ],
+      },
+      direct: {
+        subject: 'Startup growth team inside Wix — you need your own data access',
+        body: `Mor,
+
+Base44 was acquired by Wix because it's a fast-moving, AI-first product. But inside a 5,000-person company, the data org moves at corporate speed — and your growth team can't afford to wait 48 hours to answer "what's our week-over-week activation rate this sprint?"
+
+ClarityQ gives Base44's growth team a self-serve analytics layer on top of Wix's data stack. Ask questions in plain English. Get answers in 10 seconds.
+
+I'd like to show you what that looks like in 15 minutes. Are you free Thursday or Friday?`,
+        personalization_notes: [
+          'Named the Base44 acquisition context and the cultural tension it creates',
+          'Used a specific, growth-relevant example query (activation rate by sprint)',
+          'Clear outcome: maintain startup speed inside corporate infrastructure',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Base44 × ClarityQ',
+        body: `Hi Mor,
+
+Following up from last week. One example that might resonate: we work with a startup that was acquired by a large SaaS company and used ClarityQ to maintain its own growth analytics independence — without waiting on the central data team for weekly metrics. Their sprint velocity stayed the same post-acquisition.
+
+15 minutes to see how that works?`,
+        personalization_notes: [
+          'Used a directly analogous case study: startup acquired by large SaaS',
+          'Named the specific outcome: maintaining growth analytics independence post-acquisition',
+          'Sprint velocity metaphor — highly relevant to a growth team lead',
+        ],
+      },
+      conversational: {
+        subject: 'Checking in on the Base44 growth analytics question',
+        body: `Hey Mor,
+
+I reached out last week about ClarityQ and didn't hear back — completely understandable. Post-acquisition growth teams are always in execution mode.
+
+I wanted to add one angle: as Base44 scales within Wix, the growth analytics questions get more complex — how does Base44-sourced traffic convert to paid Wix plans? How does the developer segment monetize differently from traditional Wix users? Those cross-platform questions are hard to answer with the central data team's queue.
+
+ClarityQ handles them in plain English, in seconds. Happy to show you when the timing is right.`,
+        personalization_notes: [
+          'Added new hook: cross-platform growth analytics questions are harder post-acquisition',
+          'Named specific questions: Base44 traffic → Wix paid conversion, developer monetization',
+          'Positioned ClarityQ as solving the cross-platform complexity',
+        ],
+      },
+      direct: {
+        subject: 'Last note on growth analytics',
+        body: `Mor,
+
+Last note. As Base44 grows within Wix, the question of how your developer users convert and retain within Wix's broader ecosystem gets increasingly complex — and increasingly important to your growth story.
+
+ClarityQ gives your team the self-serve analytics to answer those questions in real-time. 15 minutes to see how — pick a time.`,
+        personalization_notes: [
+          'Named the long-term analytics challenge: Base44 developer segment within Wix ecosystem',
+          'Framed as growing in importance over time',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Mor,
+
+No worries — I'll check back in a few months. If the cross-platform analytics question ever becomes a blocker for growth, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named a relevant future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the response',
+        body: `Hey Mor,
+
+Appreciate you letting me know. Completely understand — growth at an acquisition stage is full-on.
+
+I'll reach back out in a quarter. If the Wix data org ever becomes a bottleneck for Base44's growth sprint cycle, feel free to reach out directly.
+
+Best of luck — it's an exciting time at Base44.`,
+        personalization_notes: [
+          'Acknowledged the acquisition context empathetically',
+          'Named the specific future trigger: data org as a growth sprint bottleneck',
+          'Warm close referencing the exciting moment',
+        ],
+      },
+      direct: {
+        subject: 'Noted — I\'ll follow up in Q3',
+        body: `Mor,
+
+Got it. I'll follow up in Q3 — by then the cross-platform analytics questions will likely be clearer priorities.
+
+Feel free to reach out before then if the need arises.`,
+        personalization_notes: [
+          'Specific Q3 timeline',
+          'Tied to the natural evolution of post-acquisition analytics needs',
+        ],
+      },
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // APPSFLYER — NEW PERSONAS
+  // ─────────────────────────────────────────────
+
+  'appsf-deborah-baruc': {
+    cold: {
+      concise: {
+        subject: 'AppsFlyer × ClarityQ — pricing analytics without engineering tickets',
+        body: `Hi Deborah,
+
+Pricing strategy at a $5.9B attribution platform requires fast answers on customer segmentation, usage patterns, and price sensitivity — without waiting on engineering or analytics queues.
+
+ClarityQ connects to BigQuery and lets your team ask "what's the average usage intensity for customers in the mid-market tier vs. enterprise in the US?" in plain English — answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the $5.9B valuation — shows research and establishes scale context',
+          'Named the specific pricing analytics pain points: segmentation, usage, sensitivity',
+          'Named BigQuery as their confirmed stack',
+          'Used a specific, pricing-relevant example query',
+        ],
+      },
+      conversational: {
+        subject: 'Question about pricing analytics at AppsFlyer',
+        body: `Hey Deborah,
+
+AppsFlyer's pricing decisions at this scale — serving 75,000+ apps across every tier from indie developers to Fortune 500 — must be incredibly data-intensive. Understanding which features drive expansion, which segments are underpriced, and how usage patterns predict churn requires a constant stream of analytics.
+
+I'm curious: when you want to understand something like "which customer segments have the highest feature usage relative to their current plan?" — how do you surface that? Is it a self-serve dashboard, or does it go through an analyst request?
+
+I ask because ClarityQ connects to BigQuery and lets pricing leaders ask exactly those kinds of segmentation questions in plain English — answers in seconds. It's built for the kind of fast iteration that pricing strategy requires.
+
+Would love to show you a 20-minute demo. What does your week look like?`,
+        personalization_notes: [
+          'Showed genuine knowledge of AppsFlyer\'s multi-tier customer base (75,000+ apps)',
+          'Named three specific pricing analytics use cases: expansion drivers, underpricing, churn prediction',
+          'Asked a diagnostic question about current data access workflow',
+          'Named BigQuery specifically',
+        ],
+      },
+      direct: {
+        subject: 'Your pricing decisions need faster data',
+        body: `Deborah,
+
+Pricing strategy at AppsFlyer means navigating 75,000+ customer accounts across multiple tiers, geographies, and product lines. When you need to know "which enterprise accounts are under-utilizing their plan relative to similar accounts that expanded?" you can't afford a 2-day analyst turnaround.
+
+ClarityQ connects to BigQuery and delivers that answer in plain English in 10 seconds.
+
+I'd like to show you what pricing analytics looks like with ClarityQ in 15 minutes. Free Thursday?`,
+        personalization_notes: [
+          'Named the 75,000+ customer account scale — specific and credible',
+          'Used a specific, high-value pricing analytics example: under-utilization identification',
+          'Clear speed contrast: 2-day turnaround → 10 seconds',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: AppsFlyer × ClarityQ',
+        body: `Hi Deborah,
+
+Following up from last week. A pricing-specific example worth sharing: a SaaS platform we work with used ClarityQ to identify that 23% of their mid-market accounts were consistently hitting usage limits but hadn't been flagged for an upgrade conversation. They recovered $180K ARR in the next quarter.
+
+That insight came from a 30-second query. Normally it would have taken a 2-week data pull.
+
+15 minutes to see how?`,
+        personalization_notes: [
+          'Used a specific, high-impact pricing case study with a dollar outcome',
+          'Named the exact use case: usage limit identification for expansion',
+          'Speed contrast: 30-second query vs. 2-week data pull',
+        ],
+      },
+      conversational: {
+        subject: 'The Incrementality product launch angle',
+        body: `Hey Deborah,
+
+I reached out last week about ClarityQ and didn't hear back — no worries.
+
+One angle I didn't mention: the Incrementality product launch means AppsFlyer now has a new pricing surface to think about — a statistically complex product that needs its own usage and adoption analytics to inform tier design. Understanding how Incrementality usage correlates with account expansion is a new data question your current workflow probably wasn't built to answer quickly.
+
+ClarityQ handles that in plain English, in seconds. Happy to show you when the timing is right.`,
+        personalization_notes: [
+          'Added new hook: Incrementality launch creates new pricing analytics questions',
+          'Named the specific question: Incrementality usage → expansion correlation',
+          'Positioned ClarityQ as solving a near-term, product-specific challenge',
+        ],
+      },
+      direct: {
+        subject: 'One more note on pricing analytics',
+        body: `Deborah,
+
+Last note. The Incrementality launch has introduced a new pricing complexity — a statistically rigorous product that needs its own tier structure informed by usage data. That's a pricing analytics question that can't wait weeks for an analyst sprint.
+
+ClarityQ delivers those answers in seconds. 15 minutes to see how — pick a time.`,
+        personalization_notes: [
+          'Used Incrementality launch as the specific urgency trigger',
+          'Named the concrete pricing challenge: new tier structure needs usage data',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Deborah,
+
+No worries — I'll check back in a few months. If pricing analytics speed ever becomes a bottleneck, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named the relevant future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the response',
+        body: `Hey Deborah,
+
+Appreciate you taking the time. Completely understand — pricing strategy at AppsFlyer's scale is a complex, full-time mandate.
+
+I'll reach out again in a quarter. If the Incrementality pricing question ever creates a data analytics urgency, feel free to reach out directly.
+
+Good luck with everything.`,
+        personalization_notes: [
+          'Acknowledged the complexity of her role empathetically',
+          'Named a specific future trigger (Incrementality pricing)',
+          'Warm close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — Q3 follow-up',
+        body: `Deborah,
+
+Got it. I'll follow up in Q3 — likely after the Incrementality pricing model has had a few months to generate real usage data worth analyzing.
+
+Feel free to reach out before then.`,
+        personalization_notes: [
+          'Specific Q3 timeline tied to Incrementality data maturation',
+          'Confident close',
+        ],
+      },
+    },
+  },
+
+  'appsf-gal-regev': {
+    cold: {
+      concise: {
+        subject: 'AppsFlyer × ClarityQ — GTM analytics without the engineering queue',
+        body: `Hi Gal,
+
+Running GTM applications at AppsFlyer means you need fast answers on pipeline health, tool adoption, and RevOps performance — without waiting on engineering or data team queues.
+
+ClarityQ connects to BigQuery and lets your team ask "which GTM tool has the highest adoption rate among enterprise AEs this quarter?" in plain English — answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the GTM-specific analytics pain points: pipeline health, tool adoption, RevOps',
+          'Named BigQuery as their confirmed stack',
+          'Used a specific, GTM-relevant example query',
+        ],
+      },
+      conversational: {
+        subject: 'Question about GTM analytics at AppsFlyer',
+        body: `Hey Gal,
+
+AppsFlyer's GTM motion at this scale — 75,000+ apps across enterprise, mid-market, and SMB segments — must generate a huge amount of internal analytics questions. Which tools are AEs actually using? Which GTM plays are converting at the highest rate in each segment? Where are the handoff gaps between marketing and sales?
+
+I'm curious: how do you get fast answers to those questions right now? Is there a self-serve RevOps dashboard, or do those questions go through the data team?
+
+I ask because ClarityQ connects to BigQuery and lets GTM leaders ask exactly those kinds of questions in plain English — answers in seconds. It's designed for the kind of rapid iteration that modern GTM strategy requires.
+
+Would love to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Named AppsFlyer\'s multi-segment GTM complexity (75,000+ apps, enterprise/MM/SMB)',
+          'Listed three specific GTM analytics questions that resonate with his role',
+          'Named BigQuery and framed around RevOps decision speed',
+        ],
+      },
+      direct: {
+        subject: 'GTM analytics at AppsFlyer shouldn\'t wait on the data team',
+        body: `Gal,
+
+Running GTM applications at AppsFlyer means making decisions about tooling, pipeline, and RevOps based on data that's often 48 hours stale by the time it surfaces. When you want to know "which sales motion is driving the fastest time-to-close for enterprise accounts this quarter?" you need that now, not next week.
+
+ClarityQ connects to BigQuery and delivers that answer in plain English in 10 seconds.
+
+I'd like to show you what GTM analytics looks like with ClarityQ in 15 minutes. Free Thursday?`,
+        personalization_notes: [
+          'Named the specific GTM pain: 48-hour data lag on pipeline decisions',
+          'Used a specific, enterprise GTM example query: time-to-close by sales motion',
+          'Clear speed outcome: next week → 10 seconds',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: AppsFlyer × ClarityQ',
+        body: `Hi Gal,
+
+Following up from last week. A GTM-specific example worth sharing: a SaaS RevOps leader we work with used ClarityQ to identify that one of their GTM tools was being used by only 30% of AEs despite being in their stack for 18 months. That insight led to a targeted enablement program that drove adoption to 80% — and measurable pipeline improvement.
+
+That analysis came from a 2-minute query. Previously it would have required a custom data pull.
+
+15 minutes to see how?`,
+        personalization_notes: [
+          'Used a specific GTM case study: tool adoption analysis driving enablement program',
+          'Named concrete outcomes: 30% → 80% adoption, pipeline improvement',
+          'Speed contrast: 2-minute query vs. custom data pull',
+        ],
+      },
+      conversational: {
+        subject: 'The IPO path and GTM analytics angle',
+        body: `Hey Gal,
+
+I reached out last week and didn't hear back — no worries.
+
+One angle I didn't mention: as AppsFlyer moves toward a potential IPO, the rigor of GTM analytics becomes board-level important. Understanding exactly which go-to-market motions drive ARR, and proving that with clean data, is exactly the kind of pre-IPO discipline that ClarityQ helps GTM leaders build.
+
+Happy to show you how in 15 minutes when the timing is right.`,
+        personalization_notes: [
+          'Added new hook: IPO path creates board-level GTM analytics pressure',
+          'Named the specific need: clean GTM data for ARR attribution',
+          'Positioned ClarityQ as a pre-IPO GTM analytics discipline tool',
+        ],
+      },
+      direct: {
+        subject: 'One more note on GTM analytics',
+        body: `Gal,
+
+Last note. With AppsFlyer's IPO path in view, GTM analytics clarity becomes a board-level requirement. Which motions drive ARR, and at what efficiency — those aren't nice-to-have questions anymore.
+
+ClarityQ gives you clean, instant answers from BigQuery. 15 minutes to see how — pick a time.`,
+        personalization_notes: [
+          'Used IPO path as the specific urgency trigger',
+          'Named the board-level GTM analytics requirement',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Gal,
+
+No worries — I'll check back in a few months. If GTM analytics speed ever becomes a bottleneck pre-IPO, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named the IPO-related trigger for future re-engagement',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the response',
+        body: `Hey Gal,
+
+Appreciate you letting me know. Completely understand — GTM operations at AppsFlyer's scale is a full-time focus.
+
+I'll reach out in a quarter. If the pre-IPO GTM analytics rigor question becomes a priority, feel free to reach out before then.
+
+Good luck with everything.`,
+        personalization_notes: [
+          'Acknowledged the scale of his GTM role',
+          'Named the IPO analytics trigger as a future re-engagement reason',
+          'Warm close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — Q3 check-in',
+        body: `Gal,
+
+Got it. I'll follow up in Q3 — likely when the IPO timeline makes GTM analytics precision a clearer priority.
+
+Feel free to reach out before then.`,
+        personalization_notes: [
+          'Specific Q3 timeline tied to IPO preparation',
+          'Confident close',
+        ],
+      },
+    },
+  },
+
+  'appsf-niv-klein': {
+    cold: {
+      concise: {
+        subject: 'AppsFlyer × ClarityQ — product analytics for Incrementality',
+        body: `Hi Niv,
+
+Running the Incrementality product means you need fast answers on feature adoption, A/B test coverage, and usage patterns across 75,000+ apps — without waiting on data team queues.
+
+ClarityQ connects to BigQuery and lets your team ask "which customer segments have the highest Incrementality feature engagement in the first 30 days?" in plain English — answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named Incrementality specifically — shows awareness of his product area',
+          'Named the specific product analytics pain points: adoption, A/B coverage, usage patterns',
+          'Named BigQuery as their confirmed stack',
+          'Used a product-relevant example query specific to Incrementality',
+        ],
+      },
+      conversational: {
+        subject: 'Question about product analytics for Incrementality',
+        body: `Hey Niv,
+
+The Incrementality product is a fascinating build — using statistical rigor to measure true campaign lift is exactly the kind of product that AppsFlyer's customer base has been asking for. But I imagine running product for it creates a unique analytics challenge: you're building a measurement product, which means your internal product data needs to be held to an especially high standard.
+
+I'm curious: how do you handle the product analytics for Incrementality? Is there a self-serve layer for your PMs and data scientists to query feature adoption and experiment results, or does everything go through the central data team?
+
+I ask because ClarityQ connects to BigQuery and lets product teams ask questions like "what's the activation rate for Incrementality in accounts with >10M MAU?" in plain English — answers in seconds. It's built for data-heavy product teams that can't afford analyst lag.
+
+Would love to show you a 20-minute demo. What does your week look like?`,
+        personalization_notes: [
+          'Showed genuine appreciation for the Incrementality product\'s technical sophistication',
+          'Named the unique challenge: building a measurement product means high internal data standards',
+          'Asked a diagnostic question about their self-serve vs. analyst workflow',
+          'Used a Incrementality-specific, product-relevant example query',
+        ],
+      },
+      direct: {
+        subject: 'Incrementality product analytics needs faster answers',
+        body: `Niv,
+
+You're running product for AppsFlyer's most statistically complex offering — which means your PMs and data scientists are asking detailed questions about feature adoption, experiment results, and customer usage patterns constantly. Waiting on the central data team for those answers slows down your iteration cycle.
+
+ClarityQ connects to BigQuery and lets your product team ask "what's the Day-30 retention rate for customers who activated Incrementality alongside Conversion Paths?" in plain English — answer in 10 seconds.
+
+I'd like to show you what product analytics looks like with ClarityQ in 15 minutes. Free Thursday?`,
+        personalization_notes: [
+          'Named the Incrementality product\'s statistical complexity as a reason for higher internal analytics demands',
+          'Named the specific stakeholders: PMs and data scientists',
+          'Used a cross-product, AppsFlyer-specific example query',
+          'Specific day CTA',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: AppsFlyer × ClarityQ',
+        body: `Hi Niv,
+
+Following up from last week. A product analytics example worth sharing: a measurement product team we work with used ClarityQ to identify that their highest-engaged feature was being used almost exclusively by one customer segment — a finding that completely redirected their roadmap for the next two quarters.
+
+That insight came from a 5-minute query session. Previously it would have required a 3-week analyst sprint.
+
+15 minutes to see how?`,
+        personalization_notes: [
+          'Used a case study directly analogous to Niv\'s measurement product context',
+          'Named the high-value outcome: roadmap redirection from a segmentation insight',
+          'Speed contrast: 5-minute query session vs. 3-week analyst sprint',
+        ],
+      },
+      conversational: {
+        subject: 'Thinking about the self-serve angle for Incrementality PMs',
+        body: `Hey Niv,
+
+I reached out last week and didn't hear back — no worries.
+
+One thing I wanted to share: product teams working on measurement and analytics products often have a specific challenge — their PMs are analytically sophisticated enough to know what questions to ask, but not technical enough to write the BigQuery SQL to answer them. That gap shows up as an analyst queue that slows down product iteration.
+
+ClarityQ closes that gap. Happy to show you how in 15 minutes whenever the timing works.`,
+        personalization_notes: [
+          'Added new angle: analytically sophisticated PMs who can\'t write SQL — a specific and resonant pain',
+          'Named the mechanism: analyst queue slows iteration for measurement product PMs',
+          'Positioned ClarityQ as the bridge between analytical curiosity and SQL execution',
+        ],
+      },
+      direct: {
+        subject: 'One more note on product analytics',
+        body: `Niv,
+
+Last note. Your PMs on Incrementality know exactly what questions they want to answer about feature adoption and customer behavior — but they shouldn't need to wait on data team queues to get those answers.
+
+ClarityQ gives them self-serve access to BigQuery in plain English. 15 minutes to see how — pick a time.`,
+        personalization_notes: [
+          'Named the specific audience: Incrementality PMs with high analytical curiosity',
+          'Framed the pain: waiting on data queues for known questions',
+          'Minimal friction CTA',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Niv,
+
+No worries — I'll check back in a few months. If the Incrementality PM analytics bottleneck ever becomes a priority, happy to reconnect.`,
+        personalization_notes: [
+          'Brief and professional',
+          'Named the specific future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Thanks for the reply',
+        body: `Hey Niv,
+
+Appreciate the response. Completely understand — running product for Incrementality is a technically intensive role.
+
+I'll check back in a quarter. If the self-serve analytics question for your PM team becomes a priority, feel free to reach out directly.
+
+Good luck with the product.`,
+        personalization_notes: [
+          'Acknowledged the technical intensity of his role',
+          'Named the specific future trigger: PM self-serve analytics',
+          'Warm close',
+        ],
+      },
+      direct: {
+        subject: 'Noted — Q3 follow-up',
+        body: `Niv,
+
+Got it. I'll follow up in Q3 — by then the Incrementality product will have had another few quarters of adoption data worth analyzing.
+
+Feel free to reach out before then if the need arises.`,
+        personalization_notes: [
+          'Specific Q3 timeline tied to Incrementality adoption growth',
+          'Confident close',
+        ],
+      },
+    },
+  },
 }
 
 // Helper: lookup cached email or return null (triggers live Claude generation)

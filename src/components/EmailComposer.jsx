@@ -95,7 +95,18 @@ export default function EmailComposer({ persona, company, onBack }) {
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">Prospect</p>
             <div className="flex items-center gap-3">
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${persona.avatarColor}`}>
+              {persona.photo ? (
+                <img
+                  src={persona.photo}
+                  alt={persona.name}
+                  onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex' }}
+                  className="w-10 h-10 rounded-full object-cover shrink-0"
+                />
+              ) : null}
+              <div
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${persona.avatarColor}`}
+                style={persona.photo ? { display: 'none' } : {}}
+              >
                 {persona.avatar}
               </div>
               <div>

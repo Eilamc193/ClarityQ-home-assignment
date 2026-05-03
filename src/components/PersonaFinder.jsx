@@ -23,7 +23,18 @@ function PersonaCard({ persona, company, onDraftEmail }) {
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 flex flex-col gap-4">
       {/* Header */}
       <div className="flex items-start gap-4">
-        <div className={`w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${persona.avatarColor}`}>
+        {persona.photo ? (
+          <img
+            src={persona.photo}
+            alt={persona.name}
+            onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex' }}
+            className="w-12 h-12 rounded-full object-cover shrink-0"
+          />
+        ) : null}
+        <div
+          className={`w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${persona.avatarColor}`}
+          style={persona.photo ? { display: 'none' } : {}}
+        >
           {persona.avatar}
         </div>
         <div className="flex-1 min-w-0">
@@ -85,10 +96,20 @@ function PersonaCard({ persona, company, onDraftEmail }) {
         )}
 
         {emailState.status === 'notfound' && (
-          <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-2 rounded-lg">
-            <AlertCircle size={14} className="text-gray-400 shrink-0" />
-            <span className="text-sm text-gray-500">Email not found — try LinkedIn DM</span>
-          </div>
+          persona.estimatedEmail ? (
+            <div className="flex flex-col gap-1.5">
+              <div className="flex items-center gap-2 bg-amber-50 border border-amber-200 px-3 py-2 rounded-lg">
+                <AlertCircle size={14} className="text-amber-500 shrink-0" />
+                <span className="text-xs text-amber-700 font-medium">Estimated: {persona.estimatedEmail}</span>
+              </div>
+              <span className="text-xs text-gray-400 pl-1">Pattern-based — verify before sending</span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-2 rounded-lg">
+              <AlertCircle size={14} className="text-gray-400 shrink-0" />
+              <span className="text-sm text-gray-500">Email not found — try LinkedIn DM</span>
+            </div>
+          )
         )}
 
         {emailState.status === 'error' && (

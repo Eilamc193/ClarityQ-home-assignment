@@ -10,7 +10,7 @@ const OUTCOMES = [
   { id: 'bounce',          label: '↩ Bounced' },
 ]
 
-const TITLES = ['Head of Data', 'VP Product', 'CEO/CBO', 'VP Growth', 'Other']
+const TITLES = ['Head of Data/Analytics', 'Head of Growth/UA', 'Head of Product', 'VP Product/Data', 'VP Marketing/Growth', 'Director', 'CEO/C-Suite', 'Other']
 const PLATFORMS = [
   { id: 'email',       label: 'Email' },
   { id: 'linkedin_dm', label: 'LinkedIn DM' },
@@ -101,6 +101,21 @@ export default function ABResponseModal({ prospect, onClose }) {
                   </button>
                 ))}
               </div>
+            </div>
+
+            {/* Persona Title */}
+            <div>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Persona Title</p>
+              <select
+                value={form.personaTitle}
+                onChange={(e) => update('personaTitle', e.target.value)}
+                className="w-full text-xs border border-gray-200 rounded-lg px-2.5 py-2 text-gray-700 focus:outline-none focus:ring-1 focus:ring-indigo-300"
+              >
+                <option value="">— select role —</option>
+                {TITLES.map((t) => (
+                  <option key={t} value={t}>{t}</option>
+                ))}
+              </select>
             </div>
 
             {/* Row: Email Type + Tone */}
