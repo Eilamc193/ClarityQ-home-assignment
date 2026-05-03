@@ -61,14 +61,14 @@ export default function ABResponseModal({ prospect, onClose }) {
     <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-md">
         {/* Header */}
-        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200">
           <div>
-            <p className="font-semibold text-gray-900 text-sm">Log Outreach Outcome</p>
+            <p className="font-semibold text-slate-900 text-sm">Log Outreach Outcome</p>
             {prospect && (
-              <p className="text-xs text-gray-500 mt-0.5">{prospect.name} · {prospect.company}</p>
+              <p className="text-xs text-slate-500 mt-0.5">{prospect.name} · {prospect.company}</p>
             )}
           </div>
-          <button onClick={onClose} className="p-1.5 text-gray-400 hover:text-gray-600 transition-colors">
+          <button onClick={onClose} className="p-1.5 text-slate-400 hover:text-slate-600 transition-colors">
             <X size={16} />
           </button>
         </div>
@@ -85,7 +85,7 @@ export default function ABResponseModal({ prospect, onClose }) {
           <div className="px-5 py-4 space-y-4">
             {/* Outcome */}
             <div>
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Outcome *</p>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2">Outcome *</p>
               <div className="grid grid-cols-2 gap-1.5">
                 {OUTCOMES.map(({ id, label }) => (
                   <button
@@ -106,7 +106,7 @@ export default function ABResponseModal({ prospect, onClose }) {
             {/* Row: Email Type + Tone */}
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Email Type</p>
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Email Type</p>
                 <select
                   value={form.emailType}
                   onChange={(e) => update('emailType', e.target.value)}
@@ -118,7 +118,7 @@ export default function ABResponseModal({ prospect, onClose }) {
                 </select>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Tone Used</p>
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Tone Used</p>
                 <select
                   value={form.tone}
                   onChange={(e) => update('tone', e.target.value)}
@@ -134,7 +134,7 @@ export default function ABResponseModal({ prospect, onClose }) {
             {/* Row: Platform + Days */}
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Platform</p>
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Platform</p>
                 <div className="space-y-1">
                   {PLATFORMS.map(({ id, label }) => (
                     <button
@@ -152,7 +152,7 @@ export default function ABResponseModal({ prospect, onClose }) {
                 </div>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Days to Response</p>
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Days to Response</p>
                 <input
                   type="number"
                   min={0}
@@ -167,7 +167,7 @@ export default function ABResponseModal({ prospect, onClose }) {
 
             {/* Notes */}
             <div>
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">Notes</p>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Notes</p>
               <textarea
                 rows={2}
                 placeholder='e.g. "said budget frozen until Q3"'

@@ -14,32 +14,32 @@ export const emailCache = {
         subject: 'Play Perfect × ClarityQ — ROAS answers in 10 sec',
         body: `Hi Michael,
 
-Saw Play Perfect is soft-launching a new title while simultaneously hunting for a Monetization Data Analyst. That's a lot of campaign data chasing a shrinking headcount.
+Play Perfect is rolling out globally while your Monetization Data Analyst seat is still open. That's a lot of intraday campaign decisions chasing a shrinking headcount.
 
 ClarityQ connects to BigQuery and lets your UA team ask "which channel drove the best LTV last week?" in plain English — answer in under 10 seconds, no SQL required.
 
 Worth a 15-minute look? Happy to show you a live demo with your data stack.`,
         personalization_notes: [
-          'Referenced Play Perfect\'s active card game soft-launch (Dec 2024)',
+          'Referenced Play Perfect\'s global title rollout (Q1 2026)',
           'Referenced open Monetization Data Analyst job posting',
           'Mentioned BigQuery (confirmed tool in their stack)',
-          'Framed around UA team pain: ROAS + LTV tracking without SQL',
+          'Framed around UA team pain: intraday ROAS + LTV tracking without SQL',
         ],
       },
       conversational: {
         subject: 'Quick question about your UA analytics setup',
         body: `Hey Michael,
 
-I was looking at Play Perfect's growth — 50M+ downloads is no joke, and with a new title in soft launch the pressure to optimize every acquisition dollar must be real right now.
+I was looking at Play Perfect's growth — 50M+ downloads is no joke, and with a global rollout now underway the pressure to optimize every acquisition dollar intraday must be intense.
 
-I'm curious: how long does it currently take your team to get an answer like "what's the Day-7 retention on users from Meta vs Google for this new title?" Is it a quick query, or does it go through an analyst queue?
+I'm curious: how long does it currently take your team to get an answer like "what's the Day-7 retention on users from Meta vs Google in this market?" Is it a quick query, or does it go through an analyst queue?
 
 I ask because ClarityQ is an AI analytics tool that connects to BigQuery and lets non-technical team members ask questions like that in plain English — and get the answer in seconds. We work with mobile gaming studios that are in exactly your situation: scaling fast, lean data team, lots of campaign decisions to make.
 
 Would love to show you a quick demo if the timing is right. What does your week look like?`,
         personalization_notes: [
           'Acknowledged 50M+ download milestone as a signal of scale',
-          'Referenced new title in soft launch as a current pain trigger',
+          'Referenced global title rollout as the current pain trigger',
           'Asked a specific, relatable question about their data workflow',
           'Named BigQuery as their confirmed stack component',
         ],
@@ -48,13 +48,13 @@ Would love to show you a quick demo if the timing is right. What does your week 
         subject: 'Your new title launch — data bottleneck coming',
         body: `Michael,
 
-You're soft-launching a new card game while your Monetization Data Analyst seat is still open. That means your UA team is making acquisition decisions on delayed data — which in mobile gaming is a competitive disadvantage.
+You're rolling out globally while your Monetization Data Analyst seat is still open. That means your UA team is making intraday acquisition decisions on delayed data — which in mobile gaming is a competitive disadvantage.
 
 ClarityQ plugs into your BigQuery stack and lets any team member — PM, UA manager, CMO — ask "what's the ROAS on TikTok this week?" and get a precise answer in 10 seconds.
 
 I'd like to show you what that looks like for a gaming studio in 15 minutes. Are you free Thursday or Friday?`,
         personalization_notes: [
-          'Named the specific business risk: delayed data during soft launch',
+          'Named the specific business risk: delayed data during global rollout',
           'Referenced open Monetization Data Analyst role to create urgency',
           'Used a specific, gaming-relevant metric example (ROAS on TikTok)',
           'Clear, time-bound CTA (Thursday or Friday)',
@@ -100,11 +100,11 @@ Happy to jump on a quick call whenever the timing works. What does your schedule
 
 Quick follow-up. A different angle on why I reached out:
 
-With a soft launch active and a data analyst seat still open, your window to iterate fast is right now — before the game's key metrics stabilize. Every day of delayed campaign data in that window costs you optimization cycles.
+With a global rollout active and a data analyst seat still open, your window to iterate fast is right now — intraday budget calls can't wait for analyst queues. Every day of delayed campaign data costs you optimization cycles.
 
 ClarityQ gives your existing team — today, without a new hire — the ability to query BigQuery in plain English and get answers in seconds. Book 15 minutes and I'll show you exactly how.`,
         personalization_notes: [
-          'Created genuine urgency: optimization window during soft launch is time-limited',
+          'Created genuine urgency: intraday optimization window during global rollout is time-limited',
           'Reframed as "today without a new hire" — removes the "we\'ll fix it when we hire" objection',
           'Direct, action-oriented close',
         ],
@@ -134,11 +134,11 @@ Fair enough — appreciate you getting back to me. Timing isn't always right, an
 
 I'll circle back when you have a new launch on the horizon or if a data crunch hits at a particularly bad moment. Feel free to reach out directly if something changes before then.
 
-Good luck with the soft launch — those early retention numbers will tell the story quickly.`,
+Good luck with the global rollout — those intraday ROAS numbers will tell the story quickly.`,
         personalization_notes: [
           'Acknowledged the "no" without trying to overcome it',
           'Left two re-engagement triggers: new launch + data crunch moment',
-          'Personal and genuine — references the soft launch outcome',
+          'Personal and genuine — references the global rollout outcome',
         ],
       },
       direct: {
@@ -180,7 +180,7 @@ Worth a 15-minute look before your next board prep?`,
         subject: 'Question about how you track the business at Play Perfect',
         body: `Hi Dvir,
 
-I was looking at Play Perfect's portfolio — Gin Rummy Stars, Grand Gin Rummy, and what sounds like a new title in soft launch. Managing P&L and performance across multiple games is genuinely complex.
+I was looking at Play Perfect's portfolio — Gin Rummy Stars, Grand Gin Rummy, and a global rollout now underway. Managing P&L and intraday performance across multiple markets is genuinely complex.
 
 Quick question: when you need to know how the business is performing right now, do you get that answer from a dashboard you check yourself, or do you usually need to ask someone to pull the data?
 
@@ -189,7 +189,7 @@ I'm asking because ClarityQ is built for exactly the CEO use case — connect yo
 Happy to show you a live demo if this sounds relevant. What's your availability like this week?`,
         personalization_notes: [
           'Named specific game titles — demonstrates real research',
-          'Asked a diagnostic question that surfaces the pain naturally',
+          'Referenced global rollout as the current complexity trigger',
           'Framed around "CEO use case" explicitly — addresses his decision-making role',
         ],
       },
@@ -197,7 +197,7 @@ Happy to show you a live demo if this sounds relevant. What's your availability 
         subject: 'CEO data access at Play Perfect — quick question',
         body: `Dvir,
 
-If you want to know "how did Grand Gin Rummy perform last week vs. the new title in soft launch?" — how fast do you get that answer today?
+If you want to know "how did Grand Gin Rummy perform last week vs. your newest market rollout?" — how fast do you get that answer today?
 
 If it's more than 30 seconds, ClarityQ can fix that. We connect to your existing BigQuery/Tableau stack and let you ask business questions in plain English. No analyst queue, no dashboards to maintain.
 
@@ -214,44 +214,44 @@ If it's more than 30 seconds, ClarityQ can fix that. We connect to your existing
         subject: 'Re: Play Perfect data visibility',
         body: `Hi Dvir,
 
-Following up from last week. One additional thought: CEOs who use ClarityQ tell us the biggest value isn't the fancy queries — it's being able to spot a retention dip in a new game on Monday morning instead of hearing about it Friday from an analyst.
+Following up from last week. One additional thought: CEOs who use ClarityQ tell us the biggest value isn't the fancy queries — it's being able to spot a ROAS dip in a new market on Monday morning instead of hearing about it Friday from an analyst.
 
-For a studio with a title in soft launch, that timing matters a lot.
+For a studio with a global rollout underway, that timing matters a lot.
 
 Still happy to show you a 15-minute demo. What does your week look like?`,
         personalization_notes: [
           'Added new angle: proactive issue detection vs reactive reporting',
-          'Connected to soft-launch timing — makes the benefit concrete and urgent',
+          'Connected to global rollout timing — makes the benefit concrete and urgent',
         ],
       },
       conversational: {
-        subject: 'Still thinking about the soft launch window',
+        subject: 'Still thinking about the global rollout window',
         body: `Hey Dvir,
 
 Sending a quick follow-up in case my last note didn't land at the right moment.
 
-I keep thinking about Play Perfect's position right now — new title in soft launch, optimizing spend, trying to move fast before competitors pick up on the mechanics. That phase is usually where the data feedback loop is most critical, and also where most gaming studios feel the most friction.
+I keep thinking about Play Perfect's position right now — global rollout underway, optimizing spend across markets, trying to move fast before competitors catch up. That phase is usually where the data feedback loop is most critical, and also where most gaming studios feel the most friction.
 
-ClarityQ is built specifically for that moment. It connects your existing data stack and gives everyone — you, your marketing VP, your product leads — answers in real-time without waiting on your data team.
+ClarityQ is built specifically for that moment. It connects your existing data stack and gives everyone — you, your marketing VP, your product leads — intraday answers without waiting on your data team.
 
 Happy to show you a quick demo if this resonates. No hard sell, just curious if the timing is right.`,
         personalization_notes: [
-          'Acknowledged soft-launch as the key timing trigger',
+          'Referenced global rollout as the key timing trigger',
           'Extended value to the whole leadership team, not just the CEO',
           'Casual, non-pushy tone appropriate for follow-up',
         ],
       },
       direct: {
-        subject: 'The soft launch window is closing',
+        subject: 'The global rollout window — intraday data matters now',
         body: `Dvir,
 
-A quick follow-up. The window where daily data matters most is exactly during a soft launch — and that window closes fast.
+A quick follow-up. The window where intraday data matters most is exactly during a global rollout — and every delayed budget call costs optimization cycles.
 
 ClarityQ gives you and your team same-day answers on retention, ROAS, and revenue without analyst lag. If you're making spend decisions on delayed data right now, that's a direct cost.
 
 15 minutes this week — worth it or not?`,
         personalization_notes: [
-          'Created genuine urgency: the soft launch window is time-bounded',
+          'Created genuine urgency: the global rollout window requires intraday data',
           'Named specific, high-stakes metrics: retention, ROAS, revenue',
           'Ended with a direct yes/no framing — respects his time',
         ],
@@ -320,7 +320,7 @@ Worth 15 minutes to see it in action?`,
         subject: 'How Play Perfect makes product calls on live data',
         body: `Hi Michael,
 
-I've been following Play Perfect's growth — the card game portfolio is impressive, and managing product across multiple live titles while soft-launching new ones is genuinely complex.
+I've been following Play Perfect's growth — the card game portfolio is impressive, and managing product across multiple live titles while rolling out globally is genuinely complex.
 
 I'm curious about your current setup: when a product lead wants to know whether a gameplay change improved retention — how quickly can they get that answer? Same day? Next day? End of week via analyst report?
 
@@ -354,7 +354,7 @@ I'd like to show you a 15-minute demo this week. Tuesday or Wednesday work for y
         subject: 'Re: Play Perfect product data',
         body: `Hi Michael,
 
-Following up from last week. One new angle: ClarityQ recently helped a gaming studio reduce their analyst response time by 70% during a soft launch — letting their product team make daily iteration decisions instead of weekly ones.
+Following up from last week. One new angle: ClarityQ recently helped a gaming studio reduce their analyst response time by 70% during a global rollout — letting their product team make daily iteration decisions instead of weekly ones.
 
 Still worth 15 minutes? Happy to show you a quick demo.`,
         personalization_notes: [
@@ -383,13 +383,13 @@ Happy to show you what that looks like for Play Perfect. What does your schedule
         subject: '70% faster data answers — worth a demo?',
         body: `Michael,
 
-Quick follow-up. We recently cut a gaming studio's analyst response time by 70% during a live launch window. That's the difference between iterating on Monday vs Thursday.
+Quick follow-up. We recently cut a gaming studio's analyst response time by 70% during a live rollout window. That's the difference between iterating on Monday vs Thursday.
 
-For Play Perfect, with a new title in soft launch right now, that timing gap matters. Worth 15 minutes this week?`,
+For Play Perfect, with a global rollout underway right now, that timing gap matters. Worth 15 minutes this week?`,
         personalization_notes: [
           'Led with a compelling, specific metric (70% faster)',
           'Made it concrete with the Monday vs Thursday framing',
-          'Referenced soft launch timing — creates genuine urgency',
+          'Referenced global rollout timing — creates genuine urgency',
         ],
       },
     },
@@ -579,50 +579,48 @@ ClarityQ will still be here.`,
   'ilmak-rachael-spencer': {
     cold: {
       concise: {
-        subject: 'Il Makiage growth data — answers in 10 seconds',
+        subject: 'METHODIQ performance: Consult-to-Purchase data in 10s',
         body: `Hi Rachael,
 
-Il Makiage's post-IPO growth machine runs on data — but getting cross-channel campaign answers when you need them (not 24 hours later) is still a friction point for most growth marketing VPs.
+Now that METHODIQ has scaled, the friction between your telehealth consult logs and final purchase data in Snowflake is likely the primary bottleneck.
 
-ClarityQ connects to your Snowflake/Segment stack and lets your team ask "what\'s our blended CAC across Meta and email this week?" in plain English. Answer in 10 seconds.
+When you're checking performance over morning coffee, ClarityQ lets you ask "Which Instagram ad sets are driving the highest consult-to-purchase conversion this week?" and get the answer instantly.
 
-Worth a 15-minute look?`,
+Worth a 15-minute look at how we unify your Telehealth and Performance stacks?`,
         personalization_notes: [
-          'Referenced ODDITY Tech IPO as context for growth pressure',
-          'Named Il Makiage\'s confirmed tools: Snowflake and Segment',
-          'Used a realistic growth marketing metric: blended CAC across channels',
+          'Named METHODIQ specifically — shows research beyond Il Makiage',
+          'Identified the exact cross-stack friction: telehealth consult logs + Snowflake purchase data',
+          'Used a realistic, role-specific query (Instagram ad sets → consult-to-purchase)',
         ],
       },
       conversational: {
-        subject: 'Question about your growth analytics setup at Il Makiage',
+        subject: 'The METHODIQ consult-to-purchase gap — how do you measure it today?',
         body: `Hi Rachael,
 
-I've been following Il Makiage's growth story — going public as part of ODDITY Tech while simultaneously launching a new skincare brand is a high-stakes data environment. Your team must be running A/B tests and campaign experiments at a serious pace.
+METHODIQ is a genuinely interesting challenge — you're running a telehealth funnel that feeds into a commerce conversion. That means your performance data lives in two separate places: the consult logs and the post-purchase events in Snowflake.
 
-Quick question: when you need to know which acquisition channel drove the best LTV last month — how fast do you get that answer? Is it a query you can run yourself, or does it go through someone on the data team?
+Quick question: when you want to know which ad sets are driving the best consult-to-purchase conversion this week — how long does it actually take your team to get that answer?
 
-I ask because ClarityQ lets growth marketing VPs get those answers themselves, instantly, by asking in plain English. It connects to Snowflake and Segment and returns precise answers — not just dashboards.
-
-Happy to show you a quick demo. What does your week look like?`,
+ClarityQ connects your Telehealth and Performance stacks and lets you ask those cross-stack questions in plain English. I'd love to show you what that looks like for METHODIQ. What does your week look like?`,
         personalization_notes: [
-          'Referenced both ODDITY Tech IPO and nu skincare brand launch — shows real research',
-          'Asked a diagnostic question that surfaces the data access friction naturally',
-          'Named confirmed tech stack tools: Snowflake and Segment',
+          'Named METHODIQ and described its unique telehealth-to-commerce funnel structure',
+          'Asked a diagnostic question that surfaces the cross-stack data friction naturally',
+          'Framed ClarityQ as the connector between two specific stacks — not a generic tool',
         ],
       },
       direct: {
-        subject: 'Your growth data — accessible in 10 seconds or not?',
+        subject: "METHODIQ's consult-to-purchase rate — answer in 10s or in a ticket?",
         body: `Rachael,
 
-When you want to know "which channel drove best LTV in the last 30 days?" — do you get that answer yourself in seconds, or does it go into someone's queue?
+METHODIQ's key performance question is: which channels are actually converting consultations into purchases?
 
-If it's the latter, ClarityQ fixes that. We connect to Il Makiage's Snowflake stack and give your growth team natural language access to their own data. No SQL, no waiting, no analyst bottleneck.
+Right now that answer sits across your Telehealth stack and your Snowflake performance data — and connecting them takes time your team doesn't have.
 
-15 minutes this week — I'll show you exactly what that looks like for a growth marketing VP.`,
+ClarityQ unifies both and answers that question in plain English, in 10 seconds. 15 minutes this week to see it in action?`,
         personalization_notes: [
-          'Opened with a direct diagnostic question — immediately surfaces the pain',
-          'Named Snowflake specifically — confirms stack knowledge',
-          'Positioned around the VP growth use case explicitly',
+          'Opened with METHODIQ\'s core performance question — immediately relevant',
+          'Named the exact friction: data split across Telehealth stack and Snowflake',
+          'Positioned ClarityQ as the unifier — clear, specific value prop',
         ],
       },
     },
@@ -852,18 +850,18 @@ Good luck with nu.`,
   'wix-antanas-stimaitis': {
     cold: {
       concise: {
-        subject: 'Wix product teams — self-serve data at scale',
+        subject: "Wix B2B2C: Morning data anomalies shouldn't wait for tickets",
         body: `Hi Antanas,
 
-Wix's product org is enormous — 200+ analysts supporting 5,000 engineers and product managers. But with 230M users and 1B events/day, even that data team can\'t keep up with every PM\'s ad-hoc request.
+As Wix scales its B2B2C reach, understanding why a specific campaign cohort's retention dipped overnight is critical.
 
-ClarityQ sits on top of your BigQuery/Presto stack and lets product managers ask behavioral questions themselves. Analyst queue: shorter. PM velocity: faster.
+ClarityQ lets you skip the analyst queue for daily pulse checks. You ask "What's the D1 retention for AI Builder users from the UK yesterday?" in plain English and get the answer in 10 seconds.
 
-Worth 15 minutes?`,
+Are you free Tuesday to see how this accelerates your daily optimization?`,
         personalization_notes: [
-          'Referenced Wix\'s specific scale: 200+ analysts, 230M users, 1B events/day (real numbers)',
-          'Named confirmed tools: BigQuery and Presto',
-          'Positioned as PM self-serve — directly relevant to a Head of Product',
+          'Framed around Wix\'s B2B2C model — shows understanding of the business layer',
+          'Used a specific, realistic retention question (AI Builder, D1, UK cohort)',
+          'Positioned ClarityQ as removing the analyst bottleneck for daily ops',
         ],
       },
       conversational: {

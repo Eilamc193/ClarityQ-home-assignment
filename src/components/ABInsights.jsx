@@ -4,23 +4,23 @@ import { useABStore } from '../store/useABStore'
 function WinRateBar({ label, rate, count, color = 'bg-indigo-500' }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-xs text-gray-600 w-32 shrink-0 truncate">{label}</span>
-      <div className="flex-1 bg-gray-100 rounded-full h-2.5 overflow-hidden">
+      <span className="text-xs text-slate-600 w-32 shrink-0 truncate">{label}</span>
+      <div className="flex-1 bg-gray-100 rounded-full h-2 overflow-hidden">
         <div
           className={`h-full rounded-full transition-all ${color}`}
           style={{ width: `${rate}%` }}
         />
       </div>
-      <span className="text-xs font-bold text-gray-800 w-10 text-right tabular-nums">{rate}%</span>
-      <span className="text-xs text-gray-400 w-14 text-right tabular-nums">({count})</span>
+      <span className="text-xs font-bold text-slate-800 w-10 text-right tabular-nums">{rate}%</span>
+      <span className="text-xs text-slate-400 w-14 text-right tabular-nums">({count})</span>
     </div>
   )
 }
 
 function InsightCard({ title, children }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
-      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-4">{title}</p>
+    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
+      <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">{title}</p>
       {children}
     </div>
   )
@@ -32,42 +32,39 @@ export default function ABInsights() {
 
   const overallRate = total > 0 ? Math.round((wins / total) * 100) : 0
 
-  // Best tone
   const bestTone = [...byTone].sort((a, b) => b.rate - a.rate)[0]
-  // Best persona
   const bestTitle = [...byTitle].sort((a, b) => b.rate - a.rate)[0]
-  // Best platform
   const bestPlatform = [...byPlatform].sort((a, b) => b.rate - a.rate)[0]
 
   return (
     <div className="p-8 max-w-4xl">
-      <div className="flex items-center gap-2 mb-1">
-        <BarChart2 size={20} className="text-indigo-500" />
-        <h1 className="text-xl font-semibold text-gray-900">A/B Insights</h1>
+      <div className="flex items-center gap-2.5 mb-1.5">
+        <BarChart2 size={22} className="text-indigo-500" />
+        <h1 className="text-2xl font-bold text-slate-900">A/B Insights</h1>
       </div>
-      <p className="text-sm text-gray-500 mb-6">
+      <p className="text-sm text-slate-500 mb-7">
         Win-rate analysis across tone, persona, platform, and email type.{' '}
-        <span className="text-gray-400">Based on {total} logged outreach attempts.</span>
+        <span className="text-slate-400">Based on {total} logged outreach attempts.</span>
       </p>
 
       {/* Summary stats */}
-      <div className="grid grid-cols-4 gap-3 mb-6">
+      <div className="grid grid-cols-4 gap-3 mb-7">
         {[
-          { label: 'Total Attempts',   value: total,               color: 'text-gray-900' },
-          { label: 'Wins',             value: wins,                color: 'text-emerald-600' },
-          { label: 'Overall Win Rate', value: `${overallRate}%`,   color: 'text-indigo-600' },
+          { label: 'Total Attempts',    value: total,             color: 'text-slate-900' },
+          { label: 'Wins',              value: wins,              color: 'text-emerald-600' },
+          { label: 'Overall Win Rate',  value: `${overallRate}%`, color: 'text-indigo-600' },
           { label: 'Avg Days to Reply', value: byPlatform.map(p => p.avgDays).filter(Boolean).reduce((s, v, _, a) => s + v / a.length, 0).toFixed(1) + 'd', color: 'text-amber-600' },
         ].map(({ label, value, color }) => (
-          <div key={label} className="bg-white border border-gray-100 rounded-xl px-4 py-3 shadow-sm">
-            <p className="text-xs text-gray-400 mb-1">{label}</p>
+          <div key={label} className="bg-white border border-gray-200 rounded-xl px-4 py-3.5 shadow-sm">
+            <p className="text-xs text-slate-400 font-medium mb-1">{label}</p>
             <p className={`text-2xl font-bold ${color}`}>{value}</p>
           </div>
         ))}
       </div>
 
       {/* Key insights callout */}
-      <div className="bg-indigo-50 border border-indigo-100 rounded-xl px-5 py-4 mb-6 space-y-1.5">
-        <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wide mb-2">Key Takeaways</p>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-xl px-5 py-4 mb-7 space-y-1.5">
+        <p className="text-xs font-semibold text-indigo-400 uppercase tracking-widest mb-2">Key Takeaways</p>
         <p className="text-sm text-indigo-900">
           <strong>{bestTone?.label}</strong> tone → <strong>{bestTone?.rate}%</strong> reply rate
           {byTone.find(t => t.label !== bestTone?.label && t.count > 2) && ` vs. ${byTone.filter(t => t.label !== bestTone?.label && t.count > 2).sort((a,b) => a.rate-b.rate)[0]?.rate}% for ${byTone.filter(t => t.label !== bestTone?.label && t.count > 2).sort((a,b) => a.rate-b.rate)[0]?.label}`}
@@ -86,7 +83,6 @@ export default function ABInsights() {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        {/* Win Rate by Tone */}
         <InsightCard title="Win Rate by Tone">
           <div className="space-y-3">
             {[...byTone].sort((a, b) => b.rate - a.rate).map((item) => (
@@ -101,7 +97,6 @@ export default function ABInsights() {
           </div>
         </InsightCard>
 
-        {/* Win Rate by Persona Title */}
         <InsightCard title="Win Rate by Persona Title">
           <div className="space-y-3">
             {[...byTitle].sort((a, b) => b.rate - a.rate).map((item) => (
@@ -116,7 +111,6 @@ export default function ABInsights() {
           </div>
         </InsightCard>
 
-        {/* Win Rate by Platform */}
         <InsightCard title="Win Rate by Platform">
           <div className="space-y-3">
             {[...byPlatform].sort((a, b) => b.rate - a.rate).map((item) => (
@@ -128,14 +122,13 @@ export default function ABInsights() {
                   color={item.rate >= 55 ? 'bg-emerald-500' : item.rate >= 40 ? 'bg-indigo-500' : 'bg-gray-400'}
                 />
                 {item.avgDays != null && (
-                  <p className="text-xs text-gray-400 pl-[8.5rem]">avg {item.avgDays}d to reply</p>
+                  <p className="text-xs text-slate-400 pl-[8.5rem]">avg {item.avgDays}d to reply</p>
                 )}
               </div>
             ))}
           </div>
         </InsightCard>
 
-        {/* Win Rate by Email Type */}
         <InsightCard title="Win Rate by Email Type">
           <div className="space-y-3">
             {[...byEmailType].sort((a, b) => b.rate - a.rate).map((item) => (
@@ -157,8 +150,8 @@ export default function ABInsights() {
           <InsightCard title="Top Performing Emails">
             <div className="space-y-4">
               {topEmails.map((email, i) => (
-                <div key={i} className="border border-gray-100 rounded-lg p-3">
-                  <div className="flex items-center gap-2 mb-1.5">
+                <div key={i} className="border border-gray-100 rounded-lg p-3.5">
+                  <div className="flex items-center gap-2 mb-2">
                     <span className="text-xs font-bold text-emerald-600">#{i + 1}</span>
                     <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
                       email.tone === 'concise' ? 'bg-blue-100 text-blue-700' :
@@ -174,9 +167,9 @@ export default function ABInsights() {
                       {Math.round((email.wins / email.attempts) * 100)}% win rate
                     </span>
                   </div>
-                  <p className="text-xs font-semibold text-gray-800 mb-1">"{email.subject}"</p>
-                  <p className="text-xs text-gray-500 italic line-clamp-2">{email.snippet}</p>
-                  <p className="text-xs text-gray-400 mt-1">Target: {email.personaTitle}</p>
+                  <p className="text-xs font-semibold text-slate-800 mb-1">"{email.subject}"</p>
+                  <p className="text-xs text-slate-500 italic line-clamp-2">{email.snippet}</p>
+                  <p className="text-xs text-slate-400 mt-1">Target: {email.personaTitle}</p>
                 </div>
               ))}
             </div>

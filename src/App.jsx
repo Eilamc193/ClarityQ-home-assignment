@@ -32,7 +32,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex min-h-screen bg-gray-50 font-sans">
+    <div className="flex min-h-screen bg-slate-50 font-sans">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
 
       <main className="flex-1 overflow-y-auto">

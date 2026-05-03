@@ -20,25 +20,25 @@ function PersonaCard({ persona, company, onDraftEmail }) {
   }
 
   return (
-    <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 flex flex-col gap-4">
+    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 flex flex-col gap-4">
       {/* Header */}
       <div className="flex items-start gap-4">
         <div className={`w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${persona.avatarColor}`}>
           {persona.avatar}
         </div>
         <div className="flex-1 min-w-0">
-          <p className="font-semibold text-gray-900">{persona.name}</p>
-          <p className="text-sm text-gray-500">{persona.title}</p>
-          <span className="inline-block mt-1 text-xs font-medium bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">
+          <p className="font-semibold text-slate-900">{persona.name}</p>
+          <p className="text-sm text-slate-500">{persona.title}</p>
+          <span className="inline-block mt-1.5 text-xs font-medium bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">
             {persona.seniority}
           </span>
         </div>
       </div>
 
       {/* AI Rationale */}
-      <div className="bg-indigo-50 rounded-lg p-3">
-        <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wide mb-1">Why target this person</p>
-        <p className="text-sm text-indigo-900 leading-relaxed">{persona.rationale}</p>
+      <div className="bg-slate-50 rounded-lg p-3 border border-gray-100">
+        <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Why target</p>
+        <p className="text-sm text-slate-700 leading-relaxed">{persona.rationale}</p>
       </div>
 
       {/* Actions */}
@@ -48,17 +48,17 @@ function PersonaCard({ persona, company, onDraftEmail }) {
           href={persona.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 text-sm font-medium border border-gray-200 text-gray-700 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+          className="flex items-center justify-center gap-2 text-sm font-medium border border-gray-200 text-slate-600 px-3 py-2 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-colors"
         >
           <ExternalLink size={14} />
           View on LinkedIn
         </a>
 
-        {/* Hunter.io email lookup */}
+        {/* Email lookup */}
         {company.domainBlocked ? (
           <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-2 rounded-lg">
             <AlertCircle size={14} className="text-gray-400 shrink-0" />
-            <span className="text-xs text-gray-500">Domain opted out of Hunter.io — use LinkedIn DM</span>
+            <span className="text-xs text-gray-500">Email not available — use LinkedIn DM</span>
           </div>
         ) : emailState.status === 'idle' && (
           <button
@@ -66,12 +66,12 @@ function PersonaCard({ persona, company, onDraftEmail }) {
             className="flex items-center justify-center gap-2 text-sm font-medium bg-orange-50 text-orange-700 border border-orange-200 px-3 py-2 rounded-lg hover:bg-orange-100 transition-colors"
           >
             <Mail size={14} />
-            Find Email via Hunter.io
+            Find Email Address
           </button>
         )}
 
         {emailState.status === 'loading' && (
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-500 px-3 py-2">
+          <div className="flex items-center justify-center gap-2 text-sm text-slate-500 px-3 py-2">
             <Loader2 size={14} className="animate-spin" />
             Looking up email…
           </div>
@@ -104,7 +104,7 @@ function PersonaCard({ persona, company, onDraftEmail }) {
           className="flex items-center justify-center gap-2 text-sm font-semibold bg-indigo-600 text-white px-3 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
         >
           <Pencil size={14} />
-          Draft Email with Claude
+          Draft Email
         </button>
       </div>
     </div>
@@ -116,7 +116,7 @@ export default function PersonaFinder({ company, onBack, onDraftEmail }) {
     return (
       <div className="p-8 flex items-center justify-center h-64">
         <div className="text-center">
-          <p className="text-gray-400 text-sm">Select a company from the ICP Scanner first.</p>
+          <p className="text-slate-400 text-sm">Select a company from the ICP Scanner first.</p>
         </div>
       </div>
     )
@@ -127,16 +127,16 @@ export default function PersonaFinder({ company, onBack, onDraftEmail }) {
       {/* Header */}
       <button
         onClick={onBack}
-        className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 mb-5 transition-colors"
+        className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-700 mb-6 transition-colors font-medium"
       >
         <ArrowLeft size={15} /> Back to ICP Scanner
       </button>
 
-      <div className="flex items-center gap-3 mb-1">
+      <div className="flex items-center gap-3 mb-1.5">
         <span className="text-2xl">{company.emoji}</span>
         <div>
-          <h1 className="text-xl font-semibold text-gray-900">{company.name} — Decision Makers</h1>
-          <p className="text-sm text-gray-500">{company.industry} · {company.headcount} employees · {company.stage}</p>
+          <h1 className="text-2xl font-bold text-slate-900">{company.name} — Decision Makers</h1>
+          <p className="text-sm text-slate-500 mt-0.5">{company.industry} · {company.headcount} employees · {company.stage}</p>
         </div>
         <span className={`ml-auto text-sm font-semibold px-3 py-1 rounded-full ${
           company.icpScore >= 85 ? 'bg-emerald-100 text-emerald-700' : 'bg-indigo-100 text-indigo-700'
@@ -145,7 +145,7 @@ export default function PersonaFinder({ company, onBack, onDraftEmail }) {
         </span>
       </div>
 
-      <p className="text-sm text-gray-500 mb-6 mt-2">{company.description}</p>
+      <p className="text-sm text-slate-500 mb-7 mt-2">{company.description}</p>
 
       {/* Persona grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -160,17 +160,17 @@ export default function PersonaFinder({ company, onBack, onDraftEmail }) {
       </div>
 
       {/* ICP breakdown */}
-      <div className="mt-6 bg-white rounded-xl border border-gray-100 shadow-sm p-5">
-        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">ICP Score Breakdown</p>
-        <div className="space-y-2">
+      <div className="mt-6 bg-white rounded-xl border border-gray-200 shadow-sm p-5">
+        <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">ICP Score Breakdown</p>
+        <div className="space-y-2.5">
           {company.icpBreakdown.map((item) => (
             <div key={item.label} className="flex items-center gap-3">
               <span className={`text-base ${item.met ? 'text-emerald-500' : 'text-gray-300'}`}>
                 {item.met ? '✓' : '○'}
               </span>
-              <span className="text-sm text-gray-700 flex-1">{item.label}</span>
-              {item.note && <span className="text-xs text-gray-400 italic">{item.note}</span>}
-              <span className="text-sm font-semibold text-gray-900 tabular-nums">
+              <span className="text-sm text-slate-700 flex-1">{item.label}</span>
+              {item.note && <span className="text-xs text-slate-400 italic">{item.note}</span>}
+              <span className="text-sm font-semibold text-slate-900 tabular-nums">
                 {item.score}/{item.max}
               </span>
             </div>
