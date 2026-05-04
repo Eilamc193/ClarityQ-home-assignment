@@ -1,0 +1,602 @@
+================================================================================
+PRD: ICP Demo Dashboard — AI-Powered SDR Pipeline Tool
+For: ClarityQ SDR Role Application | Author: Candidate
+Date: May 2026 — Operational Scale Phase
+================================================================================
+
+1. OVERVIEW
+-----------
+The ICP Demo Dashboard is a standalone web prototype that demonstrates how
+an AI-native SDR would operate at ClarityQ. Rather than submitting a static
+document, this tool shows a repeatable, automated pipeline-building workflow —
+from ICP discovery to hyper-personalized outreach — powered by Claude AI and
+Hunter.io email enrichment.
+
+The prototype is built with React (Vite) + Claude API (claude-sonnet-4-6) +
+Hunter.io API.
+
+Data source approach: Hybrid — curated/hardcoded company and persona data
+(manually researched) combined with live email lookup via Hunter.io's free tier
+(25 searches/month). Emails are pre-generated via Claude and cached locally;
+Claude API is the live fallback.
+
+
+2. PROBLEM STATEMENT
+--------------------
+Traditional SDR workflows are manual, slow, and produce generic outreach:
+  - Research per prospect: 20-40 min manually
+  - Emails are copy-paste templates with light personalization
+  - No live signal tracking to prioritize hot accounts
+  - Pipeline visibility is disconnected from outreach activity
+
+ClarityQ's core use case is not the boardroom. Boards have analysts.
+The real pain lives in the morning coffee moment:
+
+  A Head of Product or Head of Growth opens their laptop at 8 AM. They see
+  a ROAS anomaly, a drop in LTV cohort, or a funnel step that collapsed
+  overnight. They need to understand it in 10 seconds — not file a ticket,
+  not wait two days for an analyst, not toggle between three dashboards.
+
+  ClarityQ is the instrument that lets them say "I know exactly why that
+  happened" before the 9 AM standup.
+
+This framing shapes every targeting and messaging decision in this pipeline:
+  - We target operators who own a metric daily (Head of, VP-level), not
+    CEOs who receive reporting from above.
+  - We lead with the anomaly-resolution moment, not BI infrastructure.
+  - We connect fragmented stacks (e.g., Telehealth consultation logs +
+    Snowflake purchase data, AppsFlyer attribution + app store conversion)
+    so the operator sees one true picture — immediately.
+
+ClarityQ needs an SDR who treats pipeline building as a growth engineering
+problem — automating the repetitive, and spending human time only on judgment
+and relationship.
+
+
+3. TARGET USER
+--------------
+Primary: The candidate (demonstrating workflow to ClarityQ hiring team)
+Secondary: Any AI-native SDR running outbound at a B2B SaaS startup
+
+
+4. SUCCESS METRICS (for the demo)
+----------------------------------
+- Prospect research time reduced from ~30 min → <2 min per account
+- Email personalization score: each email contains 3 prospect-specific signals
+- End-to-end flow (ICP → enriched persona → drafted email) completable live
+  during a demo in under 5 minutes
+
+
+5. PRODUCT MODULES
+------------------
+
+MODULE 1: ICP Scanner
+----------------------
+Purpose: Surface companies that match ClarityQ's ICP
+
+Inputs (pre-researched, curated):
+  - 5 manually selected target accounts matching ClarityQ's ICP
+  - Each account pre-loaded with: Industry, Headcount, Funding Stage, Analytics
+    tools in use, Buying signals (funding events, hiring, product launches)
+
+Output:
+  - Table of 5 companies ranked by ICP fit score
+  - Columns: Company | Industry | Headcount | Funding Stage | Data Tool Signals
+    | ICP Score (0-100) | Action
+
+ICP Score logic (weighted, max 100):
+  - Has a dedicated data/analytics team          → 30 pts
+  - Uses BI or product analytics tools           → 25 pts
+  - Growth-stage funding (Series A–F / Pre-IPO) → 20 pts
+  - Headcount 50–500                             → 15 pts
+  - Actively hiring data-adjacent roles          → 10 pts
+
+  Partial credit is applied when criteria are partially met (e.g., company is
+  larger than 500 but otherwise a strong fit). Each breakdown is shown per-
+  company in an expandable ICP scorecard.
+
+The 5 real target accounts (hardcoded, all Israeli or Israel-adjacent tech):
+  1. AppsFlyer    — Score 92 | Mobile Analytics & Attribution | Series F / Pre-IPO
+  2. Play Perfect — Score 88 | Mobile Gaming                  | Growth / Series B
+  3. Il Makiage   — Score 83 | DTC Beauty Tech                | Public (NASDAQ: ODD)
+  4. Wix          — Score 78 | Website Builder / SaaS         | Public (NASDAQ: WIX)
+  5. Canva        — Score 71 | Design SaaS                    | Pre-IPO ($26B)
+
+Data source: Manually curated (LinkedIn, Crunchbase, company blogs, job boards).
+This mirrors real SDR research workflow — quality over automated quantity.
+
+
+MODULE 2: Persona Finder
+-------------------------
+Purpose: Surface the right decision-maker personas at a selected company
+
+Trigger: User clicks a company row in Module 1 — Persona Finder opens as a
+         panel, showing pre-loaded personas for that account.
+
+Output per persona card:
+  - Name, Title, LinkedIn URL, Avatar initials, Seniority tag
+  - "Why this person" AI-generated rationale (pre-loaded, company + role aware)
+  - "Find Email" button → triggers live Hunter.io lookup on demand
+  - Email display: shows verified email, confidence score, or error state
+  - "Draft Email" button → advances to Module 4 (Email Composer)
+
+Target personas for ClarityQ's ICP (roles most likely to buy / champion):
+  - VP / Head of Data or Analytics
+  - VP / Head of Product
+  - Head of Growth / UA / Revenue Ops
+  - Director of Data / Product / Marketing
+  - CEO / Co-CEO (small companies only, <100 employees)
+
+Targeting logic — May 2026 (Operational Scale phase):
+  As ClarityQ moves past early-adopter land-and-expand into operational
+  scale, persona targeting is calibrated by company size (7-tier model):
+
+  Size-based targeting framework:
+
+  1–50 employees:
+    → CEO, CTO, CPO
+    The founders wear all hats — they ARE the data team.
+
+  51–100 employees:
+    → CEO, VP Product, VP Marketing, VP Data/Analytics
+    Dedicated VP roles exist but CEO is still accessible and data-aware.
+
+  101–250 employees:
+    → VP Product, VP Marketing, VP Data/Analytics, Head of Data/Analytics
+    Drop CEO — too many layers already. VPs own the morning data pulse.
+
+  251–500 employees:
+    → VP Product, VP Marketing,
+      Head of (Product, Marketing, Data, Growth, Revenue Ops)
+    VPs hold budget. "Head of" roles feel the daily operational pain.
+
+  501–1,000 employees:
+    → VP + Head of (Product, Marketing, UA, Growth,
+                    Data Science, BI, Revenue Ops)
+    VPs still control budget. Heads own the specific channels/metrics.
+    Both tiers feel the anomaly-resolution pain ClarityQ solves.
+
+  1,001–5,000 employees:
+    → Director + Head of (Product, Marketing, UA, Growth,
+                          Data Science, BI, Revenue Ops)
+    VPs are too senior — insulated by reports and dashboards.
+    Directors and Heads own a specific function and feel every data gap.
+
+  5,000+ employees:
+    → Director, Senior Manager,
+      Head of (Product, Marketing, UA, Growth,
+               Data Science, BI, Revenue Ops)
+    Team Leads are too junior (no budget authority) — avoid.
+    Target the layer that owns a P&L or channel metric directly.
+
+  Key principles:
+    - CEOs are only reachable and relevant below ~100 employees
+    - VPs own budget authority up to ~1,000 employees
+    - Heads/Directors own budget authority from ~250–5,000 employees
+    - Team Leads have no budget — wrong entry point for ClarityQ
+    - Lead with the anomaly-resolution moment for all tiers, not BI infra
+
+Real personas pre-loaded (12 total across 5 accounts):
+  ┌─────────────────────────────┬──────────────────────────────────┬─────────────────────────────────┐
+  │ Name                        │ Title                            │ Company                         │
+  ├─────────────────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+  │ Oren Kaniel                 │ CEO & Co-Founder                 │ AppsFlyer                       │
+  │ Barak Witkowski              │ Chief Product Officer            │ AppsFlyer                       │
+  │ Ran Avrahamy                │ Chief Marketing Officer          │ AppsFlyer                       │
+  │ Michael Saifer              │ VP Marketing                     │ Play Perfect                    │
+  │ Dvir Shemesh                │ Co-CEO                           │ Play Perfect                    │
+  │ Michael Berkovich            │ Co-CEO                           │ Play Perfect                    │
+  │ Jonathan Okun               │ VP Data & Economy                │ Play Perfect                    │
+  │ Rachael Spencer             │ VP of Growth Marketing           │ Il Makiage                      │
+  │ Helina Levy                 │ VP of Product & Growth           │ Il Makiage                      │
+  │ Antanas Štimaitis           │ Head of Product                  │ Wix                             │
+  │ Jill Sherman                │ Co-Founder & CEO, Modalyst       │ Wix                             │
+  │ Gilad Barkan                │ Head of Data Science Guild       │ Wix                             │
+  │ Zach Kitschke               │ Chief Marketing Officer          │ Canva                           │
+  │ Cameron Adams               │ Co-Founder & Chief Product Officer│ Canva                          │
+  │ Andy Ford                   │ Head of Marketing Data           │ Canva                           │
+  └─────────────────────────────┴──────────────────────────────────┴─────────────────────────────────┘
+
+Hunter.io integration:
+  - Lookup is triggered per-persona on demand (not on page load)
+  - Sends: domain, first_name, last_name → receives: email, confidence score
+  - AppsFlyer domain (appsflyer.com) is opted out of Hunter.io → UI shows
+    "Domain opted out" and offers LinkedIn DM as the alternative channel
+  - All 12 non-AppsFlyer persona emails were pre-verified during build time;
+    9 are fully verified, 2 are estimated (Gilad Barkan — accept_all domain),
+    1 is 92% confidence (Cameron Adams)
+
+
+MODULE 3: Buying Signal Feed
+-----------------------------
+Purpose: Prioritize outreach based on real triggers that signal active need
+
+Trigger: User views a company — signals auto-display in a scrollable feed.
+
+Signals tracked (3 per company, manually researched):
+  - Funding events in last 90–180 days → growth mode, scaling data needs
+  - Active job postings: "Data Analyst", "BI Engineer", "Analytics Lead" →
+    indicates current analytics capacity is stretched
+  - Tech stack changes (Snowflake, dbt, Segment detected) → modern stack,
+    ClarityQ integrates natively
+  - Product launches or major press → decision-makers publicly engaged
+
+Display per signal:
+  - Icon (emoji), Type badge (Funding / Hiring / Product / Growth)
+  - Signal title, detailed explanation, ClarityQ relevance note
+  - Date of signal, "hot" badge for recent (< 90 days)
+
+All signals across the 5 companies:
+
+  AppsFlyer:
+    💰 Raised $210M Series F at $5.9B valuation (Jan 2021)
+    🚀 Launched Incrementality Measurement product — HOT (Oct 2024)
+    💼 Hiring: Data Engineers & Analytics roles — HOT (Feb 2025)
+
+  Play Perfect:
+    📈 50M+ downloads across gaming portfolio — now scaling globally (Q1 2026)
+    💼 Hiring: Data Analyst (Monetization) — HOT (Jan 2025)
+    🌍 Global title rollout underway — ROAS/LTV require immediate intraday
+       adjustments; VP-level operators need a morning "pulse check" view that
+       surfaces budget reallocation signals before campaigns are wasted — HOT
+
+  Il Makiage (ODDITY Tech):
+    📈 ODDITY Tech IPO on NASDAQ — raised $424M (Jul 2023)
+    🏥 Launched METHODIQ Telehealth brand (Nov 2025) — HOT — adds online
+       consultation data to an already complex DTC funnel: Telehealth
+       consultation logs must be connected to Snowflake purchase data to
+       measure true performance marketing conversion. Fragmented stack =
+       daily blind spots for the Head of Growth.
+    💼 Hiring: Data Scientists & ML Engineers (Dec 2024)
+
+  Wix:
+    🤖 Launched Wix AI website builder — HOT (Nov 2024)
+    💼 Hiring: Data Analytics Team Lead (multiple) — HOT (Jan 2025)
+    🌍 B2B2C performance optimization challenge — HOT: with 230M+ registered
+       users and high-budget global campaigns running continuously, Head of
+       Product needs real-time monitoring of user behavior shifts that follow
+       each campaign spike. The question isn't "did the campaign work?" — it's
+       "which user segment changed behavior and why, right now?" Current stack
+       can't answer that without a 48-hour analyst turnaround.
+
+  Canva:
+    🚀 200M MAU — $1.7B ARR (Oct 2024)
+    ✨ Launched Magic Studio AI creative suite — HOT (Sep 2024)
+    💼 Hiring: Head of Data — Platform (ANZ Remote) — HOT (Jan 2025)
+
+
+MODULE 4: AI Email Composer
+----------------------------
+Purpose: Generate hyper-personalized outreach emails, not templates
+
+Trigger: User clicks "Draft Email" from a persona card (Module 2)
+
+Email types supported:
+  1. Cold Intro  — lead with a specific signal, one-line value prop, soft CTA
+  2. Follow-up   — Day 5, different angle, references a new trigger,
+                   explicitly avoids "just following up"
+  3. Post-Rejection — graceful, under 60 words, plant a seed for future timing
+
+Tone selector (3 options):
+  - Concise      — Under 100 words, every sentence earns its place
+  - Conversational — Warm and human, like a sharp colleague reaching out
+  - Direct       — Confident and straight to the point, no hedging
+
+Total combinations: 3 email types × 3 tones = 9 emails per persona
+
+Output format (JSON, from Claude or cache):
+  {
+    "subject": "compelling subject line",
+    "body": "full email body with greeting and sign-off",
+    "personalization_notes": ["specific thing personalized 1", "..."]
+  }
+
+Email generation workflow (two-path):
+
+  PATH A — Cache hit (preferred, zero API cost):
+    1. EmailComposer calls getCachedEmail(personaId, emailType, tone)
+    2. If found → simulates a realistic 0.9–1.5s delay (UX authenticity)
+    3. Returns the pre-generated email object
+    4. Cache covers all 12 non-AppsFlyer personas (108 emails total)
+       Key: emailCache[personaId][emailType][tone]
+
+  PATH B — Live Claude API fallback:
+    1. Triggered when persona is not in cache (e.g. AppsFlyer personas)
+    2. Requires VITE_ANTHROPIC_API_KEY in .env
+    3. Calls Anthropic API: POST https://api.anthropic.com/v1/messages
+       Model: claude-sonnet-4-6 | Max tokens: 1024
+    4. System prompt: SDR context at ClarityQ, value prop, tone + type rules,
+       output format, outreach principles (no buzzwords, ≥2 specific signals)
+    5. User prompt: prospect name/title/company/stack + top 3 buying signals +
+       email type instruction + tone instruction
+    6. Response: JSON extracted even if Claude wraps in markdown backticks
+    7. Displayed identically to cached result
+
+Claude prompt strategy:
+  - System prompt encodes: SDR identity, ClarityQ one-line value prop, the
+    pain solved (analyst bottleneck), 5 outreach principles, output JSON schema
+  - User prompt encodes: prospect context (name, title, company, industry,
+    headcount, tools used, description) + signal bullets + type/tone instructions
+  - Result is deterministic in cache, generative for new personas
+
+One-click actions after generation:
+  - Regenerate (new live API call for a different angle)
+  - Copy to clipboard
+  - Add to Pipeline → creates card in Module 5
+
+
+MODULE 5: Pipeline Board
+-------------------------
+Purpose: Track outreach status across all prospects in one Kanban view
+
+Columns (7 stages):
+  Identified → Researched → Email Drafted → Sent → Replied → Meeting Booked
+                                                  → Nurture
+
+Stage color coding:
+  Identified     → Gray
+  Researched     → Blue
+  Email Drafted  → Amber
+  Sent           → Indigo
+  Replied        → Cyan
+  Meeting Booked → Emerald
+  Nurture        → Orange
+
+Prospect card data:
+  - Name, title, company name, avatar initials
+  - Current stage badge
+  - Days since added / last touched (auto-calculated)
+  - Stage transition buttons: advance or move to Nurture
+  - Remove button
+
+Pipeline behavior:
+  - addProspect: de-duplicates by personaId — can't add same persona twice
+  - moveProspect: updates stage + lastTouchedAt timestamp
+  - When moved to Replied, Meeting Booked, or Nurture → triggers A/B log modal
+
+State management:
+  - Zustand store (usePipelineStore) with localStorage persistence
+  - Key: 'ghd-pipeline'
+  - No backend required — all state is browser-local
+
+
+MODULE 6: A/B Testing & Response Tracker
+-----------------------------------------
+Purpose: Systematically capture outreach outcomes and surface patterns that
+improve future messaging, persona targeting, and channel selection.
+
+HOW IT WORKS:
+  When a prospect advances to "Replied", "Meeting Booked", or "Nurture" on
+  the Pipeline Board, the dashboard triggers an A/B Response Log Modal.
+  The SDR fills in outcome details. All data is stored in Zustand +
+  localStorage and aggregated live into the Insights panel.
+
+A/B RESPONSE LOG MODAL — fields captured:
+  ┌─────────────────────┬────────────────────────────────────────────────────┐
+  │ Field               │ Values                                             │
+  ├─────────────────────┼────────────────────────────────────────────────────┤
+  │ Outcome             │ Positive reply / Meeting booked / Rejection /      │
+  │                     │ No response / Bounce                               │
+  │ Persona title       │ VP Product / Head of Data / CEO/CBO / VP Growth /  │
+  │                     │ Other (free text)                                  │
+  │ Platform used       │ Email / LinkedIn DM / Phone call / Other           │
+  │ Email type          │ Cold Intro / Follow-up / Post-rejection            │
+  │ Tone used           │ Concise / Conversational / Direct                  │
+  │ Subject line        │ Free text (auto-suggested from drafted email)      │
+  │ Email snippet       │ First 2 lines (auto-suggested from drafted email)  │
+  │ Days to response    │ Numeric (0 = no response)                          │
+  │ Notes               │ Free text (e.g. "said budget frozen until Q3")     │
+  └─────────────────────┴────────────────────────────────────────────────────┘
+
+A/B STORE (useABStore):
+  - Zustand store with localStorage persistence (key: 'ghd-ab-tracker')
+  - Pre-seeded with 23 mock baseline entries (MOCK_SEED array in useABStore.js)
+  - logResponse(entry) appends new entries with timestamp
+  - getInsights() computes all metrics live from the full responses array
+
+COMPUTED INSIGHTS:
+  Win definition: outcome === 'positive_reply' OR 'meeting_booked'
+  Win Rate = wins / total × 100 (rounded to integer %)
+
+  1. Win Rate by Tone (bar chart)
+     Groups: Concise / Conversational / Direct
+     → Which tone drives the most positive replies?
+
+  2. Win Rate by Persona Title (bar chart)
+     Groups: Head of Data / VP Product / CEO/CBO / VP Growth
+     → Which role is most responsive to ClarityQ's value prop?
+
+  3. Win Rate by Platform (bar chart + avg days to reply)
+     Groups: Email / LinkedIn DM / Phone
+     → Where do conversations actually start?
+
+  4. Win Rate by Email Type (bar chart)
+     Groups: Cold Intro / Follow-up / Post-Rejection
+     → Does persistence pay off? Is Day 5 follow-up worth it?
+
+  5. Top Performing Emails (table)
+     Emails with ≥1 win, sorted by win rate descending, top 3 shown
+     Columns: Subject | Snippet | Tone | Type | Persona title | Win rate
+
+MOCK BASELINE DESIGN INTENT (23 seeded entries):
+  The seed is designed to surface these insights in the demo:
+  - Concise tone outperforms Direct, which outperforms Conversational
+  - Head of Data is the highest-converting persona (2.3x vs VP Growth)
+  - LinkedIn DM outperforms Email for first touch
+  - Day-5 follow-up conversion nearly matches cold intro
+  - Post-rejection re-engagement converts when given enough time (14 days)
+
+  Real logged data appends to the seed and gradually shifts the numbers.
+
+
+6. TECH STACK
+-------------
+Layer          | Choice              | Reason
+---------------|---------------------|------------------------------------------
+Frontend       | React + Vite        | Fast setup, component-based, modern
+Styling        | Tailwind CSS        | Rapid UI, clean design system
+AI             | Claude API          | claude-sonnet-4-6 for email + rationale
+Enrichment     | Hunter.io REST API  | Live email lookup (free tier, 25/mo)
+Data           | Curated / hardcoded | 5 ICP accounts + personas, researched
+Email cache    | emailCache.js       | 108 pre-generated emails, zero API cost
+State          | Zustand             | Lightweight global state management
+Persistence    | localStorage        | No backend needed for demo
+Deploy         | Vercel (planned)    | One-click deploy, shareable URL
+
+ClarityQ value prop — tech framing for outreach (May 2026):
+  The core message is not "another BI tool." It is:
+  "ClarityQ connects your fragmented stack so an operator gets a single,
+  real-time answer — without an analyst in the loop."
+
+  Example stack connections that resonate with these 5 accounts:
+    - ODDITY/METHODIQ: Telehealth consultation logs (CRM/EHR) ↔ Snowflake
+      purchase data ↔ Meta/Google performance marketing events
+    - Wix: CDN/session behavior events ↔ campaign attribution data ↔ product
+      analytics (Mixpanel/Amplitude) — correlated in real time post-campaign
+    - Play Perfect: AppsFlyer attribution ↔ in-app monetization events ↔
+      AppStore conversion rates — surfaced as a morning ROAS/LTV dashboard
+    - AppsFlyer: Their own attribution pipeline ↔ customer-side fragmented
+      stacks → selling ClarityQ to their enterprise clients
+    - Canva: 200M MAU telemetry ↔ Magic Studio AI feature adoption ↔ paid
+      conversion — head of marketing data needs anomaly alerts, not weekly reports
+
+  Lead with the specific fragmented pair in every cold email subject line.
+
+Environment variables required (.env):
+  VITE_HUNTER_API_KEY     → Hunter.io API key (required for live email lookup)
+  VITE_ANTHROPIC_API_KEY  → Claude API key (optional — cache covers 12 personas)
+
+Build:
+  npm run build  → dist/ folder, 301KB JS (87KB gzipped)
+  npm run dev    → localhost:5173
+
+
+7. USER FLOW (end-to-end demo path)
+-------------------------------------
+1. Open dashboard at localhost:5173 → ICP Scanner tab
+2. View 5 ranked target accounts, ICP scores, tools, and signals
+3. Click a company (e.g., Play Perfect) → Persona Finder opens
+4. Review 2-4 persona cards with pre-loaded "Why target" rationales
+5. Click "Find Email" on a persona → Hunter.io live lookup runs
+   - Email + confidence score displayed (or LinkedIn DM fallback for AppsFlyer)
+6. Click "Draft Email" → Email Composer opens
+7. Select: Email type (Cold / Follow-up / Rejection) + Tone
+8. Click Generate → Cache hit returns email in 0.9–1.5s with personalization notes
+   (or live Claude API call for uncached personas, ~3s)
+9. Review subject, body, personalization notes — edit if needed
+10. Click "Add to Pipeline" → card appears in Pipeline Board under "Identified"
+11. Navigate to Pipeline Board → see all prospects in Kanban view
+12. Advance card to "Email Drafted" → "Sent" → "Replied"
+13. On moving to "Replied" → A/B Response Log Modal appears
+14. Log outcome, platform, tone, email type, days to response, notes
+15. Navigate to A/B Insights → live charts update with logged data on top of
+    the 23 mock baseline entries
+16. Top performing emails surface in the insights table
+
+AppsFlyer special path:
+  - Domain opted out of Hunter.io → "Find Email" shows "Domain opted out" state
+  - UI offers "Connect on LinkedIn" link instead
+  - No email cache exists for AppsFlyer personas (cache is domain-lookup gated)
+  - Email generation falls back to live Claude API (requires VITE_ANTHROPIC_API_KEY)
+
+
+8. ARCHITECTURE — DATA FLOW
+----------------------------
+
+ICP SCORING (static, per company):
+  companies.js → icpBreakdown[] array → ICP score shown in ICPScanner.jsx
+
+PERSONA EMAIL LOOKUP (on demand):
+  PersonaFinder.jsx → hunter.js:findEmail({ domain, name })
+    → GET https://api.hunter.io/v2/email-finder?domain=...&first_name=...&last_name=...&api_key=...
+    → returns { email, confidence } or error string
+
+EMAIL GENERATION (cache-first):
+  EmailComposer.jsx → claude.js:generateEmail({ prospect, company, emailType, tone })
+    → emailCache.js:getCachedEmail(personaId, emailType, tone)
+      → HIT: return cached JSON after simulated delay
+      → MISS: fetch('https://api.anthropic.com/v1/messages', ...)
+               with system + user prompt → parse JSON from response
+
+PIPELINE STATE (persistent):
+  PipelineBoard.jsx ↔ usePipelineStore (Zustand + localStorage 'ghd-pipeline')
+  addProspect / moveProspect / removeProspect — all operations sync to storage
+
+A/B LOGGING (persistent):
+  ABResponseModal.jsx → useABStore:logResponse(entry) → appended to responses[]
+  ABInsights.jsx ← useABStore:getInsights() — computed live on each render
+
+
+9. SCOPE
+--------
+In scope (built):
+  - All 6 modules above
+  - Hunter.io API integration (live email lookup per persona, on demand)
+  - Claude API integration (email generation with structured JSON output)
+  - Manually curated ICP data (5 companies, 2-4 personas each, buying signals)
+  - 108-email pre-generated cache (12 personas × 3 types × 3 tones)
+  - A/B response logging modal (triggered on Pipeline Board stage change)
+  - Insights panel with win-rate charts by tone, title, platform, email type
+  - Top performing emails table (min 1 win, sorted by win rate)
+  - 23-entry mock baseline pre-seeded in A/B store for demo coherence
+  - AppsFlyer domain-blocked state handled gracefully (LinkedIn DM fallback)
+  - Responsive web UI (desktop-first, sidebar navigation)
+  - Vercel-ready build
+
+Out of scope (v1):
+  - Direct email sending (copy-paste workflow only)
+  - LinkedIn automation
+  - CRM sync (HubSpot, Salesforce)
+  - Multi-user / auth
+  - Real-time signal fetching (signals are static, manually curated)
+
+
+10. KNOWN CONSTRAINTS & EDGE CASES
+------------------------------------
+- AppsFlyer domain (appsflyer.com) is opted out of Hunter.io email lookup.
+  The 3 AppsFlyer personas are shown in the app but have no email cache entries.
+  Live Claude API fallback requires VITE_ANTHROPIC_API_KEY in .env.
+
+- Wix domain (wix.com) has accept_all=true — Hunter.io cannot SMTP-verify
+  individual addresses. Gilad Barkan's email (giladb@wix.com) is marked
+  "estimated" in the UI (no confidence score shown).
+
+- Hunter.io free tier: 25 searches/month. For demo purposes, the 12 real
+  persona emails were verified during build; live lookups during demo consume
+  quota sparingly. A lookup is only triggered when the user clicks "Find Email."
+
+- Claude API browser access: the app calls the Anthropic API directly from
+  the browser (using the anthropic-dangerous-direct-browser-access header).
+  This is acceptable for a demo prototype; production would proxy through a
+  backend to keep the key secret.
+
+- Pipeline state and A/B data are localStorage-only. Clearing browser storage
+  resets the pipeline to empty and the A/B store to the 23-entry mock seed.
+
+
+11. WHY THIS IMPRESSES CLARITYQ
+---------------------------------
+- It's live, not a slide — they can click through it during the interview
+- It mirrors exactly how an AI-native SDR would work day-to-day
+- It shows Claude API fluency (prompt engineering, structured output, caching)
+- It shows product thinking: ICP scoring, signal-based prioritization
+- The pipeline board proves CRM-level thinking without needing a CRM
+- The A/B tracker shows data-driven iteration — not "spray and pray"
+- Win-rate insights by tone/title/platform demonstrate analytical maturity
+- The email cache demonstrates engineering judgment: zero API cost for demo,
+  live fallback for real use
+- 108 pre-generated emails prove the outreach strategy was thought through end-to-end
+- Built in React — proves technical credibility beyond "I use ChatGPT"
+
+
+12. BUILD PHASES (completed)
+-----------------------------
+Phase 1 (Core):   ICP Scanner + Persona Finder + AI Email Composer
+Phase 2 (Demo):   Signal Feed + Pipeline Board
+Phase 3 (Learn):  A/B Response Logger + Insights Panel (mock data pre-seeded)
+Phase 4 (Polish): Email cache (108 emails), Hunter.io live integration,
+                  AppsFlyer domain-blocked state, UI polish, demo flow
+
+================================================================================
+END OF PRD
+================================================================================
