@@ -5,6 +5,7 @@ import { findEmail } from '../lib/hunter'
 function PersonaCard({ persona, company, onDraftEmail }) {
   const [emailState, setEmailState] = useState(() => {
     if (persona.email) return { status: 'found', email: persona.email, error: null }
+    if (persona.estimatedEmail) return { status: 'estimated', email: persona.estimatedEmail, error: null }
     if (persona.emailNotFound) return { status: 'notfound', email: null, error: null }
     return { status: 'idle', email: null, error: null }
   })
@@ -96,6 +97,14 @@ function PersonaCard({ persona, company, onDraftEmail }) {
           <div className="flex items-center gap-2 bg-emerald-50 border border-emerald-200 px-3 py-2 rounded-lg">
             <CheckCircle size={14} className="text-emerald-600 shrink-0" />
             <span className="text-sm font-medium text-emerald-800">{emailState.email}</span>
+          </div>
+        )}
+
+        {emailState.status === 'estimated' && (
+          <div className="flex items-center gap-2 bg-amber-50 border border-amber-200 px-3 py-2 rounded-lg">
+            <AlertCircle size={14} className="text-amber-500 shrink-0" />
+            <span className="text-sm font-medium text-amber-800">{emailState.email}</span>
+            <span className="text-xs text-amber-500 ml-auto shrink-0">estimated</span>
           </div>
         )}
 

@@ -61,7 +61,7 @@ export const companies = [
         id: 'appsf-gal-regev',
         name: 'Gal Regev',
         title: 'Head of GTM Applications',
-        linkedin: 'https://www.linkedin.com/in/gal-regev/',
+        linkedin: 'https://www.linkedin.com/in/gal-regev2/',
         avatar: 'GR',
         avatarColor: 'bg-cyan-100 text-cyan-700',
         photo: '/avatars/gal-regev.jpg',
@@ -73,7 +73,7 @@ export const companies = [
         id: 'appsf-niv-klein',
         name: 'Niv Klein',
         title: 'Head of Product, Incrementality',
-        linkedin: 'https://www.linkedin.com/in/niv-klein/',
+        linkedin: 'https://www.linkedin.com/in/niv-klein-01537182/',
         avatar: 'NK',
         avatarColor: 'bg-green-100 text-green-700',
         photo: '/avatars/niv-klein.jpg',
@@ -144,6 +144,7 @@ export const companies = [
         avatarColor: 'bg-blue-100 text-blue-700',
         photo: '/avatars/michael-saifer.jpg',
         seniority: 'VP',
+        email: 'michaels@play-perfect.com',
         rationale: 'Michael oversees all marketing performance for a gaming studio where LTV, ROAS, and DAU/MAU ratios define success. He needs instant answers on campaign efficiency across channels — ClarityQ turns his data warehouse into plain-English decisions without SQL dependency.',
       },
       {
@@ -155,6 +156,7 @@ export const companies = [
         avatarColor: 'bg-rose-100 text-rose-700',
         photo: '/avatars/jonathan-okun.jpg',
         seniority: 'VP',
+        email: 'jonathan.okun@play-perfect.com',
         rationale: 'Jonathan owns the entire data and virtual economy stack for Play Perfect\'s games. His team handles ad revenue modeling, in-app purchase optimization, and player behavior analytics. ClarityQ reduces the analyst bottleneck — letting game designers and PMs get answers directly.',
       },
       {
@@ -250,6 +252,7 @@ export const companies = [
         avatarColor: 'bg-pink-100 text-pink-700',
         photo: '/avatars/rachael-spencer.jpg',
         seniority: 'VP',
+        email: 'rachaels@ilmakiage.com',
         rationale: 'Rachael manages multi-channel growth for a brand where AI personalization drives conversion. Her team runs hundreds of A/B tests across paid social, email, and retention — and needs instant analytics on what\'s working. ClarityQ replaces "wait for the analyst" with "ask in plain English."',
       },
       {
@@ -261,6 +264,7 @@ export const companies = [
         avatarColor: 'bg-fuchsia-100 text-fuchsia-700',
         photo: '/avatars/helina-levy.jpg',
         seniority: 'VP',
+        email: 'helinal@oddity.com',
         rationale: 'Helina sits at the intersection of product and growth — she needs to answer "which features drive LTV?" and "where do users churn?" in real-time. ClarityQ gives her product team self-serve access to their data warehouse without SQL, dramatically shortening the insight-to-action cycle.',
       },
       {
