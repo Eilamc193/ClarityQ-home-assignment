@@ -1,4 +1,4 @@
-# ClarityQ — SDR Growth Hacker Dashboard
+# ClarityQ — SDR ICP Demo Dashboard
 
 **Live demo:** https://eilamc193.github.io/ClarityQ-home-assignment
 

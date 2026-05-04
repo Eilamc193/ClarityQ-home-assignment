@@ -23,7 +23,7 @@ export default function ICPScanner({ onSelectCompany }) {
           <h1 className="text-2xl font-bold text-slate-900">ICP Scanner</h1>
         </div>
         <p className="text-sm text-slate-500">
-          4 target accounts — SaaS &amp; app companies with data analytics needs.
+          5 target accounts — SaaS &amp; app companies with data analytics needs.
         </p>
       </div>
 

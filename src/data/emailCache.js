@@ -980,6 +980,838 @@ Good luck.`,
     },
   },
 
+  // ─────────────────────────────────────────────
+  // APPSFLYER
+  // ─────────────────────────────────────────────
+
+  'appsf-deborah-baruc': {
+    cold: {
+      concise: {
+        subject: 'AppsFlyer pricing analytics → plain English',
+        body: `Hi Deborah,
+
+Pricing at a $5.9B attribution platform means constant questions: which customer segments are approaching tier limits, which accounts show expansion signals, which pricing cohorts have the best retention.
+
+Right now those questions go to an analyst queue. ClarityQ connects to your BigQuery and lets you ask them in plain English — answer in under 10 seconds.
+
+Worth a 15-minute look?`,
+        personalization_notes: [
+          'Referenced $5.9B valuation as pricing context',
+          'Named BigQuery as confirmed tool',
+          'Framed around pricing-specific use cases: tier limits, expansion signals, retention cohorts',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about your pricing analytics setup',
+        body: `Hey Deborah,
+
+I was thinking about what pricing analytics looks like at the scale AppsFlyer operates — 75,000 apps, a $5.9B valuation, IPO conversations in the air. Every pricing decision is backed by customer usage data, and I imagine the questions come fast: which segments are approaching tier thresholds, which accounts are ripe for expansion, which price points have the best retention.
+
+How long does it typically take your team to answer something like "which enterprise accounts are underutilizing their current tier?" — quick pull, or analyst queue?
+
+ClarityQ connects to BigQuery and answers questions like that in plain English — seconds, not days. No SQL, no engineering ticket.
+
+Happy to show you a quick demo if this resonates. What does your calendar look like?`,
+        personalization_notes: [
+          'Referenced 75,000 app scale and $5.9B valuation',
+          'Framed around pricing-specific pain: tier analysis, expansion signals',
+          'Asked a specific, relatable question about their workflow',
+        ],
+      },
+      direct: {
+        subject: 'Pricing analytics without the analyst wait',
+        body: `Deborah,
+
+Pricing at AppsFlyer means you're constantly asking: which segments are approaching tier limits, which accounts have expansion potential, which cohorts churn at specific price points.
+
+Those questions shouldn't require an engineering ticket. ClarityQ connects to BigQuery and answers them in plain English — in seconds.
+
+15 minutes to show you live?`,
+        personalization_notes: [
+          'Named BigQuery as confirmed tool',
+          'Focused on pricing-specific pain points: tier analysis, expansion, churn by cohort',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: pricing analytics → pre-IPO angle',
+        body: `Hi Deborah,
+
+One thing I didn't mention: AppsFlyer is in pre-IPO mode, which means your pricing data is under a new kind of scrutiny — board-level, investor-level.
+
+ClarityQ gives you real-time visibility into pricing cohort performance from BigQuery, in plain English. No analyst dependency for the metrics that matter most right now.
+
+Still worth a quick look?`,
+        personalization_notes: [
+          'Led with new angle: pre-IPO board scrutiny on pricing data',
+          'Tied urgency to IPO timing',
+        ],
+      },
+      conversational: {
+        subject: 'One more angle on the pricing question',
+        body: `Hey Deborah,
+
+I reached out last week about pricing analytics — wanted to try a different angle.
+
+AppsFlyer is scaling its data org ahead of what looks like an IPO. That typically means more pressure on pricing analytics specifically: investor-level visibility into cohort performance, tier utilization, and expansion revenue. The questions your board will ask are exactly the kind that currently sit in an analyst queue.
+
+ClarityQ gives you a layer where you can ask those questions directly — "how is ARR trending by tier this quarter?" — and get the answer in seconds from BigQuery.
+
+If the timing isn't right, happy to stay in touch. But if pricing analytics is a current pain point, 15 minutes could be well spent.`,
+        personalization_notes: [
+          'New angle: IPO-driven board scrutiny on pricing data',
+          'Named specific question a board would ask',
+          'Acknowledged timing sensitivity',
+        ],
+      },
+      direct: {
+        subject: 'Pre-IPO pricing visibility — quick follow-up',
+        body: `Deborah,
+
+IPO prep puts pricing metrics under a new microscope — board visibility, cohort performance, tier utilization. Analysts can't keep pace with those demands.
+
+ClarityQ gives you self-serve access to your BigQuery pricing data in plain English. One layer that removes the bottleneck.
+
+Quick 15 minutes?`,
+        personalization_notes: [
+          'Reframed around IPO as new urgency trigger',
+          'Kept extremely concise',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: No problem at all',
+        body: `Deborah,
+
+Completely understood — timing matters. If AppsFlyer's pricing analytics ever becomes a bottleneck during IPO prep, I'd love to revisit. Happy to reconnect then.`,
+        personalization_notes: [
+          'Acknowledged decision gracefully',
+          'Left door open with IPO timing as future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Re: Understood — and thanks',
+        body: `Deborah,
+
+No worries at all — appreciate you letting me know. These things are often about timing, not fit.
+
+If the data access question ever becomes urgent — especially as IPO prep creates new pressure on pricing visibility — feel free to reach out. I'll be here.
+
+Wishing you and the team continued success.`,
+        personalization_notes: [
+          'Warm, non-defensive close',
+          'Named IPO prep as a future timing trigger without being pushy',
+        ],
+      },
+      direct: {
+        subject: 'Re: Noted — door stays open',
+        body: `Deborah,
+
+Understood. Whenever pricing analytics becomes a priority — and IPO timelines tend to accelerate that — I'm easy to reach.
+
+Best of luck with the build.`,
+        personalization_notes: [
+          'Brief and direct',
+          'Named IPO as natural future trigger',
+        ],
+      },
+    },
+  },
+
+  'appsf-gal-regev': {
+    cold: {
+      concise: {
+        subject: 'AppsFlyer GTM analytics — instant answers from your stack',
+        body: `Hi Gal,
+
+Running GTM applications at AppsFlyer means you're constantly tracking pipeline health, tool adoption, and revenue motion across a complex stack. Those questions shouldn't sit in a ticket queue.
+
+ClarityQ connects to BigQuery and lets you ask "which stage has the most pipeline drag this quarter?" in plain English — answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Focused on GTM-specific use cases: pipeline health, tool adoption, revenue motion',
+          'Named BigQuery as confirmed tool',
+          'Used a specific, relatable pipeline question',
+        ],
+      },
+      conversational: {
+        subject: 'Question about your GTM analytics setup',
+        body: `Hey Gal,
+
+I was looking at what GTM analytics looks like at AppsFlyer's scale — a data-intensive attribution platform that also has to manage its own RevOps motion, pipeline visibility, and GTM tool stack.
+
+Here's a question I'd be curious about: when a sales leader asks "where's pipeline stalling this week?", how long does it take your team to get them a credible answer? Quick pull from your BI layer, or analyst first?
+
+ClarityQ connects to BigQuery and answers questions like that in plain English — under 10 seconds. No SQL, no engineering dependency. We work with GTM and RevOps leads who need data at the speed of deal cycles.
+
+Happy to show you a quick demo if this sounds familiar. What does your schedule look like?`,
+        personalization_notes: [
+          'Asked a specific, relatable question about their GTM workflow',
+          'Named BigQuery as confirmed tool',
+          'Framed around GTM-specific pain: pipeline visibility, sales speed',
+        ],
+      },
+      direct: {
+        subject: 'GTM pipeline data without the wait',
+        body: `Gal,
+
+GTM leads at AppsFlyer scale need pipeline health, tool adoption rates, and RevOps data fast — not at the speed of analyst queues.
+
+ClarityQ connects to your BigQuery and delivers those answers in plain English. "Which channel is driving the best conversion this quarter?" — seconds, not days.
+
+15 minutes to show you live?`,
+        personalization_notes: [
+          'Focused on speed as core value for GTM',
+          'Named specific GTM use cases',
+          'BigQuery reference',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'AppsFlyer IPO prep — GTM data gets scrutinized more',
+        body: `Hi Gal,
+
+One thing I didn't mention: as AppsFlyer scales toward a potential IPO, GTM data accuracy and visibility becomes board-level. Pipeline forecasting, win rates, tool ROI — those get reviewed at a new level.
+
+ClarityQ gives you real-time self-serve access to that data from BigQuery. No analyst dependency at a moment when data credibility matters most.
+
+Still worth a quick chat?`,
+        personalization_notes: [
+          'New angle: IPO scrutiny on GTM data',
+          'Named specific metrics board would care about',
+        ],
+      },
+      conversational: {
+        subject: 'Different angle on the GTM question',
+        body: `Hey Gal,
+
+I reached out last week about GTM analytics — wanted to come at this from a different angle.
+
+AppsFlyer is in scale mode right now — data org expanding, IPO conversations in the background. That puts more pressure on GTM data accuracy: pipeline forecasting needs to be defensible, tool adoption needs to be measured, and RevOps reporting can't be stuck in an analyst queue.
+
+ClarityQ sits on top of your BigQuery and lets GTM leads query that data in plain English — "what's our average cycle length for enterprise deals this quarter?" — and get the answer in seconds.
+
+If the timing is off, completely understand. But if GTM data visibility is a live issue, worth 15 minutes.`,
+        personalization_notes: [
+          'New angle: pre-IPO GTM data scrutiny',
+          'Named specific GTM metrics',
+          'Conversational and respectful of their time',
+        ],
+      },
+      direct: {
+        subject: 'Pre-IPO GTM visibility — following up',
+        body: `Gal,
+
+Pre-IPO scale means your pipeline data needs to be board-ready, not analyst-dependent.
+
+ClarityQ gives GTM leads self-serve access to BigQuery data in plain English — pipeline health, tool ROI, win rates — in seconds.
+
+Quick 15 minutes?`,
+        personalization_notes: [
+          'Tight reframe on IPO as urgency trigger',
+          'Named specific GTM metrics',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: Understood — no problem',
+        body: `Gal,
+
+Totally understood. When GTM analytics visibility becomes a priority — especially during IPO build-out — happy to reconnect. Good luck with the quarter.`,
+        personalization_notes: [
+          'Brief, non-defensive',
+          'IPO timing as future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Re: Thanks for the reply',
+        body: `Gal,
+
+Appreciate you getting back to me — these decisions are always about timing and priority.
+
+If the GTM data question ever becomes more pressing — particularly as revenue scrutiny picks up ahead of any potential IPO — feel free to reach out. I'd be glad to reconnect.
+
+Best of luck with AppsFlyer's next chapter.`,
+        personalization_notes: [
+          'Warm and non-defensive',
+          'IPO as future timing trigger',
+        ],
+      },
+      direct: {
+        subject: 'Re: Got it',
+        body: `Gal,
+
+Understood. When GTM data visibility becomes a priority — it tends to during IPO cycles — I'm easy to find.
+
+Good luck with the quarter.`,
+        personalization_notes: [
+          'Direct and brief',
+          'IPO timing as future trigger',
+        ],
+      },
+    },
+  },
+
+  'appsf-niv-klein': {
+    cold: {
+      concise: {
+        subject: 'Incrementality analytics — self-serve for your team',
+        body: `Hi Niv,
+
+The Incrementality Suite is gaining traction across enterprise — which means your team is fielding more internal data questions: feature adoption by customer segment, experiment coverage rates, validation pipeline throughput.
+
+ClarityQ connects to BigQuery and lets your team ask those questions in plain English — no SQL, no analyst queue, answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Referenced Incrementality Suite enterprise growth signal',
+          'Named specific product analytics use cases: adoption, experiment coverage, validation throughput',
+          'BigQuery reference',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about Incrementality product analytics',
+        body: `Hey Niv,
+
+I was looking at AppsFlyer's Incrementality Suite — impressive traction with top enterprise accounts. I'm curious about the internal side: as adoption scales across the top-100 app developers, how does your team stay on top of which customers are running experiments, what adoption looks like by segment, and whether the validation pipeline is keeping pace?
+
+Those sound like the kind of questions that could go to an analyst — or could go directly into a plain-English query layer.
+
+ClarityQ connects to BigQuery and lets product teams ask exactly these questions in natural language and get the answer in under 10 seconds. No SQL, no engineering ticket.
+
+Happy to show you a quick demo if this resonates. What does your week look like?`,
+        personalization_notes: [
+          'Referenced Incrementality Suite enterprise traction as conversation opener',
+          'Asked a specific question about internal product analytics workflow',
+          'BigQuery reference',
+        ],
+      },
+      direct: {
+        subject: 'Incrementality product data — no more analyst queue',
+        body: `Niv,
+
+Enterprise adoption of the Incrementality Suite means your team is tracking feature adoption rates, A/B test coverage, and validation pipeline health — constantly.
+
+Those questions shouldn't require analyst tickets. ClarityQ connects to BigQuery and answers them in plain English — in seconds.
+
+15 minutes to see it live?`,
+        personalization_notes: [
+          'Directly referenced Incrementality Suite adoption signal',
+          'Named specific product analytics use cases',
+          'BigQuery reference',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'One more angle — CTV complexity',
+        body: `Hi Niv,
+
+Something I didn't mention: AppsFlyer's CTV attribution expansion adds a new measurement surface — and new internal data questions your team will need to answer fast.
+
+ClarityQ gives product teams self-serve access to analytics data across surfaces in plain English. No SQL, no queue, instant answers.
+
+Still worth a look?`,
+        personalization_notes: [
+          'New angle: CTV expansion creates new internal product analytics complexity',
+          'Tied to a real signal from their company',
+        ],
+      },
+      conversational: {
+        subject: 'CTV + Incrementality — a new data angle',
+        body: `Hey Niv,
+
+Reached out last week about Incrementality analytics — wanted to try a different angle.
+
+AppsFlyer is expanding into CTV attribution, which adds a new measurement surface your product team will need to track internally — adoption patterns, cross-platform validation, methodology accuracy in a medium your system wasn't originally built for.
+
+That's the kind of question that doesn't fit neatly into existing dashboards. ClarityQ sits on top of BigQuery and lets your team ask "how is CTV experiment adoption tracking vs. mobile this quarter?" in plain English — and get the answer in seconds.
+
+Worth a quick demo if this is on your radar. No pressure.`,
+        personalization_notes: [
+          'New signal: CTV expansion as new internal analytics challenge',
+          'Named specific cross-platform question as example',
+          'Non-pressured close',
+        ],
+      },
+      direct: {
+        subject: 'CTV expansion → new product analytics questions',
+        body: `Niv,
+
+CTV attribution adds measurement complexity that existing dashboards weren't built for. Your team will need fast answers on CTV adoption, cross-platform validation, and methodology coverage.
+
+ClarityQ answers those questions in plain English from BigQuery. No SQL, no queue.
+
+Quick 15 minutes?`,
+        personalization_notes: [
+          'New angle: CTV as new complexity driver',
+          'Direct and to the point',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: Makes sense — door stays open',
+        body: `Niv,
+
+Understood. If product analytics becomes a bottleneck — especially as the Incrementality suite and CTV surface both scale — happy to reconnect. Good luck with the roadmap.`,
+        personalization_notes: [
+          'Graceful, brief',
+          'Named specific future triggers: Incrementality scale, CTV expansion',
+        ],
+      },
+      conversational: {
+        subject: 'Re: No worries at all',
+        body: `Niv,
+
+Appreciate you responding — timing is everything with these things.
+
+If product analytics becomes harder to keep pace with as Incrementality adoption grows and CTV adds complexity, feel free to reach back out. I'll be easy to find.
+
+Wishing you a strong quarter.`,
+        personalization_notes: [
+          'Warm close',
+          'Named both growth signals as natural future triggers',
+        ],
+      },
+      direct: {
+        subject: 'Re: Got it',
+        body: `Niv,
+
+Understood. When product analytics velocity becomes a priority — it tends to during rapid product expansion — I'm easy to reach.
+
+Good luck with the suite.`,
+        personalization_notes: [
+          'Brief and direct',
+          'Product expansion as natural future trigger',
+        ],
+      },
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // WIX
+  // ─────────────────────────────────────────────
+
+  'wix-roy-maimon': {
+    cold: {
+      concise: {
+        subject: 'Wix data org — self-serve layer for 200 analysts',
+        body: `Hi Roy,
+
+Running data at Wix means processing 1B events per day while fielding a constant stream of ad-hoc requests from product, marketing, and growth. Every PM request that goes to an analyst is a strategic question that doesn't get answered.
+
+ClarityQ connects to Presto/BigQuery and lets non-technical teams self-serve on routine queries — freeing your analysts for complex work.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Referenced 1B events/day as proof of research',
+          'Named Presto and BigQuery as confirmed tools from Wix Engineering Blog',
+          'Framed from data team leader perspective: protect analyst time',
+        ],
+      },
+      conversational: {
+        subject: 'Data bottleneck at 1B events/day',
+        body: `Hey Roy,
+
+I was reading Wix's engineering blog — impressive infrastructure. 1 billion events per day, Presto, Trino, and a 200+ person analytics org.
+
+Here's a question I'd be curious about: even at that scale, how much of your team's time goes to ad-hoc requests from product and growth teams — "can you pull retention numbers for this cohort?" — versus strategic, high-complexity work?
+
+ClarityQ puts a self-serve layer on top of your data warehouse — BigQuery, Presto, whatever's in the stack — so product managers and marketers ask routine questions in plain English and get answers in seconds. Your analysts spend less time on tickets and more time on the work only they can do.
+
+If this resonates, happy to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Referenced Wix Engineering Blog as source — adds credibility',
+          'Named 1B events/day, Presto, Trino, 200+ person org',
+          'Framed around analyst time protection — the key pain for a data team lead',
+        ],
+      },
+      direct: {
+        subject: 'Reduce ad-hoc requests to your 200-person data team',
+        body: `Roy,
+
+Wix processes 1B events per day across a 200+ analyst org. Despite that scale, ad-hoc requests from product and growth still eat analyst bandwidth that should go to strategic work.
+
+ClarityQ gives non-technical teams a self-serve query layer on top of BigQuery — plain English, instant answers, no analyst queue.
+
+15 minutes?`,
+        personalization_notes: [
+          'Referenced 1B events/day and 200+ analyst scale',
+          'BigQuery as confirmed tool',
+          'Framed directly from Head of Data perspective: protect analyst time',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Base44 + Wix — two very different data audiences',
+        body: `Hi Roy,
+
+One thing I didn't mention: post-Base44 acquisition, your data org is now serving two very different audiences — Wix's SMB base and Base44's developer community.
+
+ClarityQ lets each team self-serve on their own data questions in plain English — reducing central team load across both product surfaces.
+
+Worth a quick look?`,
+        personalization_notes: [
+          'New angle: Base44 acquisition creates dual-audience data complexity',
+          'Framed from data org leader perspective',
+        ],
+      },
+      conversational: {
+        subject: 'Different angle — Base44 analytics complexity',
+        body: `Hey Roy,
+
+I reached out last week about data self-service at Wix. Wanted to take a different angle.
+
+The Base44 acquisition puts your data org in an interesting spot — you're now serving a developer audience that behaves very differently from Wix's SMB base. Different retention signals, different activation metrics, different data questions entirely. That's a new layer of complexity on top of an already 1B-events-per-day operation.
+
+ClarityQ can act as a self-serve layer for both teams — so Base44's growth leads can ask their own questions in plain English without adding to your central team's load.
+
+If the Base44 data integration is on your radar, happy to connect. No pressure.`,
+        personalization_notes: [
+          'New angle: Base44 dual-audience data complexity',
+          'Demonstrated understanding of the acquisition internal data implications',
+          'Low-pressure close',
+        ],
+      },
+      direct: {
+        subject: 'Base44 data complexity — following up',
+        body: `Roy,
+
+Post-acquisition, your data org serves two very different audiences: Wix SMB and Base44's developer base. Different metrics, different questions, compounding demand on your team.
+
+ClarityQ adds a self-serve layer so each audience answers their own questions — without adding to your team's ticket queue.
+
+Quick 15 minutes?`,
+        personalization_notes: [
+          'Base44 acquisition as new angle',
+          'Direct framing around compounding demand on data org',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: Makes sense — staying in touch',
+        body: `Roy,
+
+Understood. If ad-hoc request volume ever becomes a bigger pain point — especially as Base44 analytics complexity grows — happy to revisit. Good luck with the build.`,
+        personalization_notes: [
+          'Brief, non-defensive',
+          'Base44 as future timing trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Re: No worries — appreciate the response',
+        body: `Roy,
+
+Makes sense — data initiatives at this scale rarely move quickly. Appreciate you getting back to me.
+
+If the self-serve analytics question ever becomes more urgent — particularly as Base44 adds new data complexity — I'd be glad to reconnect. Happy to stay in touch.
+
+Wishing you and the team a strong quarter.`,
+        personalization_notes: [
+          'Warm and understanding',
+          'Base44 as natural future trigger',
+          'Scale acknowledgment shows empathy',
+        ],
+      },
+      direct: {
+        subject: 'Re: Got it',
+        body: `Roy,
+
+Understood. When data self-service becomes a priority — and Base44 complexity tends to accelerate that — I'm easy to reach.
+
+Good luck with the quarter.`,
+        personalization_notes: [
+          'Brief and direct',
+          'Base44 as natural future trigger',
+        ],
+      },
+    },
+  },
+
+  'wix-omer-zilberman': {
+    cold: {
+      concise: {
+        subject: 'Wix BD analytics — answers without the queue',
+        body: `Hi Omer,
+
+Business development at Wix means you need partner performance data, deal analytics, and market insights fast — without competing with 200+ analysts for bandwidth.
+
+ClarityQ connects to BigQuery and lets BD leads ask "which partner is driving the best conversion in the enterprise segment this quarter?" in plain English — answer in seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the core BD pain: competing for analyst bandwidth at 200+ person org',
+          'BigQuery as confirmed tool',
+          'Used a specific, relatable BD question',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about your BD analytics setup',
+        body: `Hey Omer,
+
+I was looking at Wix's BD operation — a 5,000+ person company with a massive partner ecosystem, enterprise segment growth, and a newly acquired AI platform in Base44. That's a lot of partnerships to track and a lot of performance data to stay on top of.
+
+Here's the question: when you need to understand which partners are contributing the most pipeline, or how a particular market segment is converting — does that information come to you quickly, or does it go through a data team queue first?
+
+ClarityQ connects to BigQuery and gives BD leads the ability to ask those questions in plain English and get the answer in seconds. No SQL, no analyst ticket.
+
+Happy to show you a quick demo if this resonates. What does your calendar look like?`,
+        personalization_notes: [
+          'Named Base44 acquisition as BD complexity driver',
+          'Asked a specific, relatable BD question about partner performance',
+          'BigQuery reference',
+        ],
+      },
+      direct: {
+        subject: 'BD analytics without waiting on data team',
+        body: `Omer,
+
+At Wix's scale, waiting 48 hours for partner performance data or deal conversion insights is a real cost to BD velocity.
+
+ClarityQ gives you self-serve access to BigQuery in plain English — "which enterprise partners drove the most activation this quarter?" — in seconds.
+
+15 minutes to show you?`,
+        personalization_notes: [
+          'Named the 48-hour wait as a real BD cost',
+          'Used a specific partner analytics question',
+          'BigQuery reference',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'One angle I missed — Base44 partnership data',
+        body: `Hi Omer,
+
+Something I didn't mention: the Base44 acquisition adds a new BD layer — developer partnerships, API integrations, platform deals — on top of Wix's existing partner ecosystem.
+
+ClarityQ can help you track both in plain English without adding to your data team's load.
+
+Still worth a quick look?`,
+        personalization_notes: [
+          'New angle: Base44 acquisition creates new BD data layer',
+          'Tied to a confirmed company event',
+        ],
+      },
+      conversational: {
+        subject: 'Different angle — Base44 partnerships',
+        body: `Hey Omer,
+
+Reached out last week about BD analytics — wanted to try a different approach.
+
+The Base44 acquisition opens a new front for Wix's partnership strategy — developer ecosystem deals, API partnerships, platform integrations. That's a different kind of BD motion with different performance metrics than your existing SMB and enterprise partnerships.
+
+Getting visibility into both — how are Base44 developer partners converting vs. traditional Wix ecosystem partners? — requires data that currently sits in separate pipelines.
+
+ClarityQ unifies that and lets you ask cross-portfolio questions in plain English. If Base44 integration is on your radar, happy to show you how.`,
+        personalization_notes: [
+          'New angle: Base44 creates new BD data layer',
+          'Named specific cross-portfolio analytics question',
+          'Demonstrated understanding of developer vs. SMB partnership distinction',
+        ],
+      },
+      direct: {
+        subject: 'Base44 BD analytics — following up',
+        body: `Omer,
+
+Base44 adds a new partnership surface — developer deals, API integrations — on top of your existing ecosystem. Getting visibility across both requires data currently sitting in different pipelines.
+
+ClarityQ unifies them and lets you query in plain English. Quick 15 minutes?`,
+        personalization_notes: [
+          'Base44 as new angle',
+          'Cross-pipeline visibility as core pain',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: Understood — staying in touch',
+        body: `Omer,
+
+Makes sense. If BD analytics visibility becomes a priority — especially as Base44 partnerships layer on — happy to reconnect. Good luck with the quarter.`,
+        personalization_notes: [
+          'Brief and graceful',
+          'Base44 as future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Re: Thanks for letting me know',
+        body: `Omer,
+
+Appreciate you responding — timing and priorities shift, completely understand.
+
+If the BD data question becomes more urgent — particularly as Base44 partnership activity scales up — feel free to reach out. I'll be here.
+
+Best of luck with Wix's next chapter.`,
+        personalization_notes: [
+          'Warm close',
+          'Base44 as natural future timing trigger',
+        ],
+      },
+      direct: {
+        subject: 'Re: Got it',
+        body: `Omer,
+
+Understood. When partnership analytics becomes a priority — Base44 integration tends to accelerate that — I'm easy to reach.
+
+Good luck.`,
+        personalization_notes: [
+          'Brief and direct',
+          'Base44 as future trigger',
+        ],
+      },
+    },
+  },
+
+  'wix-mor-saar': {
+    cold: {
+      concise: {
+        subject: 'Base44 growth analytics — startup speed in a 5K-person org',
+        body: `Hi Mor,
+
+Running growth at Base44 means moving at startup speed inside a 5,000-person org — great for resources, brutal when data requests have to compete with 200+ analysts.
+
+ClarityQ connects to BigQuery and gives your growth team instant self-serve analytics in plain English — activation funnels, developer retention, campaign performance — without touching the central data queue.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Named the startup-within-enterprise tension as central pain',
+          'Named specific Base44 growth metrics: activation, developer retention, campaign performance',
+          'BigQuery reference',
+        ],
+      },
+      conversational: {
+        subject: 'Growth analytics at Base44 — quick question',
+        body: `Hey Mor,
+
+Running growth at Base44 is a unique challenge — startup speed inside one of Israel's largest tech companies. Great infrastructure, but real friction when every data question has to route through a 200+ analyst organization.
+
+Here's a specific question I'd be curious about: when you need to understand how developer activation is tracking this week, or which acquisition channel is driving the best retention — how quickly can you get that answer? Same-day? Next-day? Or does it sit in a queue?
+
+ClarityQ connects to BigQuery and gives Base44's growth team a self-serve layer for those questions in plain English — so you're not blocked on data while moving at startup speed.
+
+Happy to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Named the startup-within-enterprise tension directly',
+          'Asked a specific, relatable growth question about developer activation',
+          'BigQuery reference',
+          'Acknowledged the unique org dynamics at Base44/Wix',
+        ],
+      },
+      direct: {
+        subject: 'Base44 growth data without the Wix queue',
+        body: `Mor,
+
+Startup-speed growth teams can't wait for large-org data queues. Base44's activation, developer retention, and campaign data sits in BigQuery — but getting to it requires competing with a 200+ analyst org.
+
+ClarityQ gives your team a self-serve plain-English layer. Same-day answers, no queue.
+
+15 minutes?`,
+        personalization_notes: [
+          'Named the core tension: startup speed vs. large-org data queue',
+          'Named specific Base44 growth metrics',
+          'BigQuery reference',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'One more thing — developer audiences are different',
+        body: `Hi Mor,
+
+Something I didn't mention: developer retention data looks different from SMB retention. Activation events, API usage depth, integration milestones — these are signals Wix's existing dashboards weren't built for.
+
+ClarityQ lets your team ask those questions in plain English without waiting on the central analytics team to build new reports.
+
+Worth a quick look?`,
+        personalization_notes: [
+          'New angle: developer-specific analytics signals differ from SMB',
+          'Named specific developer metrics: API usage, integration milestones',
+          'Low-pressure close',
+        ],
+      },
+      conversational: {
+        subject: 'Developer metrics vs. SMB metrics — a different angle',
+        body: `Hey Mor,
+
+I reached out last week about Base44 growth analytics. Wanted to try a different angle.
+
+Developer products create analytics signals that are fundamentally different from Wix's SMB base — time-to-activation on API keys, depth of feature integration, retention curves tied to project milestones rather than subscription renewal dates. Wix's existing reporting infrastructure probably wasn't built to surface those answers quickly.
+
+ClarityQ gives your team a self-serve layer where you can ask "which activation channel is driving 30-day developer retention?" in plain English — and get the answer in seconds, without a custom report request.
+
+If Base44 growth analytics is a current pain point, worth 15 minutes. No pressure.`,
+        personalization_notes: [
+          'New angle: developer-specific analytics differ from SMB',
+          'Named specific developer metrics: API activation, integration depth, milestone-based retention',
+          'Low-pressure close',
+          'Demonstrated understanding of what makes developer analytics distinct',
+        ],
+      },
+      direct: {
+        subject: 'Developer analytics — different signals, same bottleneck',
+        body: `Mor,
+
+Developer activation, API usage depth, integration milestones — these signals are different from Wix's SMB metrics, and Wix's existing reports probably don't surface them well.
+
+ClarityQ gives your team self-serve plain-English analytics. No custom report requests, no queue.
+
+Quick 15 minutes?`,
+        personalization_notes: [
+          'New angle: developer-specific signals don\'t fit existing reports',
+          'Named specific developer metrics',
+          'Direct and brief',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: Understood — staying in touch',
+        body: `Mor,
+
+Makes sense. If developer analytics becomes a bottleneck as Base44 scales — happy to reconnect. Good luck with the growth.`,
+        personalization_notes: [
+          'Brief, graceful',
+          'Base44 scaling as future trigger',
+        ],
+      },
+      conversational: {
+        subject: 'Re: No worries — appreciate the reply',
+        body: `Mor,
+
+Completely understood — these decisions are always about timing and current priorities.
+
+If the data access question ever becomes a blocker for Base44's growth team — it tends to as developer platforms scale — feel free to reach out. I'll be here.
+
+Good luck with Base44!`,
+        personalization_notes: [
+          'Warm and enthusiastic close',
+          'Named the natural future trigger: as developer platform scales',
+        ],
+      },
+      direct: {
+        subject: 'Re: Got it',
+        body: `Mor,
+
+Understood. When developer analytics becomes a priority — it tends to during rapid platform growth — I'm easy to find.
+
+Good luck.`,
+        personalization_notes: [
+          'Brief and direct',
+          'Platform growth as natural future trigger',
+        ],
+      },
+    },
+  },
+
 }
 
 // Helper: lookup cached email or return null (triggers live Claude generation)

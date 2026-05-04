@@ -19,7 +19,7 @@ export default function Sidebar({ activeTab, onTabChange }) {
           <span className="text-xl font-bold text-cyan-400 tracking-tight">Q.</span>
         </div>
         <p className="text-xs text-slate-500 mt-0.5 font-medium tracking-widest uppercase">
-          Growth Hacker Dashboard
+          ICP Demo Dashboard
         </p>
       </div>
 
