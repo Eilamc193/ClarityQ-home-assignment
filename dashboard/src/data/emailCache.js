@@ -1812,6 +1812,886 @@ Good luck.`,
     },
   },
 
+  // ─────────────────────────────────────────────
+  // PLAY PERFECT (continued)
+  // ─────────────────────────────────────────────
+
+  'playp-zur-shental': {
+    cold: {
+      concise: {
+        subject: 'Play Perfect product data - answers in 10 sec',
+        body: `Hi Zur,
+
+Leading product at Play Perfect while a global rollout is live means constant demand for behavioral data: DAU shifts, Day-7 retention, monetization curves. With the VP Product seat open, those requests land on you.
+
+ClarityQ connects to BigQuery and lets you ask "how is feature X affecting Day-3 retention in this market?" in plain English - answer in under 10 seconds, no analyst queue.
+
+Worth a 15-minute demo? Happy to show you a live example with gaming data.`,
+        personalization_notes: [
+          'Referenced the open VP Product seat - positions Zur as the de-facto product decision-maker',
+          'Named specific gaming metrics: DAU, Day-7 retention, monetization curves',
+          'Framed as instant answers during the high-stakes global rollout window',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about how you track feature impact',
+        body: `Hi Zur,
+
+I was looking at Play Perfect's current trajectory - a new title in beta, a global card game rollout, and a VP Product seat that's been open for a bit. That puts you in a tough spot: you're making the big product calls with data that takes time to surface.
+
+Quick question: when you need to understand how a new feature is affecting Day-7 retention or monetization, how long does it take to get that answer? Is it a quick query or does it go through an analyst?
+
+I ask because ClarityQ is an AI analytics tool that lets product leads ask those questions in plain English - directly against BigQuery - and get answers in seconds. We work with mobile gaming teams where intraday iteration on retention data is the difference between a hit and a miss.
+
+Would love to show you a quick demo. What does your calendar look like?`,
+        personalization_notes: [
+          'Acknowledged the open VP Product seat as creating extra pressure on Zur',
+          'Asked a diagnostic question that surfaces the data access pain naturally',
+          'Named gaming-specific metrics and the intraday iteration need',
+        ],
+      },
+      direct: {
+        subject: 'Product decisions during global rollout - data lag costs you',
+        body: `Zur,
+
+If you're waiting more than an hour for answers on "how is retention trending on Day-1 in this market?" during your global rollout, you're losing optimization cycles.
+
+ClarityQ connects to BigQuery and lets you ask product questions in plain English. No SQL, no analyst queue - results in seconds.
+
+With a beta launch live and a VP Product seat open, your window to iterate fast is now.
+
+15 minutes to see a live demo?`,
+        personalization_notes: [
+          'Created urgency around the active global rollout and open VP Product seat',
+          'Named a specific, realistic product question to make it concrete',
+          'Kept it tight - respected that PMs are busy',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Play Perfect product analytics - one more angle',
+        body: `Hi Zur,
+
+Following up quickly. One angle I didn't mention: ClarityQ also helps during stakeholder reviews - you can answer "what's the retention delta since we shipped X?" live in the room, without prepping a deck.
+
+Still happy to show you a demo. 15 minutes this week?`,
+        personalization_notes: [
+          'Added new angle: in-meeting data answers, not just async analysis',
+          'Short second touch - respects time',
+        ],
+      },
+      conversational: {
+        subject: 'Another thought on the data access problem',
+        body: `Hey Zur,
+
+Reaching back out - I realized my first note focused on the async side: reducing wait time for retention data. But there's another use case that's equally relevant for product leads.
+
+When you're in a product review or a launch readout and someone asks "how does this compare to our previous title at the same point?" - ClarityQ lets you answer that live, in the room, in plain English. No need to flag it for an analyst and follow up the next day.
+
+For a product team lead running a global rollout, that kind of in-meeting clarity changes how decisions get made.
+
+Happy to walk through it in 15 minutes whenever works.`,
+        personalization_notes: [
+          'Pivoted to a new use case: live in-meeting data queries during product reviews',
+          'Referenced the global rollout launch readout scenario specifically',
+          'Framed as changing how decisions get made - not just a productivity tool',
+        ],
+      },
+      direct: {
+        subject: 'ClarityQ for Play Perfect product reviews',
+        body: `Zur,
+
+Quick follow-up - second angle on ClarityQ: it's not just async analysis.
+
+You can use it in live product reviews to answer "how does Day-7 retention compare across markets?" on the spot. Plain English, BigQuery data, seconds.
+
+During a global rollout, that's a meaningful change to how you run your reviews.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Introduced the in-meeting use case as a distinct angle from the first email',
+          'Named a specific product review question relevant to their global rollout',
+          'Tight second touch - clear ask',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ - understood, keeping the door open',
+        body: `Hi Zur,
+
+Totally fair - I'll take this off your plate for now.
+
+If the data access bottleneck becomes a real friction point during the rollout or the next launch cycle, happy to reconnect. No pressure.
+
+Good luck with the global title - the retention data will tell the story fast.`,
+        personalization_notes: [
+          'Graceful acknowledgment - no pushback',
+          'Left a specific re-engagement trigger: rollout friction or next launch',
+          'Ended on a genuine note about Play Perfect\'s global title',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense - let\'s stay in touch',
+        body: `Hey Zur,
+
+Appreciated the reply - timing isn't always right, and I'd rather wait for the right moment than push for a meeting that doesn't fit.
+
+I'll check back in if Play Perfect has another major title moment or if the data team bandwidth gap becomes a real blocker. Feel free to reach out directly if something changes on your end.
+
+Good luck with the rollout - rooting for you.`,
+        personalization_notes: [
+          'Accepted the rejection without trying to overcome it',
+          'Named two future re-engagement triggers: new title launch, data bandwidth gap',
+          'Warm, human close',
+        ],
+      },
+      direct: {
+        subject: 'Noted - I\'ll circle back at the right time',
+        body: `Zur,
+
+Understood. I'll hold off.
+
+When the next major product cycle hits and data access is the bottleneck, ClarityQ will still be here - BigQuery queries in plain English, answers in seconds.
+
+Talk soon.`,
+        personalization_notes: [
+          'Crisp acknowledgment - no over-explanation',
+          'Left a clear future trigger: next product cycle',
+          'Reinforced core value prop without being pushy',
+        ],
+      },
+    },
+  },
+
+  'playp-gilad-ben-david': {
+    cold: {
+      concise: {
+        subject: 'Play Perfect data team - reduce the ad-hoc queue',
+        body: `Hi Gilad,
+
+Running data analytics for a 50M+ download gaming studio means your team is fielding a constant stream of "can you pull X for me?" from marketing, product, and leadership - questions that don't require your expertise, just your access.
+
+ClarityQ sits on top of BigQuery and lets those stakeholders self-serve on routine questions in plain English. Your team gets back to the high-leverage analysis.
+
+With two analytics roles open simultaneously, every analyst hour matters. Worth a 15-minute demo?`,
+        personalization_notes: [
+          'Named Play Perfect\'s 50M+ download scale to show research',
+          'Framed around the ad-hoc request pain that data heads universally feel',
+          'Referenced the two open analytics roles as urgency - stretched team',
+        ],
+      },
+      conversational: {
+        subject: 'Question about your analytics team\'s request volume',
+        body: `Hi Gilad,
+
+I've been looking at Play Perfect's growth trajectory - a new title in beta, a global rollout live, and two senior analytics roles open at the same time. That last data point is what caught my attention.
+
+Quick question: what percentage of your team's week goes to ad-hoc data pulls vs. the strategic analysis that actually moves the needle? I'm guessing the ratio isn't where you'd like it.
+
+ClarityQ is built to shift that balance. It connects to BigQuery and lets your marketing and product stakeholders ask routine questions in plain English - without touching your queue. Your analysts get to focus on the work that requires their actual skills.
+
+Would love to show you how other gaming studios are using it. What does your week look like?`,
+        personalization_notes: [
+          'Opened with three specific Play Perfect signals that demonstrate research',
+          'Asked a diagnostic question that naturally surfaces the ad-hoc request pain',
+          'Positioned ClarityQ as a force multiplier, not a replacement for his team',
+        ],
+      },
+      direct: {
+        subject: 'Give your analysts their time back - 15 min?',
+        body: `Gilad,
+
+If your analytics team spends more than 30% of its week on ad-hoc requests from stakeholders who could answer those questions themselves with the right tool - ClarityQ fixes that.
+
+Connect BigQuery to ClarityQ, and your UA managers can ask "what's ROAS by channel in Germany this week?" themselves. In seconds. Without your team.
+
+That's analyst hours back for the modeling and analysis that actually requires expertise.
+
+Worth 15 minutes to see it live?`,
+        personalization_notes: [
+          'Opened with a specific, relatable benchmark: 30% ad-hoc load',
+          'Named a gaming-specific query example: ROAS by channel and market',
+          'Closed with the payoff: analyst hours reclaimed for strategic work',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: ClarityQ for Play Perfect data team',
+        body: `Hi Gilad,
+
+Following up quickly. One thing I didn't mention: ClarityQ also reduces the re-work cycle - when a stakeholder gets their own answer, they stop coming back to clarify or ask follow-ups.
+
+Still happy to show you a demo. 15 minutes this week?`,
+        personalization_notes: [
+          'Added new angle: reduced rework cycle, not just initial request volume',
+          'Short and respectful - doesn\'t re-explain everything',
+        ],
+      },
+      conversational: {
+        subject: 'Another angle on the data team load',
+        body: `Hey Gilad,
+
+Checking back in - I wanted to add one thing I didn't cover in my first note.
+
+Beyond reducing incoming ad-hoc requests, ClarityQ also cuts the back-and-forth that follows them. When a stakeholder can explore their own data and refine their question themselves, you get fewer "actually, can you also pull X by Y?" follow-ups. The request closes faster.
+
+For a team that's currently scaling and filling two senior roles, compressing that cycle has real value right now.
+
+Happy to walk through it in 15 minutes whenever works.`,
+        personalization_notes: [
+          'Introduced a new angle: reduced follow-up cycles, not just initial ad-hoc volume',
+          'Tied it specifically to the stretched team and open roles timing',
+          'Framed as a current, time-sensitive opportunity',
+        ],
+      },
+      direct: {
+        subject: 'Closing the data request loop - ClarityQ follow-up',
+        body: `Gilad,
+
+Quick follow-up with a different angle: ClarityQ doesn't just reduce incoming ad-hoc requests - it also cuts the follow-up loop.
+
+When stakeholders self-serve, they iterate themselves. Fewer "can you also break that down by X?" emails.
+
+With your team stretched across two open roles, compressing that cycle matters now.
+
+15 minutes?`,
+        personalization_notes: [
+          'New angle: reduced follow-up cycles and stakeholder iteration',
+          'Tied directly to the open roles / stretched team context',
+          'Clear, direct ask',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ - understood',
+        body: `Hi Gilad,
+
+No problem at all - I'll take this off your plate.
+
+If the request volume becomes a real crunch point during the global rollout or when the new analysts are ramping up, happy to reconnect. No pressure in the meantime.`,
+        personalization_notes: [
+          'Graceful, no-pushback acknowledgment',
+          'Named two future re-engagement triggers: rollout crunch + new analyst ramp-up period',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense - I\'ll circle back at the right moment',
+        body: `Hey Gilad,
+
+Fair enough - appreciate the reply. I know data team leads don't exactly have a lot of open calendar slots, so I'll take "no for now" at face value.
+
+I'll check back in when you have the new analysts on board and are thinking about how to scale the team's impact further. Or if the intraday data pressure during the global rollout reaches a tipping point before then.
+
+Either way, rooting for Play Perfect's new title.`,
+        personalization_notes: [
+          'Acknowledged the busy nature of data team leads',
+          'Named two specific future triggers: new analysts onboarded, rollout intraday pressure',
+          'Genuine close - no hard sell',
+        ],
+      },
+      direct: {
+        subject: 'Noted - I\'ll reach out at a better time',
+        body: `Gilad,
+
+Understood. I'll hold off.
+
+When the team is at full capacity and you're thinking about how to scale self-serve analytics across Play Perfect, ClarityQ will still be here.
+
+Talk soon.`,
+        personalization_notes: [
+          'Clean, no-drama acknowledgment',
+          'Named a future trigger: team at full capacity post-hiring',
+          'Left the door open without being pushy',
+        ],
+      },
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // ODDITY (continued)
+  // ─────────────────────────────────────────────
+
+  'ilmak-boaz-ariely': {
+    cold: {
+      concise: {
+        subject: 'Oddity performance data - ROAS answers without the wait',
+        body: `Hi Boaz,
+
+Running performance marketing for a public DTC brand means your ROAS and CAC data needs to be current - not from last night's dashboard refresh. With SpoiledChild scaling globally and METHODIQ adding a new funnel layer, cross-brand attribution is only getting more complex.
+
+ClarityQ connects to your data warehouse and lets you ask "what's our blended CAC across brands in the UK this week?" in plain English - answer in seconds, no analyst queue.
+
+Worth a 15-minute demo?`,
+        personalization_notes: [
+          'Named Oddity\'s public status as pressure for real-time metric visibility',
+          'Referenced both SpoiledChild global scaling and METHODIQ as compounding complexity',
+          'Named a specific, realistic performance marketing query',
+        ],
+      },
+      conversational: {
+        subject: 'Question about how you track cross-brand campaign performance',
+        body: `Hi Boaz,
+
+I was looking at Oddity's recent momentum - SpoiledChild expanding internationally, the METHODIQ Telehealth launch adding a new conversion funnel, and all of this as a public company with quarterly reporting pressure. That's a lot of data complexity landing on performance marketing.
+
+Quick question: when you need to compare ROAS across Il Makiage and SpoiledChild for a specific channel or market, how long does that take? Is it a query that runs in minutes, or is it a 24-hour turnaround through analytics?
+
+I ask because ClarityQ is an AI analytics tool that lets performance marketers ask those cross-brand questions directly - plain English, connected to your data warehouse, answers in seconds. No analyst ticket.
+
+Would love to show you how it works. What does your week look like?`,
+        personalization_notes: [
+          'Named all three Oddity signals: SpoiledChild global, METHODIQ launch, public company pressure',
+          'Asked a specific, relatable cross-brand analytics question',
+          'Positioned ClarityQ as removing the analyst ticket step',
+        ],
+      },
+      direct: {
+        subject: 'Cross-brand ROAS tracking - faster than your current setup',
+        body: `Boaz,
+
+If comparing ROAS across Il Makiage and SpoiledChild takes more than an hour, you're losing media optimization cycles.
+
+ClarityQ connects to your data warehouse - Snowflake, BigQuery, or equivalent - and lets you or your team ask those questions in plain English. In seconds.
+
+Public company reporting expectations mean you can't afford data blind spots. Neither can your campaign efficiency.
+
+15 minutes to see a live demo?`,
+        personalization_notes: [
+          'Opened with a specific time benchmark around cross-brand ROAS tracking',
+          'Named potential tools in their stack (Snowflake/BigQuery)',
+          'Tied urgency to public company reporting expectations',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Oddity performance analytics - one more angle',
+        body: `Hi Boaz,
+
+Following up quickly. With METHODIQ adding consultation-to-purchase tracking to your existing funnel, cross-brand attribution just got another layer of complexity.
+
+ClarityQ handles that unified view - one plain-English query across all your data sources.
+
+Still happy to demo in 15 minutes. This week?`,
+        personalization_notes: [
+          'Introduced METHODIQ\'s new consultation-to-purchase tracking as a specific new complexity',
+          'Positioned ClarityQ as the unified view across fragmented data sources',
+        ],
+      },
+      conversational: {
+        subject: 'Another thought on the METHODIQ attribution challenge',
+        body: `Hey Boaz,
+
+Reaching back out - I wanted to add one thing I didn't cover in my first note.
+
+With METHODIQ now in the picture, your performance marketing attribution has a new step: connecting telehealth consultation data to downstream purchase conversions. That's not a standard DTC funnel - it creates a data gap that's hard to see in traditional dashboards.
+
+ClarityQ can bridge that: one plain-English question that spans consultation logs and purchase data, giving you true ROAS on your telehealth acquisition spend.
+
+Would love to show you this specific use case in a quick demo. What does your calendar look like?`,
+        personalization_notes: [
+          'Focused specifically on METHODIQ\'s consultation-to-purchase attribution gap',
+          'Named a specific, novel use case: bridging telehealth and purchase data',
+          'Offered to show this exact scenario in the demo',
+        ],
+      },
+      direct: {
+        subject: 'METHODIQ + performance attribution - the blind spot',
+        body: `Boaz,
+
+Quick follow-up - specific angle for METHODIQ: connecting consultation conversions to downstream purchases is a data blind spot most DTC stacks weren't built to handle.
+
+ClarityQ can query across your telehealth and purchase datasets in one plain-English question. True ROAS on your METHODIQ spend.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'Laser-focused on the METHODIQ attribution blind spot as a new angle',
+          'Named the specific capability: cross-dataset queries in plain English',
+          'Tight ask - clear value for a second touch',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ - noted, keeping the door open',
+        body: `Hi Boaz,
+
+Understood - I'll take this off your plate for now.
+
+If cross-brand attribution complexity increases with SpoiledChild's next market push or METHODIQ scaling, happy to reconnect. No pressure in the meantime.`,
+        personalization_notes: [
+          'Clean acknowledgment - no pushback',
+          'Named two specific future triggers: SpoiledChild market push, METHODIQ scaling',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense - I\'ll circle back',
+        body: `Hey Boaz,
+
+Fair enough - appreciate the reply. Timing isn't always right and I'd rather wait for the right moment.
+
+I'll check back in when SpoiledChild's next international expansion adds another layer of cross-brand data complexity, or if the METHODIQ attribution gap becomes a real reporting headache.
+
+Good luck with the campaigns - rooting for Oddity.`,
+        personalization_notes: [
+          'Graceful acceptance of the rejection',
+          'Named two specific future triggers based on Oddity\'s roadmap signals',
+          'Human close - no hard sell',
+        ],
+      },
+      direct: {
+        subject: 'Understood - filing this for later',
+        body: `Boaz,
+
+Noted. I'll hold off.
+
+When cross-brand attribution complexity is the bottleneck - or when a board reporting cycle creates a data crunch - ClarityQ will still be here.
+
+Talk soon.`,
+        personalization_notes: [
+          'Crisp, no-drama acknowledgment',
+          'Named two future triggers: attribution complexity, board reporting crunch',
+          'Left door open without overstaying',
+        ],
+      },
+    },
+  },
+
+  'ilmak-miranda-may': {
+    cold: {
+      concise: {
+        subject: 'Oddity revenue data - SpoiledChild answers in seconds',
+        body: `Hi Miranda,
+
+Overseeing revenue and product for SpoiledChild while Oddity manages public company reporting pressure means you need data that's current and cross-brand. Waiting on the analytics team for a revenue cohort comparison isn't an option.
+
+ClarityQ connects to your data warehouse and lets you ask "what's SpoiledChild's subscription retention vs Il Makiage in this cohort?" in plain English - answer in seconds.
+
+Worth a 15-minute demo?`,
+        personalization_notes: [
+          'Named Miranda\'s specific role: revenue AND product for SpoiledChild specifically',
+          'Referenced public company reporting as the urgency driver',
+          'Named a specific, realistic cross-brand revenue query',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about how you track SpoiledChild revenue data',
+        body: `Hi Miranda,
+
+I've been looking at Oddity's trajectory - SpoiledChild expanding globally, METHODIQ adding a new revenue stream, and all of this while managing quarterly reporting as a public company. Your role sits right at the intersection of all of it.
+
+Quick question: when you need a revenue breakdown - SpoiledChild cohort performance by market, subscription retention, or cross-brand comparison - how quickly can you get that? Is it a same-day answer or does it go through the analytics team?
+
+I ask because ClarityQ is an AI analytics tool that lets revenue and product leads get those answers directly - plain English, connected to your data warehouse, in seconds. With a BCG background, I imagine data speed matters to how you operate.
+
+Would love to show you a quick demo. What does your calendar look like?`,
+        personalization_notes: [
+          'Named all three Oddity signals as they affect Miranda\'s specific role',
+          'Referenced her BCG background as a proxy for data-driven expectations',
+          'Asked a diagnostic question around specific revenue queries she\'d care about',
+        ],
+      },
+      direct: {
+        subject: 'Revenue analytics at Oddity - no more analyst wait',
+        body: `Miranda,
+
+If getting a SpoiledChild revenue cohort breakdown takes more than a few hours, you're running your growth engine slower than you should be.
+
+ClarityQ connects to your data warehouse and lets you ask those questions in plain English. Subscription retention, cross-brand comparison, market-level revenue - seconds, not days.
+
+With public company reporting expectations and SpoiledChild scaling globally, data lag is a revenue risk.
+
+15 minutes to see a live demo?`,
+        personalization_notes: [
+          'Named SpoiledChild-specific revenue analytics as the use case',
+          'Tied urgency to public company reporting + global scaling',
+          'Positioned data lag as a revenue risk - BCG-style framing',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Oddity revenue analytics - one more angle',
+        body: `Hi Miranda,
+
+Following up quickly. One thing I didn't mention: ClarityQ is useful for board prep too - you can answer ad-hoc revenue questions in real time during a board call, without flagging it for follow-up.
+
+Still happy to demo in 15 minutes. This week?`,
+        personalization_notes: [
+          'Added new use case: real-time board call answers - highly relevant for public company exec',
+          'Short and respectful second touch',
+        ],
+      },
+      conversational: {
+        subject: 'Board prep angle I forgot to mention',
+        body: `Hey Miranda,
+
+Checking back in - there's a use case I didn't cover in my first note that might be more relevant than the day-to-day analytics angle.
+
+When you're on a board call and an investor asks "how does SpoiledChild's US cohort compare to UK at 90 days?" - ClarityQ lets you answer that live, in the room, in plain English. No "I'll follow up with the team on that."
+
+For a VP at a public company managing investor expectations, removing that lag from live conversations is a meaningful change.
+
+Happy to show you this specific scenario in a 15-minute demo. What does your calendar look like?`,
+        personalization_notes: [
+          'Introduced the board call / investor meeting use case - highly relevant for public company exec',
+          'Named a specific, realistic investor question about SpoiledChild cohort performance',
+          'Framed as removing the "I\'ll follow up" moment - prestigious upgrade',
+        ],
+      },
+      direct: {
+        subject: 'For Oddity board calls - live revenue answers',
+        body: `Miranda,
+
+Quick follow-up - a different angle: board and investor calls.
+
+When a question comes up live - "how does SpoiledChild UK compare to US at 60 days?" - ClarityQ lets you answer it in the room. Plain English, connected to your data, seconds.
+
+No follow-up emails. No "I'll get back to you."
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'New angle: live board/investor call data answers',
+          'Named a specific realistic question that might come up in an investor call',
+          'The "no follow-up emails" framing is compelling for a public company exec',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ - understood',
+        body: `Hi Miranda,
+
+No problem - I'll take this off your plate for now.
+
+If SpoiledChild's next market expansion creates data complexity or quarterly reporting creates a crunch, happy to reconnect. No pressure in the meantime.`,
+        personalization_notes: [
+          'Clean acknowledgment - no pushback',
+          'Named two specific future triggers: market expansion, quarterly reporting crunch',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense - I\'ll circle back',
+        body: `Hey Miranda,
+
+Fair enough - appreciate the reply. Timing isn't always right.
+
+I'll check back in when SpoiledChild's next growth phase adds another layer of data complexity, or when a board reporting cycle creates the kind of data urgency that makes this more timely.
+
+Good luck with the expansion - rooting for Oddity.`,
+        personalization_notes: [
+          'Accepted rejection without pressure',
+          'Named two future triggers tied to Oddity\'s actual roadmap',
+          'Genuine close',
+        ],
+      },
+      direct: {
+        subject: 'Noted - I\'ll reach out at a better time',
+        body: `Miranda,
+
+Understood. I'll hold off.
+
+When the next board cycle or SpoiledChild expansion creates the data urgency, ClarityQ will still be here.
+
+Talk soon.`,
+        personalization_notes: [
+          'Clean, no-drama acknowledgment',
+          'Named two future triggers relevant to Miranda\'s role',
+        ],
+      },
+    },
+  },
+
+  'ilmak-yohei-shoji': {
+    cold: {
+      concise: {
+        subject: 'Il Makiage CX insights - same-day answers from your data',
+        body: `Hi Yohei,
+
+Leading CX and insights for Il Makiage means translating behavioral data into retention improvements - constantly. But with SpoiledChild scaling globally and METHODIQ adding new customer journeys, the insight backlog only grows.
+
+ClarityQ connects to your data platform and lets you ask "what's the Day-30 satisfaction trend for Il Makiage vs SpoiledChild subscribers?" in plain English - answer in seconds, no analyst ticket.
+
+Worth a 15-minute demo?`,
+        personalization_notes: [
+          'Named Yohei\'s specific role: CX AND insights for Il Makiage',
+          'Referenced cross-brand complexity as the driver: SpoiledChild + METHODIQ',
+          'Named a specific CX-relevant cross-brand query',
+        ],
+      },
+      conversational: {
+        subject: 'Quick question about your CX data turnaround',
+        body: `Hi Yohei,
+
+I've been looking at Oddity's recent moves - SpoiledChild scaling internationally, METHODIQ adding a telehealth customer journey, and all of this as a public company with quarterly reporting expectations. Your CX and insights role sits right in the middle of all of it.
+
+Quick question: when you need to understand how a CX initiative is affecting customer satisfaction or retention - say, across both Il Makiage and SpoiledChild - how quickly can you get that data? Same-day? Or is it waiting on the analytics team?
+
+I ask because ClarityQ is an AI analytics tool that connects to your data platform and lets insights teams ask those questions in plain English - and get answers in seconds. With a BCG background, I imagine data speed is part of how you operate.
+
+Would love to show you a quick demo. What does your week look like?`,
+        personalization_notes: [
+          'Named all three Oddity signals as they affect Yohei\'s CX role',
+          'Asked a diagnostic question specifically around cross-brand CX data',
+          'Referenced BCG background - signals high analytical expectations',
+        ],
+      },
+      direct: {
+        subject: 'CX data across Il Makiage + SpoiledChild - faster',
+        body: `Yohei,
+
+If measuring the impact of a CX initiative across both Il Makiage and SpoiledChild takes more than a day, you're iterating slower than the data allows.
+
+ClarityQ connects to your data platform and lets you ask cross-brand CX questions in plain English. Customer satisfaction trends, retention cohorts, METHODIQ consultation-to-purchase - seconds, not days.
+
+15 minutes to see a live demo?`,
+        personalization_notes: [
+          'Named the cross-brand CX analytics challenge directly',
+          'Listed specific CX use cases including the METHODIQ signal',
+          'Positioned speed as the core value prop for a BCG-background exec',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: CX insights at Oddity - one more angle',
+        body: `Hi Yohei,
+
+Following up quickly. One thing I didn't cover: ClarityQ is useful for cross-team CX questions too - when marketing asks "which customer segments show the highest satisfaction score after X campaign?" you can answer that in real time.
+
+Still happy to demo in 15 minutes. This week?`,
+        personalization_notes: [
+          'Added new angle: cross-team CX questions from marketing and product',
+          'Short, respectful second touch',
+        ],
+      },
+      conversational: {
+        subject: 'Another CX use case I didn\'t mention',
+        body: `Hey Yohei,
+
+Checking back in - there's a use case I didn't cover in my first note that might resonate for a CX insights lead.
+
+When your marketing or product teams ask "how does satisfaction score correlate with retention for customers who saw X message?" - ClarityQ lets you answer that yourself, in the room, without flagging it to your data team.
+
+For a CX leader who runs at the intersection of qualitative insights and quantitative data, that kind of self-serve capability changes how fast you can turn CX findings into action.
+
+Happy to show you this scenario in a 15-minute demo. What does your calendar look like?`,
+        personalization_notes: [
+          'Introduced a new scenario: cross-team CX correlation questions from marketing/product',
+          'Framed around the qualitative + quantitative intersection of Yohei\'s role',
+          'Emphasized speed from CX insight to action',
+        ],
+      },
+      direct: {
+        subject: 'CX correlation questions - live, in the room',
+        body: `Yohei,
+
+Quick follow-up - different angle: when marketing asks "how does satisfaction score correlate with retention for X cohort?", can you answer that live, or does it go to the data team?
+
+ClarityQ lets you answer it in the room. Plain English, your data, seconds.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'New angle: in-meeting cross-team CX analytics questions',
+          'Named a specific, realistic correlation question',
+          'Tight second touch - clear ask',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ - understood',
+        body: `Hi Yohei,
+
+No problem - I'll take this off your plate for now.
+
+If cross-brand CX complexity increases as SpoiledChild expands, happy to reconnect. No pressure in the meantime.`,
+        personalization_notes: [
+          'Clean acknowledgment',
+          'Named a specific future trigger: SpoiledChild expansion increasing CX complexity',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense - I\'ll circle back',
+        body: `Hey Yohei,
+
+Fair enough - appreciate the reply. Timing isn't always right.
+
+I'll check back in when SpoiledChild's next expansion creates new CX data complexity, or when cross-brand insights become a more urgent bottleneck.
+
+Good luck with the work - rooting for Oddity.`,
+        personalization_notes: [
+          'Accepted rejection gracefully',
+          'Named two future triggers tied to Oddity\'s actual roadmap',
+          'Genuine close',
+        ],
+      },
+      direct: {
+        subject: 'Noted - I\'ll reach out when the timing is better',
+        body: `Yohei,
+
+Understood. I'll hold off.
+
+When cross-brand CX data becomes the bottleneck, ClarityQ will still be here.
+
+Talk soon.`,
+        personalization_notes: [
+          'Crisp, clean acknowledgment',
+          'Left door open with a relevant future trigger',
+        ],
+      },
+    },
+  },
+
+  'ilmak-amanda-rodriguez': {
+    cold: {
+      concise: {
+        subject: 'Il Makiage retention - churn answers without the wait',
+        body: `Hi Amanda,
+
+Running retention for a brand with millions of customers means constant demand for segment-level data: which cohorts are churning, which lifecycle messages are converting, which campaigns are moving the LTV needle.
+
+ClarityQ connects to your data platform and lets you ask "what's the 60-day churn rate for customers who received X campaign vs Y?" in plain English - answer in seconds, no analyst queue.
+
+Worth a 15-minute demo?`,
+        personalization_notes: [
+          'Named Amanda\'s core pain: segment-level retention and churn data at scale',
+          'Named a specific, realistic lifecycle marketing query',
+          'Positioned as removing the analyst queue step',
+        ],
+      },
+      conversational: {
+        subject: 'Question about your retention data turnaround',
+        body: `Hi Amanda,
+
+I've been looking at Il Makiage's CX infrastructure - a brand with millions of customers across multiple markets, running lifecycle campaigns, email sequences, and churn analysis simultaneously. That's a lot of data to stay on top of, especially as SpoiledChild adds cross-brand complexity.
+
+Quick question: when you need to understand how a specific lifecycle campaign is affecting 60-day retention for a particular customer segment, how quickly can you get that answer? Is it same-day or does it go through an analyst?
+
+I ask because ClarityQ is an AI analytics tool that lets retention leaders ask those segment-level questions directly - plain English, connected to your data warehouse, in seconds. No ticket, no wait.
+
+Would love to show you how it works. What does your calendar look like?`,
+        personalization_notes: [
+          'Named Amanda\'s specific retention challenges at Il Makiage\'s scale',
+          'Referenced SpoiledChild cross-brand complexity as an added layer',
+          'Asked a diagnostic question that surfaces her exact pain point',
+        ],
+      },
+      direct: {
+        subject: 'Retention data at Il Makiage scale - faster answers',
+        body: `Amanda,
+
+If understanding "which lifecycle message drove the highest 90-day LTV for this cohort?" takes more than a day, you're making retention decisions with stale data.
+
+ClarityQ connects to your data warehouse and lets you ask segment-level retention questions in plain English. Churn rates, cohort LTV, campaign attribution - seconds, not days.
+
+At Il Makiage's scale, every retention insight delayed costs you customer lifetime value.
+
+15 minutes to see a live demo?`,
+        personalization_notes: [
+          'Named a specific, realistic lifecycle retention question',
+          'Tied urgency to Il Makiage\'s scale: every insight delayed costs LTV',
+          'Listed specific retention use cases relevant to Amanda\'s role',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Il Makiage retention analytics - one more angle',
+        body: `Hi Amanda,
+
+Following up quickly. One use case I didn't mention: ClarityQ is useful for A/B test readouts too - you can check "which subject line drove higher open and purchase rates for X segment?" in real time, without waiting on the analytics team.
+
+Still happy to demo in 15 minutes. This week?`,
+        personalization_notes: [
+          'Added new angle: A/B test readouts for email subject lines and campaign variants',
+          'Named a specific, relatable retention marketing query',
+        ],
+      },
+      conversational: {
+        subject: 'A/B test readout angle I forgot to mention',
+        body: `Hey Amanda,
+
+Checking back in - there's a use case I didn't cover in my first note that might be particularly relevant for a retention director.
+
+When you're running A/B tests on lifecycle email sequences and want to know "did version A outperform version B on 30-day purchase rate for the churned-once segment?" - ClarityQ lets you check that yourself, in real time. No analyst ticket, no 24-hour wait.
+
+For someone running active campaigns across millions of customers, being able to iterate on test results the same day changes your optimization velocity.
+
+Happy to show you this exact scenario in a 15-minute demo. What does your calendar look like?`,
+        personalization_notes: [
+          'Introduced A/B testing readout as a new angle for retention specifically',
+          'Named a specific, realistic A/B test question about churn cohort performance',
+          'Framed around optimization velocity - directly relevant to a retention director\'s KPIs',
+        ],
+      },
+      direct: {
+        subject: 'Same-day A/B test readouts for retention campaigns',
+        body: `Amanda,
+
+Quick follow-up - different angle: A/B test readouts.
+
+"Did version A outperform version B on 30-day purchase rate for the churned-once cohort?" - ClarityQ lets you check that yourself, in real time. No analyst wait.
+
+At Il Makiage's volume, same-day test results change your optimization cycle.
+
+Worth 15 minutes?`,
+        personalization_notes: [
+          'New angle: real-time A/B test readouts for retention campaigns',
+          'Named a specific, realistic retention A/B test question',
+          'Tied to Il Makiage\'s scale as an urgency multiplier',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ - understood',
+        body: `Hi Amanda,
+
+No problem at all - I'll take this off your plate.
+
+If Il Makiage's retention data needs outgrow the current setup or cross-brand complexity increases, happy to reconnect. No pressure in the meantime.`,
+        personalization_notes: [
+          'Clean acknowledgment - no pushback',
+          'Named two future triggers: retention data scaling, cross-brand complexity',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense - I\'ll circle back',
+        body: `Hey Amanda,
+
+Fair enough - appreciate the reply. I know retention teams are always in the middle of a campaign cycle, so I'll hold off.
+
+I'll check back in when the cross-brand data complexity from SpoiledChild's expansion or METHODIQ scaling creates a real retention analytics bottleneck.
+
+Good luck with the campaigns - rooting for you.`,
+        personalization_notes: [
+          'Acknowledged the always-on nature of retention work',
+          'Named specific future triggers: SpoiledChild expansion, METHODIQ scaling',
+          'Genuine close',
+        ],
+      },
+      direct: {
+        subject: 'Noted - I\'ll reach out at the right time',
+        body: `Amanda,
+
+Understood. I'll hold off.
+
+When retention data complexity is the bottleneck - cross-brand cohorts, METHODIQ consultation attribution - ClarityQ will still be here.
+
+Talk soon.`,
+        personalization_notes: [
+          'Clean, no-drama acknowledgment',
+          'Named specific future triggers relevant to Amanda\'s role',
+        ],
+      },
+    },
+  },
+
 }
 
 // Helper: lookup cached email or return null (triggers live Claude generation)
