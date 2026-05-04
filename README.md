@@ -37,7 +37,19 @@ I screened Israeli-founded B2B companies (100–5000 employees) with a strong da
 
 ### Personas (19 total)
 
-Each persona was chosen for role-to-product fit, not just seniority. The Persona Finder shows a written "why target" rationale for each. A few examples:
+Each persona was chosen for role-to-product fit, not just seniority. Seniority targeting follows company size — decision-making authority lives at different levels depending on headcount:
+
+| Company size | Target seniority | Rationale |
+|---|---|---|
+| 1–50 | CEO / CTO / Co-founder | C-suite owns all purchasing decisions |
+| 51–250 | VP level | VPs hold budget authority and champion new tools |
+| 251–1,000 | Director / Head of | Functional owners with budget, report to C-suite |
+| 1,001–5,000 | Head of (specific function) | Dedicated team leads who own the problem and the toolstack |
+| 5,000+ | Head of (specific sub-team) | Large orgs require targeting the exact function, not the division |
+
+This maps directly to the dashboard: Play Perfect (101–250) → VP level; Oddity & Lightricks (501–1,000) → Director / Head of; AppsFlyer (1,001–5,000) → Head of; Wix (5,000+) → Head of specific sub-team.
+
+The Persona Finder shows a written "why target" rationale for each. A few examples:
 
 - **Gilad Ben David** (Play Perfect, Head of Data Analytics) — Direct buyer; builds the dashboards ClarityQ would replace or augment
 - **Rachael Spencer** (Oddity, VP Growth Marketing) — Cited in earnings calls as driving data-led expansion across markets
