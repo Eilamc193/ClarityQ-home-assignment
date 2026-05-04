@@ -1,5 +1,5 @@
 import { companies } from '../data/companies'
-import { ChevronRight, TrendingUp } from 'lucide-react'
+import { ChevronRight, TrendingUp, ExternalLink } from 'lucide-react'
 
 function StageBadge({ stage }) {
   const colors =
@@ -71,13 +71,44 @@ export default function ICPScanner({ onSelectCompany }) {
                 </td>
                 <td className="px-4 py-4">
                   <div className="flex flex-wrap gap-1">
-                    {company.tools.slice(0, 2).map((tool) => (
-                      <span key={tool} className="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">
-                        {tool}
-                      </span>
-                    ))}
+                    {/* Confirmed tools — each links to its documented source */}
+                    {company.tools.slice(0, 2).map((tool) => {
+                      const src = company.toolSources?.[tool]
+                      return src ? (
+                        <a
+                          key={tool}
+                          href={src.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={`Source: ${src.label}`}
+                          className="flex items-center gap-0.5 text-xs bg-gray-100 text-gray-700 px-1.5 py-0.5 rounded hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          {tool}
+                          <ExternalLink size={9} className="opacity-50" />
+                        </a>
+                      ) : (
+                        <span key={tool} className="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">
+                          {tool}
+                        </span>
+                      )
+                    })}
                     {company.tools.length > 2 && (
                       <span className="text-xs text-gray-400">+{company.tools.length - 2}</span>
+                    )}
+                    {/* Inferred tools — amber, with tooltip explaining they're not confirmed */}
+                    {company.tools.length === 0 && company.toolsInferred?.slice(0, 2).map((tool) => (
+                      <span
+                        key={tool}
+                        title={`Inferred (not confirmed from public sources): ${company.inferenceNote}`}
+                        className="flex items-center gap-0.5 text-xs bg-amber-50 text-amber-700 border border-amber-200 px-1.5 py-0.5 rounded cursor-help"
+                      >
+                        {tool}
+                        <span className="opacity-60 text-[9px]">?</span>
+                      </span>
+                    ))}
+                    {company.tools.length === 0 && (company.toolsInferred?.length ?? 0) > 2 && (
+                      <span className="text-xs text-amber-400">+{company.toolsInferred.length - 2}</span>
                     )}
                   </div>
                 </td>

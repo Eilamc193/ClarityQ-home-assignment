@@ -14,14 +14,14 @@ export const emailCache = {
         subject: 'Play Perfect × ClarityQ — ROAS answers in 10 sec',
         body: `Hi Michael,
 
-Play Perfect is rolling out globally while your Monetization Data Analyst seat is still open. That's a lot of intraday campaign decisions chasing a shrinking headcount.
+Play Perfect is rolling out globally while scaling its data analytics team — two senior roles open simultaneously. That's a lot of intraday campaign decisions chasing constrained analytical headcount.
 
 ClarityQ connects to BigQuery and lets your UA team ask "which channel drove the best LTV last week?" in plain English — answer in under 10 seconds, no SQL required.
 
 Worth a 15-minute look? Happy to show you a live demo with your data stack.`,
         personalization_notes: [
           'Referenced Play Perfect\'s global title rollout (Q1 2026)',
-          'Referenced open Monetization Data Analyst job posting',
+          'Referenced dual analytics hiring (Head of Data Analytics + Growth Analyst) as urgency signal',
           'Mentioned BigQuery (confirmed tool in their stack)',
           'Framed around UA team pain: intraday ROAS + LTV tracking without SQL',
         ],
@@ -30,7 +30,7 @@ Worth a 15-minute look? Happy to show you a live demo with your data stack.`,
         subject: 'Quick question about your UA analytics setup',
         body: `Hey Michael,
 
-I was looking at Play Perfect's growth — 50M+ downloads is no joke, and with a global rollout now underway the pressure to optimize every acquisition dollar intraday must be intense.
+I was looking at Play Perfect's trajectory — a new title in beta, a global rollout in motion, and two senior analytics roles open at the same time. That's a lot of intraday acquisition pressure with constrained data bandwidth.
 
 I'm curious: how long does it currently take your team to get an answer like "what's the Day-7 retention on users from Meta vs Google in this market?" Is it a quick query, or does it go through an analyst queue?
 
@@ -38,7 +38,7 @@ I ask because ClarityQ is an AI analytics tool that connects to BigQuery and let
 
 Would love to show you a quick demo if the timing is right. What does your week look like?`,
         personalization_notes: [
-          'Acknowledged 50M+ download milestone as a signal of scale',
+          'Referenced concurrent beta launch + global rollout + hiring signal as compounding pressure',
           'Referenced global title rollout as the current pain trigger',
           'Asked a specific, relatable question about their data workflow',
           'Named BigQuery as their confirmed stack component',
@@ -48,14 +48,14 @@ Would love to show you a quick demo if the timing is right. What does your week 
         subject: 'Your new title launch — data bottleneck coming',
         body: `Michael,
 
-You're rolling out globally while your Monetization Data Analyst seat is still open. That means your UA team is making intraday acquisition decisions on delayed data — which in mobile gaming is a competitive disadvantage.
+You're rolling out globally with a new title in beta and two analytics roles still unfilled. That means your UA team is making intraday acquisition decisions on delayed data — which in mobile gaming is a competitive disadvantage.
 
 ClarityQ plugs into your BigQuery stack and lets any team member — PM, UA manager, CMO — ask "what's the ROAS on TikTok this week?" and get a precise answer in 10 seconds.
 
 I'd like to show you what that looks like for a gaming studio in 15 minutes. Are you free Thursday or Friday?`,
         personalization_notes: [
           'Named the specific business risk: delayed data during global rollout',
-          'Referenced open Monetization Data Analyst role to create urgency',
+          'Referenced open analytics roles + beta title as compounding urgency signals',
           'Used a specific, gaming-relevant metric example (ROAS on TikTok)',
           'Clear, time-bound CTA (Thursday or Friday)',
         ],
@@ -154,281 +154,6 @@ Talk soon.`,
           'Crisp, no-fluff acknowledgment of rejection',
           'Named two future triggers: next title launch, analyst squeeze',
           'Reinforced the core value prop one last time without being salesy',
-        ],
-      },
-    },
-  },
-
-  'playp-dvir-shemesh': {
-    cold: {
-      concise: {
-        subject: 'Play Perfect — data visibility for the board table',
-        body: `Hi Dvir,
-
-Running a gaming studio at Play Perfect's scale means constantly answering "how's the business?" with data from three different tools across two titles.
-
-ClarityQ connects those sources and lets you ask "what's total revenue by title this week, compared to last month?" — answer in seconds, no analyst needed.
-
-Worth a 15-minute look before your next board prep?`,
-        personalization_notes: [
-          'Addressed CEO-specific pain: board reporting and cross-title visibility',
-          'Used a specific, realistic metric example relevant to a gaming CEO',
-          'Tied CTA to an existing trigger: board prep cycle',
-        ],
-      },
-      conversational: {
-        subject: 'Question about how you track the business at Play Perfect',
-        body: `Hi Dvir,
-
-I was looking at Play Perfect's portfolio — Gin Rummy Stars, Grand Gin Rummy, and a global rollout now underway. Managing P&L and intraday performance across multiple markets is genuinely complex.
-
-Quick question: when you need to know how the business is performing right now, do you get that answer from a dashboard you check yourself, or do you usually need to ask someone to pull the data?
-
-I'm asking because ClarityQ is built for exactly the CEO use case — connect your data (BigQuery, Tableau, whatever you're using) and ask business questions in plain English. "What's our Day-30 retention vs. last quarter?" gets you a precise answer in 10 seconds.
-
-Happy to show you a live demo if this sounds relevant. What's your availability like this week?`,
-        personalization_notes: [
-          'Named specific game titles — demonstrates real research',
-          'Referenced global rollout as the current complexity trigger',
-          'Framed around "CEO use case" explicitly — addresses his decision-making role',
-        ],
-      },
-      direct: {
-        subject: 'CEO data access at Play Perfect — quick question',
-        body: `Dvir,
-
-If you want to know "how did Grand Gin Rummy perform last week vs. your newest market rollout?" — how fast do you get that answer today?
-
-If it's more than 30 seconds, ClarityQ can fix that. We connect to your existing BigQuery/Tableau stack and let you ask business questions in plain English. No analyst queue, no dashboards to maintain.
-
-15 minutes this week — I'll show you exactly how.`,
-        personalization_notes: [
-          'Led with a highly specific, realistic data question for Play Perfect\'s CEO',
-          'Named both confirmed analytics tools (BigQuery, Tableau)',
-          'Extremely direct — one paragraph setup, one value prop, one CTA',
-        ],
-      },
-    },
-    followup: {
-      concise: {
-        subject: 'Re: Play Perfect data visibility',
-        body: `Hi Dvir,
-
-Following up from last week. One additional thought: CEOs who use ClarityQ tell us the biggest value isn't the fancy queries — it's being able to spot a ROAS dip in a new market on Monday morning instead of hearing about it Friday from an analyst.
-
-For a studio with a global rollout underway, that timing matters a lot.
-
-Still happy to show you a 15-minute demo. What does your week look like?`,
-        personalization_notes: [
-          'Added new angle: proactive issue detection vs reactive reporting',
-          'Connected to global rollout timing — makes the benefit concrete and urgent',
-        ],
-      },
-      conversational: {
-        subject: 'Still thinking about the global rollout window',
-        body: `Hey Dvir,
-
-Sending a quick follow-up in case my last note didn't land at the right moment.
-
-I keep thinking about Play Perfect's position right now — global rollout underway, optimizing spend across markets, trying to move fast before competitors catch up. That phase is usually where the data feedback loop is most critical, and also where most gaming studios feel the most friction.
-
-ClarityQ is built specifically for that moment. It connects your existing data stack and gives everyone — you, your marketing VP, your product leads — intraday answers without waiting on your data team.
-
-Happy to show you a quick demo if this resonates. No hard sell, just curious if the timing is right.`,
-        personalization_notes: [
-          'Referenced global rollout as the key timing trigger',
-          'Extended value to the whole leadership team, not just the CEO',
-          'Casual, non-pushy tone appropriate for follow-up',
-        ],
-      },
-      direct: {
-        subject: 'The global rollout window — intraday data matters now',
-        body: `Dvir,
-
-A quick follow-up. The window where intraday data matters most is exactly during a global rollout — and every delayed budget call costs optimization cycles.
-
-ClarityQ gives you and your team same-day answers on retention, ROAS, and revenue without analyst lag. If you're making spend decisions on delayed data right now, that's a direct cost.
-
-15 minutes this week — worth it or not?`,
-        personalization_notes: [
-          'Created genuine urgency: the global rollout window requires intraday data',
-          'Named specific, high-stakes metrics: retention, ROAS, revenue',
-          'Ended with a direct yes/no framing — respects his time',
-        ],
-      },
-    },
-    rejection: {
-      concise: {
-        subject: 'Re: ClarityQ — noted',
-        body: `Hi Dvir,
-
-Understood — no worries at all. I'll follow up when Play Perfect has another major launch or a data crunch that makes this more relevant.
-
-Best of luck with the new title.`,
-        personalization_notes: [
-          'Extremely brief — respects a CEO\'s time even in rejection',
-          'Left a clear re-engagement trigger: next major launch',
-        ],
-      },
-      conversational: {
-        subject: 'Makes complete sense',
-        body: `Hi Dvir,
-
-Appreciate you getting back to me — genuinely. Timing is everything with these conversations, and I'd rather wait until it's actually useful.
-
-I'll check back in when you have a new launch or when the data team bandwidth becomes a real bottleneck. In the meantime, good luck with Gin Rummy Stars and whatever comes next.
-
-Feel free to reach out anytime.`,
-        personalization_notes: [
-          'Named a specific game (Gin Rummy Stars) — keeps it personal',
-          'Two re-engagement triggers: next launch, data team bandwidth',
-        ],
-      },
-      direct: {
-        subject: 'Understood — I\'ll be here when the timing is right',
-        body: `Dvir,
-
-Fair enough. Filed for later — when you're scaling again or the data noise gets loud.
-
-Talk soon.`,
-        personalization_notes: [
-          'Minimal, respectful — matches his direct communication style as CEO',
-          'Left the door open without being sycophantic',
-        ],
-      },
-    },
-  },
-
-  'playp-michael-berkovich': {
-    cold: {
-      concise: {
-        subject: 'Play Perfect — product decisions on live data',
-        body: `Hi Michael,
-
-Building a gaming portfolio at scale means your product decisions — what to fix, what to ship, when to kill a feature — need to move faster than the analytics queue.
-
-ClarityQ connects to BigQuery and lets your product leads ask "what's the Day-14 churn on the new title's tutorial?" and get the answer in seconds, not days.
-
-Worth 15 minutes to see it in action?`,
-        personalization_notes: [
-          'Addressed the product decision velocity pain common for multi-title gaming CEOs',
-          'Used a highly specific, realistic mobile gaming metric (Day-14 churn on tutorial)',
-          'Short, direct — appropriate for a Co-CEO who moves fast',
-        ],
-      },
-      conversational: {
-        subject: 'How Play Perfect makes product calls on live data',
-        body: `Hi Michael,
-
-I've been following Play Perfect's growth — the card game portfolio is impressive, and managing product across multiple live titles while rolling out globally is genuinely complex.
-
-I'm curious about your current setup: when a product lead wants to know whether a gameplay change improved retention — how quickly can they get that answer? Same day? Next day? End of week via analyst report?
-
-I ask because ClarityQ is built to make that kind of question answerable in seconds. It connects to your existing BigQuery stack, and any product manager can ask "did the tutorial change improve Day-7 retention?" in plain English and get an accurate answer immediately.
-
-Would love to show you a quick demo. What does your week look like?`,
-        personalization_notes: [
-          'Acknowledged multi-title complexity — demonstrates understanding of their business',
-          'Asked a diagnostic question that surfaces their data latency pain',
-          'Framed the solution around product manager use case — relevant to a CPO/Co-CEO',
-        ],
-      },
-      direct: {
-        subject: 'Product data lag at Play Perfect — worth 15 min?',
-        body: `Michael,
-
-When your product team needs to know if a gameplay change worked — how long does that answer take? If it's more than a few hours, you're losing optimization cycles on live titles.
-
-ClarityQ connects to BigQuery and gives your PMs same-day behavioral answers in plain English. No SQL, no analyst queue, no waiting.
-
-I'd like to show you a 15-minute demo this week. Tuesday or Wednesday work for you?`,
-        personalization_notes: [
-          'Led with the core business cost: lost optimization cycles',
-          'Positioned for PMs specifically — the users who feel the pain daily',
-          'Gave specific day options — easier to say yes to than an open-ended ask',
-        ],
-      },
-    },
-    followup: {
-      concise: {
-        subject: 'Re: Play Perfect product data',
-        body: `Hi Michael,
-
-Following up from last week. One new angle: ClarityQ recently helped a gaming studio reduce their analyst response time by 70% during a global rollout — letting their product team make daily iteration decisions instead of weekly ones.
-
-Still worth 15 minutes? Happy to show you a quick demo.`,
-        personalization_notes: [
-          'Added social proof: specific metric from similar gaming company',
-          'Tied benefit to product iteration velocity — his core job',
-        ],
-      },
-      conversational: {
-        subject: 'Still thinking about Play Perfect\'s data setup',
-        body: `Hey Michael,
-
-Following up in case my last note got lost in the shuffle. I know the inbox is brutal.
-
-One thing I didn't mention: ClarityQ isn't just for the data team — it's specifically designed for product managers and executives who need answers without SQL skills. In a gaming studio, that means your PMs can pull retention curves, ARPU by cohort, and feature adoption data themselves, without ever filing an analytics request.
-
-The gaming studios I've talked to say this changes the product meeting dynamic entirely — you walk in with live data, not last week's slide.
-
-Happy to show you what that looks like for Play Perfect. What does your schedule look like this week?`,
-        personalization_notes: [
-          'Addressed a possible objection: "we have a data team" — positioned as complementary',
-          'Named specific gaming metrics PMs would care about: ARPU by cohort, retention curves',
-          'Painted a vivid "day in the life" picture of the benefit',
-        ],
-      },
-      direct: {
-        subject: '70% faster data answers — worth a demo?',
-        body: `Michael,
-
-Quick follow-up. We recently cut a gaming studio's analyst response time by 70% during a live rollout window. That's the difference between iterating on Monday vs Thursday.
-
-For Play Perfect, with a global rollout underway right now, that timing gap matters. Worth 15 minutes this week?`,
-        personalization_notes: [
-          'Led with a compelling, specific metric (70% faster)',
-          'Made it concrete with the Monday vs Thursday framing',
-          'Referenced global rollout timing — creates genuine urgency',
-        ],
-      },
-    },
-    rejection: {
-      concise: {
-        subject: 'Re: ClarityQ — totally understand',
-        body: `Hi Michael,
-
-No worries at all — I'll follow up when the timing is better. Best of luck with the new title and the portfolio growth.`,
-        personalization_notes: [
-          'Brief, graceful exit — respects a Co-CEO\'s time',
-          'Referenced the portfolio and new title as genuine good wishes',
-        ],
-      },
-      conversational: {
-        subject: 'Makes sense — let\'s stay in touch',
-        body: `Hey Michael,
-
-Fair enough — I appreciate you responding. I know these decisions are timing-dependent, and forcing it when it's not right is a waste for both of us.
-
-I'll keep an eye on Play Perfect's launches and check back when the data complexity grows. In the meantime, good luck with the new title — card games at scale are genuinely interesting.
-
-Feel free to ping me anytime.`,
-        personalization_notes: [
-          'Acknowledged the timing dependency — shows understanding',
-          'Expressed genuine interest in Play Perfect\'s space (card games)',
-          'Left a clear future trigger: as portfolio complexity grows',
-        ],
-      },
-      direct: {
-        subject: 'Understood — filing for next launch',
-        body: `Michael,
-
-Noted. I'll circle back when you're deeper into the next launch cycle and data speed becomes the constraint.
-
-Talk soon.`,
-        personalization_notes: [
-          'Crisp and direct — matches the direct communication style expected',
-          'Named the specific future trigger: next launch cycle',
         ],
       },
     },
@@ -847,419 +572,414 @@ Good luck with nu.`,
   // WIX
   // ─────────────────────────────────────────────
 
-  'wix-antanas-stimaitis': {
+  'ltx-nicky-kamins': {
     cold: {
       concise: {
-        subject: "Wix B2B2C: Morning data anomalies shouldn't wait for tickets",
-        body: `Hi Antanas,
+        subject: 'Facetune data — answers in seconds, no queue',
+        body: `Hi Nicky,
 
-As Wix scales its B2B2C reach, understanding why a specific campaign cohort's retention dipped overnight is critical.
+Running data for Facetune at Lightricks means fielding a constant stream of product, marketing, and monetization questions — and most of them shouldn't need to go through an analyst queue.
 
-ClarityQ lets you skip the analyst queue for daily pulse checks. You ask "What's the D1 retention for AI Builder users from the UK yesterday?" in plain English and get the answer in 10 seconds.
+ClarityQ connects to your data warehouse and lets anyone on the team ask "what's the Day-30 retention for users who used the new AI background feature?" in plain English. Answer in under 10 seconds.
 
-Are you free Tuesday to see how this accelerates your daily optimization?`,
+Worth 15 minutes to see it live?`,
         personalization_notes: [
-          'Framed around Wix\'s B2B2C model — shows understanding of the business layer',
-          'Used a specific, realistic retention question (AI Builder, D1, UK cohort)',
-          'Positioned ClarityQ as removing the analyst bottleneck for daily ops',
+          'Addressed Nicky\'s specific role: Head of Facetune Data',
+          'Used a realistic, app-specific example query (AI background feature retention)',
+          'Framed around reducing the ad-hoc analyst queue',
         ],
       },
       conversational: {
-        subject: 'How Wix\'s product teams access data — a question',
-        body: `Hi Antanas,
+        subject: 'Quick question about your analytics workflow at Facetune',
+        body: `Hey Nicky,
 
-I've been looking at Wix's scale — 230M users, a billion events per day, and a product org that spans dozens of semi-autonomous teams. That's a genuinely complex data environment.
+I was looking at Facetune's AI feature expansion — the generative tools you've rolled out recently are a serious step up, and they must be generating a whole new category of behavioral data to track.
 
-One thing I'm curious about: when a PM on your team wants to understand why users are dropping off in the AI website builder flow — how fast do they get that answer? Do they query Presto/BigQuery themselves, or does that go into the data team's queue?
+I'm curious: when a PM or marketer asks you "which users are converting from the free AI edit to paid subscription?", how long does that typically take to answer? Is it a dashboard, a quick query, or does it route through your team?
 
-I ask because ClarityQ is built for exactly that use case: product managers asking behavioral questions in plain English, getting precise answers in seconds without SQL knowledge.
+I ask because ClarityQ lets non-technical stakeholders ask exactly those questions in plain English, directly against your data warehouse. No SQL, no ticket, answer in seconds. We work with product-led apps in exactly your situation.
 
-Would love to show you a quick demo. What does your calendar look like?`,
+Happy to show you a quick demo if you're open to it. What does your calendar look like?`,
         personalization_notes: [
-          'Referenced Wix AI website builder — a recent, real product launch',
-          'Named Presto and BigQuery (confirmed Wix stack tools)',
-          'Asked a diagnostic question tailored to the Head of Product role',
+          'Referenced the recent generative AI feature expansion at Lightricks',
+          'Asked a specific, realistic question about their AI-to-paid conversion funnel',
+          'Positioned ClarityQ as removing the dependency on Nicky\'s team for routine queries',
         ],
       },
       direct: {
-        subject: 'Wix product teams + self-serve data — 15 min?',
-        body: `Antanas,
+        subject: 'Your AI feature analytics — are stakeholders self-serving?',
+        body: `Nicky,
 
-At 230M users, your PMs are constantly racing to understand what's happening in the product — and waiting on the data team slows that down.
+Facetune's AI feature rollout is generating new behavioral data that product, marketing, and monetization teams all want to understand — but most of those questions shouldn't require your team to answer them.
 
-ClarityQ connects to Wix's BigQuery and Presto stack. PMs ask behavioral questions in plain English. Answers in seconds.
+ClarityQ connects to your data stack and lets PMs, growth managers, and marketers query it in plain English. "Which AI feature drives the highest free-to-paid conversion?" — answer in 10 seconds, no SQL, no analyst ticket.
 
-I'd like to show you a 15-minute demo this week. Tuesday or Wednesday work?`,
+I'd like to show you what that looks like in 15 minutes. Are you free Thursday or Friday?`,
         personalization_notes: [
-          'Led with the scale (230M users) — establishes credibility',
-          'Named both confirmed Wix data tools',
-          'Direct, respectful, gives specific day options',
+          'Named the specific trigger: AI feature rollout generating new data demand',
+          'Focused on reducing Nicky\'s team\'s ad-hoc burden',
+          'Clear, specific CTA with day suggestions',
         ],
       },
     },
     followup: {
       concise: {
-        subject: 'Re: Wix product data self-serve',
-        body: `Hi Antanas,
+        subject: 'Re: Facetune × ClarityQ',
+        body: `Hi Nicky,
 
-Following up from last week. New angle: Wix is actively hiring multiple Data Analytics Team Leads right now — which signals that data demand is outpacing even your substantial analytics team.
+Following up on my note from last week. One thing worth adding: a mobile app data team we work with cut their ad-hoc request volume by 60% within the first month — their analysts shifted from answering routine queries to building actual models.
 
-ClarityQ is a faster fix than a 3-month hiring process. Worth 15 minutes?`,
+Still happy to show you a 15-minute demo. Would next week work?`,
         personalization_notes: [
-          'Named the specific hiring signal: multiple Data Analytics Team Lead openings',
-          'Positioned ClarityQ as faster than the hiring solution',
-          'Short and additive — doesn\'t repeat the first email',
+          'Added a concrete social proof stat (60% reduction in ad-hoc volume)',
+          'Kept it short — Nicky is a data practitioner, not a marketing persona',
         ],
       },
       conversational: {
-        subject: 'The Wix AI builder launch and product analytics',
-        body: `Hey Antanas,
+        subject: 'Still thinking about your AI feature data',
+        body: `Hey Nicky,
 
-Reaching back out with a thought about the Wix AI website builder launch.
+Reaching back out — I wanted to add one more thought since I sent my last note.
 
-Measuring AI feature adoption at 230M-user scale is genuinely hard. Which user segments are using the AI builder? What's the conversion rate for users who start with AI vs. traditional editor? What's the Day-30 retention difference? Those are questions your PMs probably want answered weekly, not monthly.
+With Lightricks rolling out generative AI features across Facetune, Videoleap, and Photoleap simultaneously, the variety of questions hitting your team must be multiplying fast. Which AI brush drives the most sessions? Which users churn after their free trial of the AI suite? Do power users of one app convert to another?
 
-ClarityQ makes those questions answerable in seconds — natural language queries on top of your existing BigQuery stack, no analyst queue.
+Those aren't complex questions, but they shouldn't compete with your team's actual modeling work. ClarityQ handles that entire layer — natural language on top of your existing stack.
 
-Happy to show you a demo whenever the timing is right.`,
+Happy to jump on a call whenever makes sense. What's your week like?`,
         personalization_notes: [
-          'Named the AI website builder specifically — a real, recent Wix launch',
-          'Named three specific, realistic questions PMs would ask about this product',
-          'Positioned BigQuery specifically — confirms stack knowledge',
+          'Referenced multi-app AI expansion (Facetune, Videoleap, Photoleap)',
+          'Named specific realistic questions her team probably gets',
+          'Positioned the opportunity cost: complex work vs. routine queries',
         ],
       },
       direct: {
-        subject: 'Wix AI builder metrics — how fast do you get them?',
-        body: `Antanas,
+        subject: 'One more thought on the analyst queue',
+        body: `Nicky,
 
-Quick follow-up. With the Wix AI builder now live, your PMs need adoption and conversion metrics fast — not end-of-sprint.
+Following up with one concrete point: the data teams we work with report that 60-70% of their ad-hoc requests are questions anyone could answer if they had the right tool. ClarityQ is that tool.
 
-ClarityQ gives them that: natural language queries on BigQuery, answers in seconds.
+For Facetune specifically — with AI features shipping fast and stakeholders hungry for behavioral data — that queue is only going to grow.
 
-15 minutes this week — worth it?`,
+15 minutes to show you what self-serve analytics looks like for your stack. This week?`,
         personalization_notes: [
-          'Referenced the AI builder launch as the timing trigger',
-          'Framed urgency: "not end-of-sprint" — specific to agile product teams',
-          'Direct close',
+          'Led with a specific, credible statistic',
+          'Named the growth trajectory: AI features → more data questions → bigger queue',
+          'Tight and actionable',
         ],
       },
     },
     rejection: {
       concise: {
         subject: 'Re: ClarityQ — understood',
-        body: `Hi Antanas,
+        body: `Hi Nicky,
 
-No worries at all. I'll follow up when the product team's data request volume becomes more of a friction point.
+No problem — I'll follow up when the AI feature rollout starts generating more ad-hoc demand than the team can absorb.
 
-Best of luck with the AI builder rollout.`,
+Good luck with the Facetune data work.`,
         personalization_notes: [
-          'Named the AI builder — stays relevant and personal',
-          'Specific re-engagement trigger: data request volume friction',
-        ],
-      },
-      conversational: {
-        subject: 'Makes sense — I\'ll check back later',
-        body: `Hey Antanas,
-
-Fair enough — I appreciate the honest response. These conversations are about timing, and pushing when it's not right helps nobody.
-
-I'll circle back when the AI builder is driving more data complexity or when the PM request queue becomes the bottleneck. Good luck with the rollout — the AI website creation space is moving fast.`,
-        personalization_notes: [
-          'Named two specific re-engagement triggers: AI builder complexity, PM queue bottleneck',
-          'Expressed genuine interest in the AI website creation space',
-        ],
-      },
-      direct: {
-        subject: 'Understood — filing for when the queue gets loud',
-        body: `Antanas,
-
-Noted. When the analytics queue starts slowing your PMs down, I'll be here.
-
-Good luck with the AI builder.`,
-        personalization_notes: [
-          'Crisp, minimal — respects his time even in rejection',
-          'Named the specific trigger: analytics queue slowing PMs down',
-        ],
-      },
-    },
-  },
-
-  'wix-jill-sherman': {
-    cold: {
-      concise: {
-        subject: 'Modalyst at Wix — data access without the queue',
-        body: `Hi Jill,
-
-Running a marketplace within a 5,000-person company means competing for data team resources — which are always stretched thin at Wix scale.
-
-ClarityQ gives your Modalyst team self-serve analytics on your own supplier and buyer data without depending on Wix's central data org. Ask questions in plain English, get answers in seconds.
-
-Worth a quick look?`,
-        personalization_notes: [
-          'Named Modalyst specifically — demonstrates research into her specific unit',
-          'Identified the unique pain: competing for centralized data resources in a large org',
-          'Positioned as independence from Wix central team — directly relevant',
-        ],
-      },
-      conversational: {
-        subject: 'Running Modalyst inside Wix — a data question',
-        body: `Hi Jill,
-
-I've been looking at Modalyst's journey since the Wix acquisition — building a B2B supplier marketplace within a massive consumer-focused tech company is a genuinely unusual operating environment.
-
-One thing I'm curious about: as the CEO of a product unit inside Wix, when you need marketplace metrics — supplier GMV, buyer acquisition funnel, category performance — how quickly do you get those answers? Are you dependent on Wix's central data team, or does Modalyst have its own analytics access?
-
-I ask because ClarityQ is built exactly for this situation: giving business unit leaders self-serve data access on their own operational data, without waiting on a centralized analytics function.
-
-Happy to show you a quick demo. What does your week look like?`,
-        personalization_notes: [
-          'Named Modalyst\'s specific situation: B2B marketplace within consumer tech company',
-          'Named specific Modalyst metrics: supplier GMV, buyer acquisition, category performance',
-          'Diagnosed the exact pain point: dependency on Wix\'s central data team',
-        ],
-      },
-      direct: {
-        subject: 'Modalyst data independence from Wix central team',
-        body: `Jill,
-
-Running Modalyst inside Wix means your marketplace metrics compete with Wix's core product analytics for data team attention — and Wix\'s core product usually wins.
-
-ClarityQ gives Modalyst its own self-serve analytics layer. Connect your supplier and buyer data, ask questions in plain English, get answers without the wait.
-
-15 minutes this week — I'll show you how it works.`,
-        personalization_notes: [
-          'Named the specific organizational tension: Modalyst data vs. Wix core product priority',
-          'Positioned ClarityQ as data independence for Modalyst specifically',
-          'Direct and specific — no filler',
-        ],
-      },
-    },
-    followup: {
-      concise: {
-        subject: 'Re: Modalyst analytics independence',
-        body: `Hi Jill,
-
-Following up from last week. One additional thought: Wix is actively hiring multiple Data Analytics Team Leads right now — which signals the central team is already at capacity before Modalyst's needs are added.
-
-That\'s exactly the environment where ClarityQ becomes essential. Worth 15 minutes?`,
-        personalization_notes: [
-          'Referenced Wix\'s active hiring as a signal that central team is stretched',
-          'Made the implication clear: Modalyst will get even less central team support',
-          'Short and additive',
-        ],
-      },
-      conversational: {
-        subject: 'Thinking about the Wix AI launch and Modalyst data access',
-        body: `Hey Jill,
-
-Reaching back out. I saw that Wix just launched its AI website builder — which is likely a major bandwidth pull on the central data team as they measure adoption and optimize the AI flow.
-
-That means Modalyst's supplier and buyer analytics will get even less central team attention in the coming months. If there was ever a moment to set up self-serve data access for your team, it's before the AI launch consumes Wix's analytics resources.
-
-ClarityQ can get Modalyst's team up and running on self-serve analytics quickly. Happy to show you a demo.`,
-        personalization_notes: [
-          'Referenced the Wix AI builder launch as a timing trigger that hurts Modalyst',
-          'Created urgency: AI launch will consume central team bandwidth',
-          'Positioned ClarityQ as the solution to set up now, before the squeeze',
-        ],
-      },
-      direct: {
-        subject: 'Wix\'s AI launch = less data team attention for Modalyst',
-        body: `Jill,
-
-Quick follow-up. Wix just launched an AI website builder — which means their central data team is now measuring AI adoption at 230M-user scale.
-
-Modalyst's analytics requests are going to the back of the queue.
-
-ClarityQ gives your team self-serve access. 15 minutes this week?`,
-        personalization_notes: [
-          'Led with the causal chain: AI launch → central team consumed → Modalyst queue delayed',
-          'Created genuine urgency with real context',
-          'Short, direct close',
-        ],
-      },
-    },
-    rejection: {
-      concise: {
-        subject: 'Re: ClarityQ — understood',
-        body: `Hi Jill,
-
-No problem — I'll follow up when the central data team bottleneck becomes more acute for Modalyst.
-
-Good luck with the supplier hub growth.`,
-        personalization_notes: [
-          'Named the specific trigger: central team bottleneck for Modalyst',
-          'Referenced her current work: supplier hub growth',
+          'Named the specific re-engagement trigger: AI feature-driven ad-hoc surge',
+          'Short and respectful',
         ],
       },
       conversational: {
         subject: 'Makes sense — I\'ll check back',
-        body: `Hey Jill,
+        body: `Hey Nicky,
 
-Fair enough — timing is everything. I'd rather wait for the right moment than push for a meeting that won't be useful.
+Fair enough — I appreciate the honest response. I know timing matters with tools like this.
 
-I'll circle back when Modalyst is scaling faster and needs analytics infrastructure that can't depend on Wix's central team timeline. Good luck with the marketplace — building B2B within a consumer giant is genuinely interesting.`,
+I'll check back when the generative AI rollout starts pushing more questions to your team than there are analyst hours to handle. In the meantime, good luck with the Facetune work — the AI feature direction looks genuinely impressive.`,
         personalization_notes: [
-          'Named the specific re-engagement trigger: Modalyst scaling beyond central team capacity',
-          'Expressed genuine interest in the B2B-within-consumer dynamics',
+          'Named the specific re-engagement trigger: AI rollout generating more data demand',
+          'Acknowledged their product work — genuine, not hollow',
         ],
       },
       direct: {
-        subject: 'Understood — I\'ll be here when the queue bites',
-        body: `Jill,
+        subject: 'Noted — I\'ll be here when the queue grows',
+        body: `Nicky,
 
-Noted. When Wix\'s central data team becomes the bottleneck for Modalyst's growth, reach out.
+Understood. When the AI feature expansion drives more ad-hoc requests than the team can handle, reach out.
 
-Good luck with the supplier hub.`,
+Good luck.`,
         personalization_notes: [
-          'Crisp and respectful',
-          'Named the exact future trigger: central team bottleneck for Modalyst',
+          'Brief and respectful',
+          'Named the specific future trigger',
         ],
       },
     },
   },
 
-  'wix-gilad-barkan': {
+  'ltx-rene-froitzheim': {
     cold: {
       concise: {
-        subject: 'Wix Data Science Guild × ClarityQ — reduce ad-hoc load',
-        body: `Hi Gilad,
+        subject: 'Lightricks demand gen — pipeline answers without the wait',
+        body: `Hi Rene,
 
-Leading 200+ data scientists at Wix means a significant portion of your guild's capacity goes to answering routine data questions from product managers and marketing leads who could, with the right tool, answer themselves.
+Running demand gen across a multi-app portfolio means every campaign question — "which channel is driving pipeline for Facetune vs. Videoleap?" — has to route through an analyst before you can act.
 
-ClarityQ sits on top of BigQuery and Presto and gives those stakeholders a natural language interface for self-serve queries. Your scientists get back to the modeling that actually matters.
+ClarityQ connects to your data warehouse and lets your team ask those questions in plain English. Answer in seconds, not days.
 
-Worth 15 minutes to see how it works?`,
+Worth 15 minutes to see it live?`,
         personalization_notes: [
-          'Named the Data Science Guild specifically — demonstrates real research',
-          'Referenced his 200+ team scale (real number from Wix Engineering blog)',
-          'Named both confirmed Wix data tools: BigQuery and Presto',
-          'Positioned as freeing the guild for higher-value work, not replacing them',
+          'Named the multi-app portfolio challenge specific to Lightricks',
+          'Used a realistic, relevant campaign question example',
+          'Framed around the speed-to-insight problem in demand gen',
         ],
       },
       conversational: {
-        subject: 'A question about ad-hoc requests for the Wix data guild',
-        body: `Hi Gilad,
+        subject: 'Question about your demand gen analytics setup',
+        body: `Hey Rene,
 
-I\'ve been reading some of your posts on the Wix Engineering blog — the data science guild model is a fascinating organizational structure. Running 200+ data scientists across a company that processes a billion events per day is genuinely one of the harder data leadership challenges in Israeli tech.
+I was looking at Lightricks' growth trajectory — with generative AI rolling out across Facetune, Videoleap, and Photoleap, the demand gen picture must be getting more complex every quarter. Different conversion paths, different payback windows, different ICP signals per app.
 
-One question that came to mind: what percentage of your guild's capacity goes to answering repetitive ad-hoc questions from stakeholders — PMs who want retention curves, marketing leads who want campaign attribution data — vs. the actual modeling and research work?
+I'm curious: how quickly can your team get an answer like "what's the MQL-to-opportunity rate for users who came through paid social for Facetune last month"? Is that a quick query, or does it need an analyst?
 
-I'm asking because ClarityQ is built to solve exactly that: a natural language layer on top of BigQuery that gives those stakeholders self-serve access. Your guild focuses on the hard problems. The routine queries handle themselves.
+I ask because ClarityQ lets demand gen teams ask exactly those questions in plain English, directly against their data warehouse. No SQL, no ticket, answer in seconds.
 
-Happy to show you a demo whenever the timing is right. What does your calendar look like?`,
+Happy to show you what that looks like for a multi-app setup. What does your calendar look like?`,
         personalization_notes: [
-          'Referenced the Wix Engineering blog where Gilad has published — real research',
-          'Acknowledged the guild model specifically — shows genuine understanding of his work',
-          'Named the specific scale: 200+ scientists, 1B events/day',
-          'Asked a diagnostic question that surfaces the ad-hoc request cost naturally',
+          'Referenced multi-app AI expansion creating per-app demand gen complexity',
+          'Asked a specific, realistic pipeline question about their funnel',
+          'Positioned ClarityQ as solving the multi-product analytics fragmentation',
         ],
       },
       direct: {
-        subject: 'Free your data scientists from routine queries — 15 min?',
-        body: `Gilad,
+        subject: 'Your multi-app pipeline data — how fast can you get it?',
+        body: `Rene,
 
-If your guild spends more than 20% of its capacity on routine data requests from stakeholders who could answer their own questions — that's a ClarityQ conversation.
+Lightricks runs demand gen across multiple apps, each with distinct acquisition channels and conversion funnels. Getting a consolidated pipeline view — or a per-app campaign breakdown — should take seconds, not a 48-hour analyst turnaround.
 
-Natural language queries on BigQuery and Presto. Stakeholders self-serve. Your scientists focus on the LLM research, recommendation systems, and guild initiatives that require their expertise.
+ClarityQ connects to your data stack and lets you or your team ask "which campaign drove the most qualified pipeline for Videoleap last month?" in plain English. Instant answer, no SQL.
 
-15 minutes this week — I'll show you exactly how it works for a guild your size.`,
+I'd like to show you what that looks like in 15 minutes. Are you free Thursday or Friday?`,
         personalization_notes: [
-          'Opened with a specific, relatable benchmark: 20% capacity on routine requests',
-          'Referenced LLM research and recommendation systems — his confirmed areas of focus',
-          'Named both Wix data tools',
-          'Positioned around "guild size" — shows he\'s a serious organization, not a small team',
+          'Named the specific pain: multi-app demand gen fragmentation',
+          'Used a concrete, realistic query example',
+          'Clear CTA with specific day suggestions',
         ],
       },
     },
     followup: {
       concise: {
-        subject: 'Re: Wix Data Science Guild data self-serve',
-        body: `Hi Gilad,
+        subject: 'Re: Lightricks × ClarityQ',
+        body: `Hi Rene,
 
-Following up from last week. I read your recent piece on AI-driven data science initiatives — which makes me think the guild is leaning heavily into LLM-adjacent work right now.
+Following up on my note from last week. One thing worth adding: a B2C SaaS demand gen team we work with cut their time-to-pipeline-insight from 2 days to under 10 minutes using ClarityQ.
 
-That's exactly when routine ad-hoc queries are most expensive — they pull attention from the high-value AI work. ClarityQ can handle those while your guild focuses on the frontier.
-
-Still happy to show you a demo. 15 minutes this week?`,
+For a multi-app portfolio like Lightricks, that speed advantage compounds across every campaign decision. Still happy to show you a 15-minute demo — would next week work?`,
         personalization_notes: [
-          'Referenced a recent Wix Engineering publication by Gilad — extremely specific',
-          'Framed the opportunity cost: LLM work interrupted by routine queries',
-          'Short and additive — new angle, not repetition',
+          'Added a concrete social proof stat (2 days → 10 minutes)',
+          'Tied the stat to the specific multi-app portfolio challenge',
         ],
       },
       conversational: {
-        subject: 'Your LLM work and the data request load',
-        body: `Hey Gilad,
+        subject: 'Still thinking about your multi-app pipeline visibility',
+        body: `Hey Rene,
 
-Reaching back out with a thought from your recent piece on the emerging LLM economy.
+Reaching back out — I've been thinking about the Lightricks demand gen challenge since my last note.
 
-If your guild is heavily invested in LLM research and AI-driven analytics initiatives, then routine ad-hoc requests are an even more expensive interruption than usual. Every hour a senior data scientist spends on "can you pull Q3 retention by cohort?" is an hour not spent on the AI work that differentiates Wix.
+With AI features launching across multiple apps simultaneously, I imagine the campaign attribution question gets messy fast: which campaigns are driving subscriptions to the AI suite specifically? Which channels perform differently per app? How does a user who tried Facetune convert to Photoleap?
 
-ClarityQ is the solution: natural language self-serve for stakeholders, freeing your guild for the research that actually moves the needle.
+Those cross-app pipeline questions are exactly where ClarityQ shines — natural language queries on your unified data warehouse, instant answers.
 
-Happy to show you a demo whenever it\'s convenient.`,
+Happy to jump on a call whenever makes sense. What's your week like?`,
         personalization_notes: [
-          'Referenced his specific published work on the "LLM economy" — from his Medium posts',
-          'Framed the opportunity cost in terms of his guild\'s most important work: LLM research',
-          'Positioned ClarityQ as enabling more focus on the AI work he cares about',
+          'Named specific cross-app pipeline questions Rene likely faces',
+          'Tied the follow-up to a real business complexity (multi-app AI expansion)',
+          'Conversational and genuinely curious tone',
         ],
       },
       direct: {
-        subject: 'LLM research vs. ad-hoc queries — the tradeoff',
-        body: `Gilad,
+        subject: 'Cross-app pipeline visibility — still an open question?',
+        body: `Rene,
 
-Quick follow-up. You're leading LLM and AI research for one of Israel's largest data orgs, and routine ad-hoc requests from stakeholders are competing with that work for your guild's attention.
+One concrete follow-up: the demand gen teams we work with report that cross-product pipeline visibility is their biggest unresolved data problem. Lightricks running 4+ apps amplifies exactly that challenge.
 
-ClarityQ removes those requests from the queue. Your scientists stay on the frontier work.
+ClarityQ gives you unified pipeline analytics across every app and channel in plain English — no waiting on data teams.
 
 15 minutes this week?`,
         personalization_notes: [
-          'Named the specific tradeoff: LLM research vs. routine queries',
-          'Positioned ClarityQ as a direct enabler of the frontier AI work he cares about',
-          'Extremely concise — appropriate for a data scientist who values precision',
+          'Led with a specific, credible pain point framing',
+          'Named the Lightricks-specific amplifier: 4+ app portfolio',
+          'Tight and actionable',
         ],
       },
     },
     rejection: {
       concise: {
         subject: 'Re: ClarityQ — understood',
-        body: `Hi Gilad,
+        body: `Hi Rene,
 
-No problem — I\'ll follow up when the guild's ad-hoc request load becomes more of a constraint on the AI research work.
+No problem — I'll follow up when the cross-app pipeline visibility gap becomes more of a constraint on your campaigns.
 
-Good luck with the LLM initiatives.`,
+Good luck with the Lightricks demand gen work.`,
         personalization_notes: [
-          'Named the specific re-engagement trigger: ad-hoc load constraining AI research',
-          'Referenced his LLM work — stays relevant and personal',
+          'Named the specific re-engagement trigger: cross-app pipeline visibility',
+          'Short and respectful',
         ],
       },
       conversational: {
         subject: 'Makes sense — I\'ll check back',
-        body: `Hey Gilad,
+        body: `Hey Rene,
 
-Fair enough — I appreciate the honest response. Data leaders know what they need, and I'd rather wait for the right timing.
+Fair enough — I appreciate the honest response. Timing is everything with tooling decisions.
 
-I'll circle back when the stakeholder ad-hoc request load starts cutting into the guild\'s AI research bandwidth. In the meantime, the work on LLMs in data science sounds genuinely interesting — looking forward to reading more of your publications.`,
+I'll circle back when the multi-app pipeline attribution challenge becomes a bigger bottleneck. In the meantime, the Lightricks product direction looks genuinely exciting — good luck with the AI feature rollouts.`,
         personalization_notes: [
-          'Named the specific trigger: stakeholder requests cutting into AI research time',
-          'Expressed genuine interest in his publications — builds authentic rapport',
+          'Named the specific re-engagement trigger: multi-app attribution bottleneck',
+          'Acknowledged their product work — genuine, not hollow',
         ],
       },
       direct: {
-        subject: 'Understood — I\'ll be here when the requests pile up',
-        body: `Gilad,
+        subject: 'Noted — I\'ll be here when the pipeline data gaps grow',
+        body: `Rene,
 
-Noted. When the ad-hoc request volume starts pulling your guild away from the AI work, reach out.
+Understood. When the cross-app pipeline visibility gap starts slowing down campaign decisions, reach out.
 
-Good luck with the LLM research.`,
+Good luck.`,
         personalization_notes: [
-          'Crisp and professional',
-          'Named both the trigger and his specific work',
+          'Brief and respectful',
+          'Named the specific future trigger',
         ],
       },
     },
   },
+
+  'ltx-lior-sassy': {
+    cold: {
+      concise: {
+        subject: 'Lightricks product decisions — data in seconds',
+        body: `Hi Lior,
+
+At Lightricks, every AI feature launch requires an immediate read on adoption, retention delta, and paywall conversion. Waiting 48 hours for an analyst to pull that data means you're shipping your next feature before you understand the last one.
+
+ClarityQ connects to your data warehouse and lets your product team ask those questions in plain English — answer in under 10 seconds.
+
+Worth 15 minutes to see it?`,
+        personalization_notes: [
+          'Named the specific product analytics pain: AI feature launch cycle',
+          'Framed the cost: shipping next feature before understanding the previous one',
+          'Tight and product-persona appropriate',
+        ],
+      },
+      conversational: {
+        subject: 'Question about your product analytics loop at Lightricks',
+        body: `Hey Lior,
+
+I was looking at Lightricks' AI feature rollout — it's impressive how fast you're shipping across Facetune, Videoleap, and Photoleap. But I imagine that speed puts real pressure on the data loop: how quickly after launch can your team answer "is this feature actually driving retention?"
+
+I'm curious about your current workflow. When a feature ships and a stakeholder asks "what's the 7-day adoption rate among paid users?", how long does that take?
+
+I ask because ClarityQ is an AI analytics tool that lets product teams ask those questions in plain English, directly against your data warehouse. No SQL, no analyst ticket — answer in seconds.
+
+Happy to show you a quick demo if the timing is right. What does your week look like?`,
+        personalization_notes: [
+          'Referenced the multi-app AI feature rollout velocity',
+          'Asked a specific, realistic post-launch analytics question',
+          'Conversational and genuinely curious — right for a product director',
+        ],
+      },
+      direct: {
+        subject: 'Your AI feature launch cycle — how fast is your data loop?',
+        body: `Lior,
+
+Lightricks ships AI features at high velocity across multiple apps. The product question after every launch is the same: adoption, retention impact, paywall conversion. If that data takes 48 hours to surface, you're already halfway to the next sprint decision.
+
+ClarityQ connects to your data warehouse and lets product managers ask "what's the Day-7 retention lift for users of the new AI brush feature?" in plain English. Answer in 10 seconds.
+
+I'd like to show you what that looks like in 15 minutes. Are you free Thursday or Friday?`,
+        personalization_notes: [
+          'Named the specific post-launch analytics cycle: adoption, retention, conversion',
+          'Used a concrete, realistic product analytics query example',
+          'Clear CTA with day suggestions',
+        ],
+      },
+    },
+    followup: {
+      concise: {
+        subject: 'Re: Lightricks product analytics × ClarityQ',
+        body: `Hi Lior,
+
+Following up on my note from last week. One thing worth adding: a consumer mobile app product team we work with cut their post-launch data review cycle from 3 days to same-day using ClarityQ. Their PMs now run their own feature performance checks independently.
+
+Still happy to show you a 15-minute demo. Would next week work?`,
+        personalization_notes: [
+          'Added concrete social proof (3 days → same-day post-launch review)',
+          'Framed around PM independence — relevant for a Director of Product',
+        ],
+      },
+      conversational: {
+        subject: 'Still thinking about your feature data loop',
+        body: `Hey Lior,
+
+Reaching back out — I've been thinking about the Lightricks product analytics challenge since my last note.
+
+With generative AI features shipping across multiple apps, the variety of product questions must be multiplying: does the AI background feature increase session length? Do users who engage with AI edits convert to paid at a higher rate? How does feature adoption compare across Facetune vs. Photoleap users?
+
+Those aren't complex questions — but if they require an analyst ticket, they slow your roadmap down. ClarityQ handles that entire layer so your PMs can self-serve.
+
+Happy to jump on a call whenever makes sense. What's your week like?`,
+        personalization_notes: [
+          'Named specific realistic product analytics questions Lior\'s team faces',
+          'Framed the cost: analyst dependency slowing roadmap velocity',
+          'Conversational and empathetic to a product director\'s workflow',
+        ],
+      },
+      direct: {
+        subject: 'PM self-serve — still a gap at Lightricks?',
+        body: `Lior,
+
+Following up with one specific question: how much of your team's analytics bandwidth is going to routine "can you pull this metric?" requests vs. actual product modeling?
+
+If it's more than 30%, ClarityQ eliminates that layer — natural language self-serve for PMs on top of your existing warehouse.
+
+15 minutes this week?`,
+        personalization_notes: [
+          'Led with a specific, diagnostic question (30% bandwidth threshold)',
+          'Named the solution in concrete terms',
+          'Very short — right for a Director of Product persona',
+        ],
+      },
+    },
+    rejection: {
+      concise: {
+        subject: 'Re: ClarityQ — understood',
+        body: `Hi Lior,
+
+No problem — I'll follow up when the post-launch analytics cycle becomes a bigger constraint on your roadmap velocity.
+
+Good luck with the Lightricks product work.`,
+        personalization_notes: [
+          'Named the specific re-engagement trigger: post-launch data cycle slowing roadmap',
+          'Short and respectful',
+        ],
+      },
+      conversational: {
+        subject: 'Makes sense — I\'ll check back',
+        body: `Hey Lior,
+
+Fair enough — I appreciate the honest response. Product tool decisions need to be timed right.
+
+I'll circle back when PM self-serve analytics becomes a bigger priority. In the meantime, the Lightricks AI feature direction is genuinely impressive — good luck with the roadmap.`,
+        personalization_notes: [
+          'Named the specific re-engagement trigger: PM self-serve analytics priority',
+          'Acknowledged their product direction — genuine',
+        ],
+      },
+      direct: {
+        subject: 'Noted — I\'ll be here when the analytics queue grows',
+        body: `Lior,
+
+Understood. When the ad-hoc analytics requests start slowing your team's roadmap velocity, reach out.
+
+Good luck.`,
+        personalization_notes: [
+          'Brief and respectful',
+          'Named the specific future trigger',
+        ],
+      },
+    },
+  },
+
 }
 
 // Helper: lookup cached email or return null (triggers live Claude generation)
