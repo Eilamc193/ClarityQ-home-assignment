@@ -3,8 +3,8 @@ import { Search, Users, Mail, Zap, LayoutDashboard, BarChart2 } from 'lucide-rea
 const NAV = [
   { id: 'icp',      label: 'ICP Scanner',     icon: Search,          desc: 'Find target accounts' },
   { id: 'persona',  label: 'Persona Finder',  icon: Users,           desc: 'Identify decision-makers' },
-  { id: 'email',    label: 'Email Composer',  icon: Mail,            desc: 'AI-generated outreach' },
   { id: 'signals',  label: 'Signal Feed',     icon: Zap,             desc: 'Buying trigger alerts' },
+  { id: 'email',    label: 'Email Composer',  icon: Mail,            desc: 'AI-generated outreach' },
   { id: 'pipeline', label: 'Pipeline Board',  icon: LayoutDashboard, desc: 'Track outreach stages' },
   { id: 'insights', label: 'A/B Insights',    icon: BarChart2,       desc: "What's working & why" },
 ]
