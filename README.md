@@ -108,7 +108,7 @@ As you advance prospects through the Pipeline Board to terminal stages (Replied 
 | Styling | Tailwind CSS | Utility-first, no CSS file overhead |
 | State | Zustand + localStorage | Lightweight, pipeline and A/B data persist across refresh |
 | AI | Claude Sonnet 4.6 (Anthropic) | Best instruction following for structured JSON output |
-| Email finder | Hunter.io API | Industry standard B2B email verification |
+| Email finder | Hunter.io API + Skrapp.io (manual) | B2B email verification and discovery |
 | Icons | Lucide React | Consistent, lightweight |
 | Hosting | GitHub Pages | Zero-config static deployment |
 
