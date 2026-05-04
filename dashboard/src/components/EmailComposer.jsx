@@ -5,7 +5,7 @@ import { usePipelineStore } from '../store/usePipelineStore'
 
 const EMAIL_TYPES = [
   { id: 'cold',      label: 'Cold Intro',       desc: 'First touch' },
-  { id: 'followup',  label: 'Follow-up',        desc: 'Day 5, no reply' },
+  { id: 'followup',  label: 'Follow-up',        desc: 'Day 3, no reply' },
   { id: 'rejection', label: 'Post-Rejection',   desc: 'Keep door open' },
 ]
 
