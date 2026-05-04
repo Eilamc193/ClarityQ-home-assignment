@@ -3,7 +3,11 @@ import { ExternalLink, Mail, Loader2, CheckCircle, AlertCircle, ArrowLeft, Penci
 import { findEmail } from '../lib/hunter'
 
 function PersonaCard({ persona, company, onDraftEmail }) {
-  const [emailState, setEmailState] = useState({ status: 'idle', email: null, error: null })
+  const [emailState, setEmailState] = useState(() => {
+    if (persona.email) return { status: 'found', email: persona.email, error: null }
+    if (persona.emailNotFound) return { status: 'notfound', email: null, error: null }
+    return { status: 'idle', email: null, error: null }
+  })
 
   async function handleFindEmail() {
     setEmailState({ status: 'loading', email: null, error: null })
@@ -22,7 +26,7 @@ function PersonaCard({ persona, company, onDraftEmail }) {
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 flex flex-col gap-4">
       {/* Header */}
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-4 min-h-[96px]">
         {persona.photo ? (
           <img
             src={`${import.meta.env.BASE_URL}${persona.photo.slice(1)}`}
@@ -47,13 +51,13 @@ function PersonaCard({ persona, company, onDraftEmail }) {
       </div>
 
       {/* AI Rationale */}
-      <div className="bg-slate-50 rounded-lg p-3 border border-gray-100">
+      <div className="bg-slate-50 rounded-lg p-3 border border-gray-100 flex-1">
         <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Why target</p>
         <p className="text-sm text-slate-700 leading-relaxed">{persona.rationale}</p>
       </div>
 
       {/* Actions */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 mt-auto">
         {/* LinkedIn */}
         <a
           href={persona.linkedin}
