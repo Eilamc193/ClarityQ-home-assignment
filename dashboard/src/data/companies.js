@@ -168,7 +168,7 @@ export const companies = [
         avatarColor: 'bg-teal-100 text-teal-700',
         photo: '/avatars/zur-shental.jpg',
         seniority: 'Director',
-        estimatedEmail: 'zur.shental@play-perfect.com',
+        email: 'zur.shental@play-perfect.com',
         rationale: 'Zur leads product at Play Perfect while the VP Product seat is open - making him the de-facto product decision-maker during global rollout. Every game update requires behavioral data: DAU shifts, feature adoption, monetization curves. ClarityQ gives him instant answers on analytics data without waiting on the analytics team.',
       },
       {
@@ -180,7 +180,7 @@ export const companies = [
         avatarColor: 'bg-purple-100 text-purple-700',
         photo: '/avatars/gilad-ben-david.jpg',
         seniority: 'Director',
-        estimatedEmail: 'gilad.b@play-perfect.com',
+        email: 'gilad.b@play-perfect.com',
         rationale: 'Gilad owns data analytics at Play Perfect - a team under constant pressure from product, marketing, and growth stakeholders at a 50M+ download studio. ClarityQ reduces ad-hoc requests, letting his analysts focus on complex work while PMs and UA managers self-serve on routine queries.',
       },
     ],
