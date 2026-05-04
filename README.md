@@ -35,7 +35,7 @@ I screened Israeli-founded B2B companies (100–5000 employees) with a strong da
 | **Oddity (Il Makiage)** | Publicly traded beauty tech with explicit analytics investment push in earnings calls; CFO projected 35% revenue growth requiring "data infrastructure" |
 | **Wix** | 200M+ user platform with enterprise analytics needs; recently acquired Base44 (AI app builder), signaling a push into deeper product analytics |
 
-### Personas (18 total)
+### Personas (19 total)
 
 Each persona was chosen for role-to-product fit, not just seniority. The Persona Finder shows a written "why target" rationale for each. A few examples:
 
@@ -45,9 +45,8 @@ Each persona was chosen for role-to-product fit, not just seniority. The Persona
 - **Nicky Kamins** (Lightricks, Head of Facetune Data) — Single owner of product analytics for their flagship app, 100M+ users
 
 **Email verification status:**
-- 🟢 **Confirmed** — verified via Hunter.io (majority of personas)
-- 🟡 **Estimated** — Hunter.io 95%+ confidence based on domain pattern
-- 🔗 **LinkedIn DM only** — no email found; flagged for alternative channel (e.g. Lior Sassy at Lightricks)
+- 🟢 **Confirmed** — all 18 emails verified (Hunter.io or direct confirmation)
+- 🔗 **LinkedIn DM only** — Lior Sassy (Lightricks): no email found, flagged for alternative channel
 
 ### Buying Signals
 
@@ -75,7 +74,7 @@ The Email Composer generates emails along two axes:
 
 **How generation works:**
 
-1. Click "Generate Email" → app checks a local cache of 144 pre-generated emails (16 personas × 3 types × 3 tones)
+1. Click "Generate Email" → app checks a local cache of 171 pre-generated emails (19 personas × 3 types × 3 tones)
 2. If cached, returns in ~1s with a realistic simulated delay
 3. If not cached, calls the Claude Sonnet 4.6 API with a structured prompt that includes: persona title, company tools stack, top 3 signals, email type instructions, and tone instructions
 4. Response parsed as structured JSON: `{ subject, body, personalization_notes }`
