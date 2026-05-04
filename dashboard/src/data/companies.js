@@ -276,7 +276,7 @@ export const companies = [
         avatarColor: 'bg-orange-100 text-orange-700',
         photo: '/avatars/boaz-ariely.jpg',
         seniority: 'VP',
-        estimatedEmail: 'boaza@oddity.com',
+        email: 'boaza@oddity.com',
         rationale: 'Boaz runs performance marketing for a public DTC beauty company where every paid media decision is tied to measurable ROI. He manages hundreds of campaigns across channels and needs instant access to ROAS, CAC, and attribution data. ClarityQ connects their data stack to plain-English queries - no analyst queue.',
       },
       {
@@ -288,7 +288,7 @@ export const companies = [
         avatarColor: 'bg-pink-100 text-pink-700',
         photo: '/avatars/miranda-may.jpg',
         seniority: 'VP',
-        estimatedEmail: 'mirandam@oddity.com',
+        email: 'mirandam@oddity.com',
         rationale: 'Miranda sits at the intersection of revenue and product at Oddity - overseeing SpoiledChild\'s growth engine. With a BCG background, she expects data-driven decisions at speed. ClarityQ gives her team the ability to query their data warehouse in plain English and surface revenue insights in seconds, not days.',
       },
       {
@@ -300,7 +300,7 @@ export const companies = [
         avatarColor: 'bg-indigo-100 text-indigo-700',
         photo: '/avatars/yohei-shoji.jpg',
         seniority: 'VP',
-        estimatedEmail: 'yoheis@ilmakiage.com',
+        email: 'yoheis@ilmakiage.com',
         rationale: 'Yohei leads CX and insights for Il Makiage - translating customer behavior data into retention and satisfaction improvements. His BCG background means he expects analytical rigor and speed. ClarityQ surfaces customer journey insights from their data platform in plain English, letting his team act on data same-day.',
       },
       {
@@ -312,7 +312,7 @@ export const companies = [
         avatarColor: 'bg-rose-100 text-rose-700',
         photo: '/avatars/amanda-rodriguez.jpg',
         seniority: 'Director',
-        estimatedEmail: 'amanda@ilmakiage.com',
+        email: 'amanda@ilmakiage.com',
         rationale: 'Amanda leads retention for a brand where LTV optimization is the core growth lever. She manages lifecycle campaigns, email sequences, and churn analysis across millions of customers. ClarityQ gives her instant access to segment performance data - which cohorts are churning, which messages are working - without waiting on analysts.',
       },
     ],
@@ -478,7 +478,7 @@ export const companies = [
         avatarColor: 'bg-blue-100 text-blue-700',
         photo: '/avatars/roy-maimon.jpg',
         seniority: 'Director',
-        estimatedEmail: 'roymai@wix.com',
+        email: 'roymai@wix.com',
         rationale: 'Roy heads data at a company processing 1 billion events per day. His team is perpetually overwhelmed by ad-hoc requests from product, marketing, and growth stakeholders. ClarityQ acts as a self-serve layer - empowering non-technical teams to get answers instantly and freeing his analysts for high-value work.',
       },
       {
@@ -490,7 +490,7 @@ export const companies = [
         avatarColor: 'bg-emerald-100 text-emerald-700',
         photo: '/avatars/omer-zilberman.jpg',
         seniority: 'Director',
-        estimatedEmail: 'omerzil@wix.com',
+        email: 'omerzil@wix.com',
         rationale: 'Omer leads business development at a 5,000+ person SaaS company where partnership ROI needs to be defended with data. He needs quick access to partner performance metrics, deal analytics, and market insights - without competing for data team bandwidth. ClarityQ gives him self-serve answers from Wix\'s data warehouse.',
       },
       {
@@ -502,7 +502,7 @@ export const companies = [
         avatarColor: 'bg-violet-100 text-violet-700',
         photo: '/avatars/mor-saar.jpg',
         seniority: 'Director',
-        estimatedEmail: 'morsa@wix.com',
+        email: 'morsa@wix.com',
         rationale: 'Mor leads growth for Base44 - the AI development platform Wix acquired in 2025. Running a startup-within-Wix means moving at startup speed while navigating a 5,000-person data org. ClarityQ gives her growth team instant self-serve analytics without competing for data team bandwidth.',
       },
     ],
