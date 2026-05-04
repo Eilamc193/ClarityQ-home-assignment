@@ -25,15 +25,15 @@ The dashboard walks through a complete SDR workflow across 6 modules:
 
 ## The ICP Research
 
-I screened Israeli-founded B2B companies (100–5000 employees) with a strong data and analytics footprint. The five accounts I selected, ranked by ICP fit:
+I screened Israeli-founded B2B companies (100–5000 employees) with a strong data and analytics footprint. The five accounts I selected:
 
-| Company | Score | Why targeted |
-|---|---|---|
-| **AppsFlyer** | 92 | Marketing measurement platform drowning in attribution data — ClarityQ surfaces patterns they're missing across millions of attribution events |
-| **Play Perfect** | 88 | Mobile gaming studio scaling fast; data-heavy growth loops need faster, self-serve decision-making |
-| **Lightricks** | 85 | Creator apps (Facetune, Videoleap) generate massive behavioral data across a global user base — underutilized analytically |
-| **Oddity (Il Makiage)** | 83 | Publicly traded beauty tech with explicit analytics investment push in earnings calls; CFO projected 35% revenue growth requiring "data infrastructure" |
-| **Wix** | 78 | 200M+ user platform with enterprise analytics needs; recently acquired Base44 (AI app builder), signaling a push into deeper product analytics |
+| Company | Why targeted |
+|---|---|
+| **AppsFlyer** | Marketing measurement platform drowning in attribution data — ClarityQ surfaces patterns they're missing across millions of attribution events |
+| **Play Perfect** | Mobile gaming studio scaling fast; data-heavy growth loops need faster, self-serve decision-making |
+| **Lightricks** | Creator apps (Facetune, Videoleap) generate massive behavioral data across a global user base — underutilized analytically |
+| **Oddity (Il Makiage)** | Publicly traded beauty tech with explicit analytics investment push in earnings calls; CFO projected 35% revenue growth requiring "data infrastructure" |
+| **Wix** | 200M+ user platform with enterprise analytics needs; recently acquired Base44 (AI app builder), signaling a push into deeper product analytics |
 
 ### Personas (18 total)
 
