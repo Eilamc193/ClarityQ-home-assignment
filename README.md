@@ -193,4 +193,4 @@ dashboard/
 
 ---
 
-*Built by Eila Meitav — SDR candidate for ClarityQ*
+*Built by Eilam Cohen — SDR candidate for ClarityQ*
